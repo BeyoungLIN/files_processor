@@ -58,4 +58,3 @@ if __name__ == '__main__':
         imgs.append(pic2)
         res_path = '/Users/Beyoung/Desktop/Projects/DB/joint/Dingxiu2/'
         joint_vertical(imgs, os.path.join(res_path, img_name + '_joint.jpg'))
-
