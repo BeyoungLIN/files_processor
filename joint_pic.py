@@ -42,9 +42,6 @@ def joint_vertical(ims_list, res_name):  # 传递一个ims列表和保存名
 
 
 if __name__ == '__main__':
-    # imgs = []
-    # pic1 = '/Users/Beyoung/Desktop/Projects/DB/Dingxiu_1_demo_results_res18的副本/000001_db.jpg'
-    # pic2 = '/Users/Beyoung/Desktop/Projects/DB/Dingxiu_1_demo_results_res18的副本/000001.jpg'
 
     for id_num in range(636, 637):
         imgs = []
