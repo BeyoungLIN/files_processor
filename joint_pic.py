@@ -49,8 +49,8 @@ if __name__ == '__main__':
     for id_num in range(636, 637):
         imgs = []
         img_name = str(id_num).zfill(6)
-        folder_path1 = '/Users/Beyoung/Desktop/Projects/DB/Dingxiu_2_demo_results_res18'
-        folder_path2 = '/Users/Beyoung/Desktop/Projects/DB/Dingxiu_2_demo_results_newdb'
+        folder_path1 = '../DB/Dingxiu_2_demo_results_res18'
+        folder_path2 = '../DB/Dingxiu_2_demo_results_newdb'
         pic1 = os.path.join(folder_path1, img_name + '.jpg')
         pic2 = os.path.join(folder_path2, img_name + '.jpg')
 
