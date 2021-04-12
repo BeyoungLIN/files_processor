@@ -59,4 +59,3 @@ if __name__ == '__main__':
         res_path = '/Users/Beyoung/Desktop/Projects/DB/joint/Dingxiu2/'
         joint_vertical(imgs, os.path.join(res_path, img_name + '_joint.jpg'))
 
-        # test if changed
