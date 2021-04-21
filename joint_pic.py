@@ -29,7 +29,7 @@ def joint_vertical(ims_list, res_name):  # 传递一个ims列表和保存名
     new_img = Image.new(ims[0].mode, (width, height * len(ims)))
     '''
     todolist:
-    1. 对于不同尺寸的图片进行兼容
+    1. 对于不同尺寸的图片进行兼容,选择是否统一格式
     2. 对图片数量进行兼容
     '''
 
