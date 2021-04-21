@@ -43,15 +43,32 @@ def joint_vertical(ims_list, res_name):  # 传递一个ims列表和保存名
 
 if __name__ == '__main__':
 
-    for id_num in range(636, 637):
-        imgs = []
-        img_name = str(id_num).zfill(6)
-        folder_path1 = '../DB/Dingxiu_2_demo_results_res18'
-        folder_path2 = '../DB/Dingxiu_2_demo_results_newdb'
-        pic1 = os.path.join(folder_path1, img_name + '.jpg')
-        pic2 = os.path.join(folder_path2, img_name + '.jpg')
+    for id_num in range(1, 785):
+        try:
+            imgs = []
+            img_name = str(id_num).zfill(6)
+           # '''
+            folders_list = [
+                '../AC_OCR/Dingxiu_test/Dingxiu_2/Dingxiu_2_demo_results_res50'
+                '../AC_OCR/Dingxiu_test/Dingxiu_2/Dingxiu_2_demo_results_newdb'
+            ]
+            for folder in folders_list:
+                pic_name = os.path.join(folder, img_name + '.jpg')
+                imgs.append(pic_name)
+            '''
+            folder_path1 = '../AC_OCR/Dingxiu_test/Dingxiu_2/Dingxiu_2_demo_results_res50'
+            pic1 = os.path.join(folder_path1, img_name + '.jpg')
+            imgs.append(pic1)
+            
+            folder_path2 = '../AC_OCR/Dingxiu_test/Dingxiu_2/Dingxiu_2_demo_results_newdb'
+            pic2 = os.path.join(folder_path2, img_name + '.jpg')
+            imgs.append(pic2)
+            '''
 
-        imgs.append(pic1)
-        imgs.append(pic2)
-        res_path = '/Users/Beyoung/Desktop/Projects/DB/joint/Dingxiu2/'
-        joint_vertical(imgs, os.path.join(res_path, img_name + '_joint.jpg'))
+            res_path = '../AC_OCR/joint_compare/Dingxiu_2/res50_2.0_3.5'
+            if not os.path.exists(res_path):
+                os.mkdir(res_path)
+            joint_vertical(imgs, os.path.join(res_path, img_name + '_joint.jpg'))
+
+        except:
+            print(img_name + '.jpg')

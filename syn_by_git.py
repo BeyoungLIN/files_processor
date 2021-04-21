@@ -11,7 +11,7 @@ folders = os.listdir(root_path)
 
 for folder in folders:
     if os.path.isdir(os.path.join(root_path, folder)):
-        for num in range(20):
+        for num in range(100):
             file_name = 'book_page_' + str(num) + '.jpg'
             file_path = os.path.join(root_path, folder, 'imgs_v', file_name)
             try:
