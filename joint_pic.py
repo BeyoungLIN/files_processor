@@ -44,41 +44,39 @@ def joint_vertical(ims_list, res_name):  # 传递一个ims列表和保存名
 
 if __name__ == '__main__':
 
-
     folders_list = [
-        '../AC_OCR/Dingxiu_test/Dingxiu_2/Dingxiu_2_demo_results_total50',
-        '../AC_OCR/Dingxiu_test/Dingxiu_2/Dingxiu_2_demo_results_res50',
-        '../AC_OCR/Dingxiu_test/Dingxiu_2/Dingxiu_2_demo_results_newdb'
+        '../AC_OCR/models_test/single_test/res18_2.0',
+        '../AC_OCR/models_test/single_test/res50_2.0',
+        '../AC_OCR/models_test/single_test/res50_3.5',
     ]
 
     files = os.listdir(folders_list[0])
 
     for file in files:
-        if
+        if file.endswith('.jpg'):
+            try:
+                imgs = []
+                # img_name = str(id_num).zfill(6)
+                # img_name = str(id_num).zfill(6)
+                # '''
 
-    for id_num in range(1, 785):
-        try:
-            imgs = []
-            img_name = str(id_num).zfill(6)
-           # '''
+                for folder in folders_list:
+                    pic_name = os.path.join(folder, file)
+                    imgs.append(pic_name)
+                '''
+                folder_path1 = '../AC_OCR/Dingxiu_test/Dingxiu_2/Dingxiu_2_demo_results_res50'
+                pic1 = os.path.join(folder_path1, img_name + '.jpg')
+                imgs.append(pic1)
+                
+                folder_path2 = '../AC_OCR/Dingxiu_test/Dingxiu_2/Dingxiu_2_demo_results_newdb'
+                pic2 = os.path.join(folder_path2, img_name + '.jpg')
+                imgs.append(pic2)
+                '''
 
-            for folder in folders_list:
-                pic_name = os.path.join(folder, img_name + '.jpg')
-                imgs.append(pic_name)
-            '''
-            folder_path1 = '../AC_OCR/Dingxiu_test/Dingxiu_2/Dingxiu_2_demo_results_res50'
-            pic1 = os.path.join(folder_path1, img_name + '.jpg')
-            imgs.append(pic1)
-            
-            folder_path2 = '../AC_OCR/Dingxiu_test/Dingxiu_2/Dingxiu_2_demo_results_newdb'
-            pic2 = os.path.join(folder_path2, img_name + '.jpg')
-            imgs.append(pic2)
-            '''
+                res_path = '../AC_OCR/joint_compare/Dingxiu_2/total_res502.0_res503.5_singlePic'
+                if not os.path.exists(res_path):
+                    os.mkdir(res_path)
+                joint_vertical(imgs, os.path.join(res_path, file[:-4] + '_joint.jpg'))
 
-            res_path = '../AC_OCR/joint_compare/Dingxiu_2/total_res502.0_res503.5'
-            if not os.path.exists(res_path):
-                os.mkdir(res_path)
-            joint_vertical(imgs, os.path.join(res_path, img_name + '_joint.jpg'))
-
-        except:
-            print(img_name + '.jpg')
+            except:
+                print(file)
