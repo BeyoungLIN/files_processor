@@ -57,7 +57,6 @@ if __name__ == '__main__':
             try:
                 imgs = []
                 # img_name = str(id_num).zfill(6)
-                # img_name = str(id_num).zfill(6)
                 # '''
 
                 for folder in folders_list:
