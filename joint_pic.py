@@ -42,14 +42,7 @@ def joint_vertical(ims_list, res_name):  # 传递一个ims列表和保存名
         new_img.save(res_name)
 
 
-if __name__ == '__main__':
-
-    folders_list = [
-        '../AC_OCR/models_test/single_test/res18_2.0',
-        '../AC_OCR/models_test/single_test/res50_2.0',
-        '../AC_OCR/models_test/single_test/res50_3.5',
-    ]
-
+def run_joint(folders_list, res_path):
     files = os.listdir(folders_list[0])
 
     for file in files:
@@ -72,10 +65,19 @@ if __name__ == '__main__':
                 imgs.append(pic2)
                 '''
 
-                res_path = '../AC_OCR/joint_compare/Dingxiu_2/total_res502.0_res503.5_singlePic'
+                # res_path = '../AC_OCR/joint_compare/aug_jingbu/res18_res50_2.0_3.5'
                 if not os.path.exists(res_path):
-                    os.mkdir(res_path)
+                    os.makedirs(res_path)
                 joint_vertical(imgs, os.path.join(res_path, file[:-4] + '_joint.jpg'))
 
             except:
                 print(file)
+
+
+if __name__ == '__main__':
+    folders_list = [
+        '../AC_OCR/models_test/aug_jingbu/res18_2.0',
+        '../AC_OCR/models_test/aug_jingbu/res50_2.0',
+        '../AC_OCR/models_test/aug_jingbu/res50_3.5',
+    ]
+    run_joint(folders_list, '../AC_OCR/joint_compare/aug_jingbu/res18_res50_2.0_3.5')
