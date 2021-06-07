@@ -7,27 +7,31 @@
 # coding:utf-8
 
 
-import os, sys, json, time, traceback
+import math
+import os
+import random
+import sys
+import traceback
 
-import math, random
-import numpy as np
-from PIL import Image
-from skimage import io
+import base64
 import cv2
-import six,base64
+import numpy as np
+import six
+from PIL import Image
 
 from detect.detector0.detector import Detector
+from detect.detector0.detector import crop_rect
 from detect.detector2.detector2 import Detector2
+from detect.postdetect import concat_boxes
 from recog.recog0.recog1 import Recog1, empty_img
 
-from detect.detector0.detector import crop_rect
-from detect.postdetect import concat_boxes
 # from postdetect import concat_boxes
+
+IMG_EXT = {'.jpg', '.png', '.tif', '.tiff', '.bmp', '.gif'}
 
 blank_img = empty_img
 
 import time
-from pprint import pprint
 
 
 def base64of_img(pth_img):
@@ -412,7 +416,7 @@ def concat_boxes(res4api_detect_line, res4api_detect_line_db, pth_img='', dbg=Fa
     # 在craft画框基础上，再画db框（蓝色）  BEGIN
     res_detect_line_db = {
         int(itm['name']): {'box': [float(pt) for pt in itm['box']], 'text': itm['text']} for itm in
-    res4api_detect_line_db
+        res4api_detect_line_db
     }
     cords_db_orig = [v['box'] for index, v in res_detect_line_db.items()]
 
@@ -1168,8 +1172,8 @@ class RecogHandler():
         # print(res4api_detect_line)
 
         for i, r_line in enumerate(res4api_detect_line):
-            print(i)
-            print(r_line)
+            # print(i)
+            # print(r_line)
             res_ocr_line = res_ocr_many[i]
             cands = res_ocr_line['cands']
             # print(cands)
@@ -1218,17 +1222,81 @@ class RecogHandler():
         for i in y[0]:
             yy = list(i.values())
             # for yy in i.key
-            print(yy[2])
-            with open('', )
+            # print(yy[2])
+            output_path = 'OCR测试图像2_recog_res/' +  dir
+            if not os.path.exists(output_path):
+                os.mkdir(output_path)
+            with open(os.path.join(output_path, file[:-4] + '.txt'), 'a') as output_file:
+                output_file.write(yy[2] + '\n')
         return res
 
 
-craft_db = RecogHandler()#实例化类
-# print(my_computer.screen)#打印类中的属性值
-import os
-dir_path = '/disks/sde/beyoung/files_processor/金陵诗徵44巻_gray_pure'
-files = os.listdir(dir_path)
-for file in files:
-    if file.endswith('.jpg'):
-        img_test = readPILImg(file)
-        craft_db.ocr_page(img_test,'adv')#启动类中的方法
+def recog_jinling():
+    craft_db = RecogHandler()  # 实例化类
+    # print(my_computer.screen)#打印类中的属性值
+    dir_path = '/disks/sde/beyoung/files_processor/金陵诗徵44巻_gray_pure'
+    # dir_path = '/disks/sde/beyoung/files_processor/OCR测试图像2'
+    # test_one = '/disks/sde/beyoung/files_processor/金陵诗徵44巻_gray_pure/金陵诗徵44巻_2624.jpg'
+    files = os.listdir(dir_path)
+    AttributeError_pics = []
+    otherError_pics = []
+    num = 0
+    strart_time = time.time()
+    for file in files:
+        if file.endswith('.jpg'):
+            num += 1
+            if not os.path.exists(os.path.join(dir_path, 'output', file[:-4] + '.txt')):
+                try:
+                    img_test = readPILImg(os.path.join(dir_path, file))
+                    craft_db.ocr_page(img_test, 'adv')  # 启动类中的方法
+                except:
+                    AttributeError_pics.append(file)
+                    print(file)
+            end_time = time.time()
+            used_time = end_time - strart_time
+            rest_time = used_time / num * (len(files) - num)
+            print(str(round(num / len(files) * 100, 2)) + '% rest_time: ', rest_time)
+
+    print('AttributeError_pics:\n', AttributeError_pics)
+
+
+# img_test = readPILImg(test_one)
+# craft_db.ocr_page(img_test,'adv')#启动类中的方法
+
+# def recog_more_class():
+craft_db = RecogHandler()  # 实例化类
+dir_path = '/disks/sde/beyoung/files_processor/OCR测试图像2'
+# test_one = '/disks/sde/beyoung/files_processor/金陵诗徵44巻_gray_pure/金陵诗徵44巻_2624.jpg'
+dirs = os.listdir(dir_path)
+# print(dirs)
+AttributeError_pics = []
+otherError_pics = []
+num = 0
+strart_time = time.time()
+for dir in dirs:
+    # print(dir)
+    if os.path.isdir(os.path.join(dir_path, dir)):
+        files = os.listdir(os.path.join(dir_path, dir))
+        # print(files)
+        for file in files:
+            if os.path.splitext(file)[1].lower() in IMG_EXT:
+                num += 1
+                if not os.path.exists(os.path.join(dir_path, dir, 'output', file[:-4] + '.txt')):
+                    try:
+                        img_test = readPILImg(os.path.join(dir_path, dir, file))
+                        craft_db.ocr_page(img_test, 'adv')  # 启动类中的方法
+                    except:
+                        AttributeError_pics.append(file)
+                        print(file)
+                    end_time = time.time()
+                    used_time = end_time - strart_time
+                    rest_time = used_time / num * (len(files) - num)
+                    print(str(round(num / len(files) * 100, 2)) + '% rest_time: ', rest_time)
+
+print('AttributeError_pics:\n', AttributeError_pics)
+
+
+# img_test = readPILImg(test_one)
+# craft_db.ocr_page(img_test,'adv')#启动类中的方法
+
+# recog_more_class()
