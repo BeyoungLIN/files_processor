@@ -1281,17 +1281,17 @@ for dir in dirs:
         for file in files:
             if os.path.splitext(file)[1].lower() in IMG_EXT:
                 num += 1
-                if not os.path.exists(os.path.join(dir_path, dir, 'output', file[:-4] + '.txt')):
-                    try:
-                        img_test = readPILImg(os.path.join(dir_path, dir, file))
-                        craft_db.ocr_page(img_test, 'adv')  # 启动类中的方法
-                    except:
-                        AttributeError_pics.append(file)
-                        print(file)
-                    end_time = time.time()
-                    used_time = end_time - strart_time
-                    rest_time = used_time / num * (len(files) - num)
-                    print(str(round(num / len(files) * 100, 2)) + '% rest_time: ', rest_time)
+                # if not os.path.exists(os.path.join(dir_path, dir, 'output', file[:-4] + '.txt')):
+                try:
+                    img_test = readPILImg(os.path.join(dir_path, dir, file))
+                    craft_db.ocr_page(img_test, 'adv')  # 启动类中的方法
+                except:
+                    AttributeError_pics.append(file)
+                    print(file)
+                end_time = time.time()
+                used_time = end_time - strart_time
+                rest_time = used_time / num * (len(files) - num)
+                print(str(round(num / len(files) * 100, 2)) + '% rest_time: ', rest_time)
 
 print('AttributeError_pics:\n', AttributeError_pics)
 
