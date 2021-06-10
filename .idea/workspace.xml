@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc86253b-a69d-498d-bc1f-e6ddd2cad51c" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/copy_files_4ocr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run_double_folders_draw_box.py" afterDir="false" />
+    <list default="true" id="bc86253b-a69d-498d-bc1f-e6ddd2cad51c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/craft_db_mix_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/craft_db_mix_test.py" afterDir="false" />
     </list>
@@ -16,6 +14,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/files_processor$split_test.coverage" NAME="split_test Coverage Results" MODIFIED="1620781204508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$html_processor.coverage" NAME="html_processor Coverage Results" MODIFIED="1620839106191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$craft_db_mix_test__1_.coverage" NAME="craft_db_mix_test (1) Coverage Results" MODIFIED="1623329016158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/" />
     <SUITE FILE_PATH="coverage/files_processor$if_jinling_yi.coverage" NAME="if_jinling_yi Coverage Results" MODIFIED="1622424102517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$joint_pic.coverage" NAME="joint_pic Coverage Results" MODIFIED="1619418525866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$cp_error_pics.coverage" NAME="cp_error_pics Coverage Results" MODIFIED="1623055219763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -26,7 +25,7 @@
     <SUITE FILE_PATH="coverage/files_processor$rm_blank.coverage" NAME="rm_blank Coverage Results" MODIFIED="1621618197983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$word_count.coverage" NAME="word_count Coverage Results" MODIFIED="1620929810782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$pass_exist.coverage" NAME="pass_exist Coverage Results" MODIFIED="1622395613654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/files_processor$craft_db_mix_test.coverage" NAME="craft_db_mix_test Coverage Results" MODIFIED="1623116294178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$craft_db_mix_test.coverage" NAME="craft_db_mix_test Coverage Results" MODIFIED="1623341993807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1597010156">
@@ -52,13 +51,13 @@
         <counts>
           <entry key="HTML" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="23" />
+          <entry key="Python" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="95" />
-          <entry key="Python" value="6439" />
+          <entry key="PLAIN_TEXT" value="98" />
+          <entry key="Python" value="6660" />
         </counts>
       </usages-collector>
     </session>
@@ -86,10 +85,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/craft_db_mix_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="1015" selection-start-line="1015" selection-end-line="1015" />
+            <state relative-caret-position="-269">
+              <caret line="400" column="4" selection-start-line="400" selection-start-column="4" selection-end-line="400" selection-end-column="4" />
               <folding>
                 <element signature="e#160#171#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recog/recog0/recog1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1936">
+              <caret line="93" column="69" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="84" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,8 +148,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/print_debug.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3477">
-              <caret line="176" column="140" selection-start-line="176" selection-start-column="140" selection-end-line="176" selection-end-column="140" />
+            <state relative-caret-position="604">
+              <caret line="183" column="11" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -199,12 +210,12 @@
         <option value="$PROJECT_DIR$/pass_exist.py" />
         <option value="$PROJECT_DIR$/detect/postdetect.py" />
         <option value="$PROJECT_DIR$/if_jinling_yi.py" />
-        <option value="$PROJECT_DIR$/print_debug.txt" />
         <option value="$PROJECT_DIR$/cp_erroe_pics.py" />
         <option value="$PROJECT_DIR$/cp_error_pics.py" />
         <option value="$PROJECT_DIR$/test_api_v0_test.py" />
         <option value="$PROJECT_DIR$/run_double_folders_draw_box.py" />
         <option value="$PROJECT_DIR$/copy_files_4ocr.py" />
+        <option value="$PROJECT_DIR$/print_debug.txt" />
         <option value="$PROJECT_DIR$/craft_db_mix_test.py" />
       </list>
     </option>
@@ -310,6 +321,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -331,7 +347,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.copy_files_4ocr">
+  <component name="RunManager" selected="Python.craft_db_mix_test">
     <configuration name="copy_files_4ocr" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="files_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -376,7 +392,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="craft" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="craft_db_mix_test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="files_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -384,12 +400,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/detect/detector0" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="/" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/detect/detector0/craft.py" />
+      <option name="SCRIPT_NAME" value="&lt;1d3b37d2-5e9f-4e31-9d7d-a7035b17cfae&gt;/files_processor/craft_db_mix_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -405,7 +421,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/opt/anaconda3/bin/python" />
+      <option name="SDK_HOME" value="sftp://beyoung@162.105.87.107:22/home/beyoung/anaconda3/envs/yolo4/bin/python3.6" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -444,18 +460,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.craft_db_mix_test" />
-      <item itemvalue="Python.craft" />
       <item itemvalue="Python.cp_error_pics" />
       <item itemvalue="Python.run_double_folders_draw_box" />
       <item itemvalue="Python.copy_files_4ocr" />
+      <item itemvalue="Python.craft_db_mix_test (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.craft_db_mix_test" />
+        <item itemvalue="Python.craft_db_mix_test (1)" />
         <item itemvalue="Python.copy_files_4ocr" />
         <item itemvalue="Python.run_double_folders_draw_box" />
-        <item itemvalue="Python.craft_db_mix_test" />
         <item itemvalue="Python.cp_error_pics" />
-        <item itemvalue="Python.craft" />
       </list>
     </recent_temporary>
   </component>
@@ -596,11 +612,25 @@
       <option name="project" value="LOCAL" />
       <updated>1623112533050</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="update">
+      <created>1623328297793</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1623328297793</updated>
+    </task>
+    <task id="LOCAL-00020" summary="update">
+      <created>1623332127466</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1623332127466</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="25" width="1614" height="1025" extended-state="6" />
+    <frame x="66" y="27" width="1614" height="1025" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15648855" />
@@ -608,7 +638,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6890863" weight="0.2880259" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.687659" visible="true" weight="0.45199567" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49873096" weight="0.399137" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -616,14 +646,14 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5031807" side_tool="true" visible="true" weight="0.33549082" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.31234097" side_tool="true" visible="true" weight="0.45199567" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49936548" weight="0.32901832" />
-      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49681935" visible="true" weight="0.33549082" />
+      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49618322" weight="0.2394822" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.061068702" />
       <window_info anchor="right" id="SciView" order="4" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
@@ -750,13 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/print_debug.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3477">
-          <caret line="176" column="140" selection-start-line="176" selection-start-column="140" selection-end-line="176" selection-end-column="140" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cp_error_pics.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -771,17 +794,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/print_debug.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="183" column="11" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/recog/recog0/recog1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="-1936">
+          <caret line="93" column="69" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="84" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/craft_db_mix_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="1015" selection-start-line="1015" selection-end-line="1015" />
+        <state relative-caret-position="-269">
+          <caret line="400" column="4" selection-start-line="400" selection-start-column="4" selection-end-line="400" selection-end-column="4" />
           <folding>
             <element signature="e#160#171#0" expanded="true" />
           </folding>

@@ -818,23 +818,27 @@ class RecogHandler():
 
     def rng_interact(self, rng1, rng2):
         interacted = False
-        xmin1, xmax1 = rng1[0], rng1[1]
+        xmin1, xmax1 = rng1[0], rng1[1]  # 最小x差值的放缩
         xmin2, xmax2 = rng2[0], rng2[1]
-        if xmin1 <= xmax2 and xmin2 <= xmax1: interacted = True
+        # print(xmin1, xmax1, xmin2, xmax2)
+        if xmin1 <= xmax2 and xmin2 <= xmax1: interacted = True  # 此处不确定
         rng_u = [min(xmin1, xmin2), max(xmax1, xmax2)]
         return interacted, rng_u
 
     def get_w_rngs(self, widths, R=0.1):
-        w_sorted = sorted(widths)
-        w_rngs_tmp = [[w * (1 - R), w * (1 + R)] for w in w_sorted]
-        w_rngs, w_rng = [], w_rngs_tmp.pop(0)
+        w_sorted = sorted(widths)  # 把所有x的差值排序
+        w_rngs_tmp = [[w * (1 - R), w * (1 + R)] for w in w_sorted]  # w_rngs_tmp为w放大缩小0.1
+        # print(w_rngs_tmp)
+        w_rngs, w_rng = [], w_rngs_tmp.pop(0)  # w_rng把最小的取出来
         for _rng in w_rngs_tmp:
-            interacted, rng_u = self.rng_interact(w_rng, _rng)
+            interacted, rng_u = self.rng_interact(w_rng, _rng)  # _rng每个放缩后的坐标
+            # print(interacted, _rng)
         if interacted:
             w_rng = rng_u
         else:
             w_rngs.append(w_rng)
             w_rng = _rng
+        # print(w_rng)
         return w_rngs
 
     def get_line_size(self, w_rngs, w):
@@ -861,10 +865,6 @@ class RecogHandler():
         if 'adv' == detector:
             # 同时求db的行检测，并进行融合, 返回复杂结果格式
             res_detect_line, res4api_detect_line = self.detect_line(img)
-            # print(res_detect_line)
-            # print()
-            # print(res4api_detect_line)
-
             res_detect_line_db, res4api_detect_line_db = self.detect_line_1(img)
             concat_res = concat_boxes(res4api_detect_line, res4api_detect_line_db)
         img_lst = []
@@ -892,7 +892,7 @@ class RecogHandler():
                 img_lst.append(img_line)
 
                 x1, y1, x2, y2, x3, y3, x4, y4 = cord
-                min_x, max_x = round((x1 + x4) / 2), round((x2 + x3) / 2)  # 为什么不直接 min_x, max_x = x1, x2
+                min_x, max_x = round((x1 + x4) / 2), round((x2 + x3) / 2)  # 为什么不直接 min_x, max_x = x1, x2 ?
                 widths_line.append(abs(max_x - min_x))
             except Exception as e:
                 print(e)
@@ -905,9 +905,8 @@ class RecogHandler():
         # print(res4api_detect_line)
 
         for i, r_line in enumerate(res4api_detect_line):
-            # print(i)
-            # print(r_line)
             res_ocr_line = res_ocr_many[i]
+            # print(res_ocr_line)
             cands = res_ocr_line['cands']
             # print(cands)
 
