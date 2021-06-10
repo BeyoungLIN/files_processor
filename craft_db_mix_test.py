@@ -892,7 +892,7 @@ class RecogHandler():
                 img_lst.append(img_line)
 
                 x1, y1, x2, y2, x3, y3, x4, y4 = cord
-                min_x, max_x = round((x1 + x4) / 2), round((x2 + x3) / 2)
+                min_x, max_x = round((x1 + x4) / 2), round((x2 + x3) / 2)  # 为什么不直接 min_x, max_x = x1, x2
                 widths_line.append(abs(max_x - min_x))
             except Exception as e:
                 print(e)
@@ -950,17 +950,6 @@ class RecogHandler():
         # jsonobj = json.loads(res)  # 将响应内容转换为Json对象
         # toCntPercent = jsonobj['box']['text']  # 从Json对象获取想要的内容
         # print(toCntPercent)
-        y = list(res.values())
-        # print(y[0])
-        for i in y[0]:
-            yy = list(i.values())
-            # for yy in i.key
-            # print(yy[2])
-            output_path = dir_path + '/output'
-            if not os.path.exists(output_path):
-                os.mkdir(output_path)
-            with open(os.path.join(output_path, file[:-4] + '.txt'), 'a') as output_file:
-                output_file.write(yy[2] + '\n')
         return res
 
 
@@ -1036,7 +1025,20 @@ if __name__ == '__main__':
     # test_one_pic()
     #
     craft_db = RecogHandler()
-    file = '/Users/Beyoung/Desktop/Projects/AC_OCR/OCR测试图像2/论语注疏（常见经典，大小字夹杂）/ZHSY003345-000021.tif'
+    file = '/disks/sde/beyoung/files_processor/OCR测试图像2/论语注疏（常见经典，大小字夹杂）/ZHSY003345-000021.tif'
+    img_test = readPILImg(file)
+    res = craft_db.ocr_page(img_test, 'adv')  # 启动类中的方法
+    y = list(res.values())
+    # print(y[0])
+    for i in y[0]:
+        yy = list(i.values())
+        # for yy in i.key
+        # print(yy[2])
+        # output_path = dir_path + '/output'
+        # if not os.path.exists(output_path):
+        #     os.mkdir(output_path)
+        # with open(os.path.join(output_path, file[:-4] + '.txt'), 'a') as output_file:
+        #     output_file.write(yy[2] + '\n')
 
     # # def recog_jinling():
     # craft_db = RecogHandler()  # 实例化类
