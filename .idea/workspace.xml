@@ -57,7 +57,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="98" />
-          <entry key="Python" value="6720" />
+          <entry key="Python" value="6909" />
         </counts>
       </usages-collector>
     </session>
@@ -85,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/craft_db_mix_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="555" column="76" selection-start-line="555" selection-start-column="76" selection-end-line="555" selection-end-column="76" />
+            <state relative-caret-position="549">
+              <caret line="641" column="41" lean-forward="true" selection-start-line="641" selection-start-column="41" selection-end-line="641" selection-end-column="41" />
               <folding>
                 <element signature="e#160#171#0" expanded="true" />
               </folding>
@@ -184,9 +184,9 @@
       <find>print</find>
       <find>a</find>
       <find>adv</find>
-      <find>双行</find>
       <find>concat_boxes</find>
       <find>def concat_boxes</find>
+      <find>双行</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -234,10 +234,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="62" />
-    <option name="y" value="25" />
-    <option name="width" value="1618" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="66" />
+    <option name="y" value="27" />
+    <option name="width" value="1614" />
     <option name="height" value="1025" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -635,11 +635,18 @@
       <option name="project" value="LOCAL" />
       <updated>1623346052346</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="update">
+      <created>1623379415668</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1623379415668</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="27" width="1614" height="1025" extended-state="6" />
+    <frame x="66" y="27" width="1614" height="1025" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15648855" />
@@ -647,7 +654,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.687659" visible="true" weight="0.29773462" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.687659" weight="0.29773462" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49873096" weight="0.399137" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -655,10 +662,10 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.31234097" side_tool="true" visible="true" weight="0.29773462" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50445294" side_tool="true" visible="true" weight="0.2394822" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49936548" weight="0.32901832" />
-      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49618322" weight="0.2394822" />
+      <window_info active="true" anchor="bottom" id="File Transfer" order="13" sideWeight="0.4955471" visible="true" weight="0.2394822" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -822,8 +829,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/craft_db_mix_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="555" column="76" selection-start-line="555" selection-start-column="76" selection-end-line="555" selection-end-column="76" />
+        <state relative-caret-position="549">
+          <caret line="641" column="41" lean-forward="true" selection-start-line="641" selection-start-column="41" selection-end-line="641" selection-end-column="41" />
           <folding>
             <element signature="e#160#171#0" expanded="true" />
           </folding>

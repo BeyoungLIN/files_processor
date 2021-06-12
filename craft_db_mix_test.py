@@ -553,7 +553,7 @@ class RecogHandler():
         xmin2, xmax2 = rng2[0], rng2[1]
         # print(xmin1, xmax1, xmin2, xmax2)
         if xmin1 <= xmax2 and xmin2 <= xmax1: interacted = True  # 此处不确定,缩小后的都要比另一个放大后的小
-        rng_u = [min(xmin1, xmin2), max(xmax1, xmax2)]  # rng_理论上是 x min 1和 x max 2
+        rng_u = [min(xmin1, xmin2), max(xmax1, xmax2)]  # rng_u理论上是 x min 1和 x max 2
         return interacted, rng_u
 
     def get_w_rngs(self, widths, R=0.1):
@@ -565,18 +565,19 @@ class RecogHandler():
             interacted, rng_u = self.rng_interact(w_rng, _rng)  # _rng每个放缩后的坐标
             # print(interacted, _rng)
         if interacted:
-            w_rng = rng_u
+            w_rng = rng_u  # rng_u理论上是 x min 1和 x max 2
         else:
             w_rngs.append(w_rng)
             w_rng = _rng
-        # print(w_rng)
+        # print(w_rngs)
         return w_rngs
 
     def get_line_size(self, w_rngs, w):
         sizes = ['S', 'M', 'L', 'XL', 'XXL', 'XXXL']
+        # print(w_rngs)
         for i, rng in enumerate(w_rngs):
-            rngl, rngr = rng[0], rng[1]
-            if rngl <= w <= rngr: return sizes[i]
+            rngl, rngr = rng[0], rng[1]  # (0,x min1 缩; 1, x min1 放)
+            if rngl <= w <= rngr: return sizes[i]  # 18.9 <= w <= 23.1, return S
         return sizes[-1]
 
     def ocr_page(self, img, detector='craft'):
@@ -621,7 +622,7 @@ class RecogHandler():
             try:
                 img_line = crop_img(img, cord)
                 img_lst.append(img_line)
-
+                # print(img_line)
                 x1, y1, x2, y2, x3, y3, x4, y4 = cord
                 min_x, max_x = round((x1 + x4) / 2), round((x2 + x3) / 2)  # 为什么不直接 min_x, max_x = x1, x2 ?
                 widths_line.append(abs(max_x - min_x))
@@ -629,8 +630,8 @@ class RecogHandler():
                 print(e)
                 continue
 
-        width_rngs = self.get_w_rngs(widths_line)
-        res_ocr_many = self.ocr_many(img_lst)
+        width_rngs = self.get_w_rngs(widths_line)  # 得到的还是最小框的放缩?w_rngs
+        res_ocr_many = self.ocr_many(img_lst)  # 此处已经做好排序
 
         # print()
         # print(res4api_detect_line)
@@ -649,11 +650,11 @@ class RecogHandler():
             x1, y1, x2, y2, x3, y3, x4, y4 = box_line = [int(cord) for cord in box_line]
             min_x, max_x = round((x1 + x4) / 2), round((x2 + x3) / 2)
             min_y, max_y = round((y1 + y2) / 2), round((y3 + y4) / 2)
-            width_line = abs(max_x - min_x)
+            width_line = abs(max_x - min_x)  # 框宽度
 
             boxes_char = []
             if len_chars > 0:
-                h_char = (max_y - min_y) / len_chars
+                h_char = (max_y - min_y) / len_chars  # 框高度/字数 ≈ 字高度
                 for j in range(len_chars):
                     box = [
                         min_x, min_y + j * h_char, max_x, min_y + j * h_char,
@@ -666,9 +667,11 @@ class RecogHandler():
                     }
                     boxes_char.append(box_char)
             r_line['boxes_char'] = boxes_char
-            line_size = self.get_line_size(width_rngs, width_line)
+            # print(width_rngs, width_line)
+            line_size = self.get_line_size(width_rngs, width_line)  # 最小框的缩, 放, 框宽度
             # r_line['size'] = 'M'
             r_line['size'] = line_size
+            # print(line_size)
 
         res = res4api_detect_line
         if 'adv' == detector:
@@ -676,10 +679,6 @@ class RecogHandler():
                 'res_basic': res4api_detect_line,
                 'big_sub_boxes': concat_res['bigboxes_uboxes']
             }
-        # print(res)
-        # jsonobj = json.loads(res)  # 将响应内容转换为Json对象
-        # toCntPercent = jsonobj['box']['text']  # 从Json对象获取想要的内容
-        # print(toCntPercent)
         return res
 
 
@@ -759,7 +758,7 @@ if __name__ == '__main__':
     img_test = readPILImg(file)
     res = craft_db.ocr_page(img_test, 'adv')  # 启动类中的方法
     y = list(res.values())
-    # print(y[0])
+    print(y[0])
     for i in y[0]:
         yy = list(i.values())
         # for yy in i.key
