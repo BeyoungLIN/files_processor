@@ -46,6 +46,14 @@ def count_plot(data_list):
     df.plot()
     plt.show()
 
-y=[1,1,2,3,4,5]
+line_width = [61, 61, 37, 45, 65, 85, 51, 36, 46, 67, 75, 46, 42, 70, 61, 41, 35, 67, 67, 45, 31, 47, 35, 66, 31, 31, 36, 85, 30, 31, 27, 67, 41, 41, 70, 41, 52, 47, 42, 66, 45, 42, 52, 45, 41, 45, 32, 77, 40, 40, 77, 87, 36, 40, 60, 42, 41, 67, 46, 45, 37, 41, 51, 56, 41, 42, 61]
+line_width_new = []
+for i in line_width:
+    i_new = round(i/5, 0) * 5
+    # print(i_new)
+    line_width_new.append(i_new)
+line_width_new.sort()
+print(line_width_new)
 
-count_plot(y)
+
+count_plot(line_width_new)

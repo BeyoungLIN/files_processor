@@ -875,7 +875,6 @@ class RecogHandler():
                 x1, y1, x2, y2, x3, y3, x4, y4 = cord
                 min_x, max_x = round((x1 + x4) / 2), round((x2 + x3) / 2)
                 widths_line.append(abs(max_x - min_x))
-                print(abs(max_x - min_x))
             except Exception as e:
                 print(e)
                 continue
@@ -888,6 +887,7 @@ class RecogHandler():
         XXL_size = []
         XXXL_size = []
         S_size = []
+        width_line_list = []
 
 
         for i, r_line in enumerate(res4api_detect_line):
@@ -903,6 +903,7 @@ class RecogHandler():
             min_x, max_x = round((x1 + x4) / 2), round((x2 + x3) / 2)
             min_y, max_y = round((y1 + y2) / 2), round((y3 + y4) / 2)
             width_line = abs(max_x - min_x)
+            width_line_list.append(width_line)
 
             boxes_char = []
             if len_chars > 0:
@@ -923,25 +924,25 @@ class RecogHandler():
             line_size = get_line_size(width_rngs, width_line)
             # r_line['size'] = 'M'
             r_line['size'] = line_size
-            # print(line_size)
-        #     if line_size == 'M':
-        #         M_size.append(cand)
-        #     if line_size == 'S':
-        #         S_size.append(cand)
-        #     if line_size == 'L':
-        #         L_size.append(cand)
-        #     if line_size == 'XL':
-        #         XL_size.append(cand)
-        #     if line_size == 'XXL':
-        #         XXL_size.append(cand)
-        #     if line_size == 'XXXL':
-        #         XXXL_size.append(cand)
-        # print('XXXL: amount:',len(XXXL_size), XXXL_size)
-        # print('XXL: amount:',len(XXL_size), XXL_size)
-        # print('XL: amount:',len(XL_size), XL_size)
-        # print('L: amount:',len(L_size), L_size)
-        # print('M: amount:',len(M_size), M_size)
-        # print('S: amount:',len(S_size), S_size)
+            print(line_size)
+            if line_size == 'M':
+                M_size.append(cand)
+            if line_size == 'S':
+                S_size.append(cand)
+            if line_size == 'L':
+                L_size.append(cand)
+            if line_size == 'XL':
+                XL_size.append(cand)
+            if line_size == 'XXL':
+                XXL_size.append(cand)
+            if line_size == 'XXXL':
+                XXXL_size.append(cand)
+        print('XXXL: amount:',len(XXXL_size), XXXL_size)
+        print('XXL: amount:',len(XXL_size), XXL_size)
+        print('XL: amount:',len(XL_size), XL_size)
+        print('L: amount:',len(L_size), L_size)
+        print('M: amount:',len(M_size), M_size)
+        print('S: amount:',len(S_size), S_size)
 
 
         re_mapping_lsize(res4api_detect_line)  # line size remapping
@@ -954,6 +955,7 @@ class RecogHandler():
                 'res_basic': res4api_detect_line,
                 'big_sub_boxes': concat_res['bigboxes_uboxes']
             }
+        print(width_line_list)
         return res
 
 
