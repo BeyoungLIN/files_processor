@@ -875,18 +875,27 @@ class RecogHandler():
                 x1, y1, x2, y2, x3, y3, x4, y4 = cord
                 min_x, max_x = round((x1 + x4) / 2), round((x2 + x3) / 2)
                 widths_line.append(abs(max_x - min_x))
+                print(abs(max_x - min_x))
             except Exception as e:
                 print(e)
                 continue
 
         width_rngs = get_w_rngs(widths_line)
         res_ocr_many = self.ocr_many(img_lst)
+        M_size = []
+        L_size = []
+        XL_size = []
+        XXL_size = []
+        XXXL_size = []
+        S_size = []
+
 
         for i, r_line in enumerate(res4api_detect_line):
             res_ocr_line = res_ocr_many[i]
             cands = res_ocr_line['cands']
             cand = cands[0]['char']
             r_line['text'] = cand
+            # print(cand, end= ' ')
             # 字检测结果
             len_chars = len(cand)  # 字数
             box_line = r_line['box']
@@ -909,11 +918,31 @@ class RecogHandler():
                         'text': cand[j]
                     }
                     boxes_char.append(box_char)
+                    # print(cand[j], end='')
             r_line['boxes_char'] = boxes_char
             line_size = get_line_size(width_rngs, width_line)
             # r_line['size'] = 'M'
             r_line['size'] = line_size
-            print(line_size)
+            # print(line_size)
+        #     if line_size == 'M':
+        #         M_size.append(cand)
+        #     if line_size == 'S':
+        #         S_size.append(cand)
+        #     if line_size == 'L':
+        #         L_size.append(cand)
+        #     if line_size == 'XL':
+        #         XL_size.append(cand)
+        #     if line_size == 'XXL':
+        #         XXL_size.append(cand)
+        #     if line_size == 'XXXL':
+        #         XXXL_size.append(cand)
+        # print('XXXL: amount:',len(XXXL_size), XXXL_size)
+        # print('XXL: amount:',len(XXL_size), XXL_size)
+        # print('XL: amount:',len(XL_size), XL_size)
+        # print('L: amount:',len(L_size), L_size)
+        # print('M: amount:',len(M_size), M_size)
+        # print('S: amount:',len(S_size), S_size)
+
 
         re_mapping_lsize(res4api_detect_line)  # line size remapping
         res = res4api_detect_line
@@ -1000,7 +1029,10 @@ if __name__ == '__main__':
     # test_one_pic()
     #
     craft_db = RecogHandler()
-    file = '/disks/sde/beyoung/files_processor/OCR测试图像2/论语注疏（常见经典，大小字夹杂）/ZHSY003345-000021.tif'
+    # file = '/disks/sde/beyoung/files_processor/OCR测试图像2/论语注疏（常见经典，大小字夹杂）/ZHSY003345-000020.tif'
+    # file = '/disks/sde/beyoung/files_processor/OCR测试图像2/吕氏家塾（常见经典，大小字）/ZHSY003347-000008.tif'
+    file = '/disks/sde/beyoung/files_processor/OCR测试图像2/春秋经传集解(页面有些杂质干扰，有大小字）/ZHSY003341-000011.tif'
+    # file = '/disks/sde/beyoung/files_processor/OCR测试图像2/史记（经典中的经典）/史记1.jpg'
     img_test = readPILImg(file)
     res = craft_db.ocr_page(img_test, 'adv')  # 启动类中的方法
     y = list(res.values())
