@@ -13,19 +13,22 @@ import random
 import sys
 import traceback
 
-import base64
-import cv2
-import numpy as np
-import six
-from PIL import Image
-
-from detect.detector0.detector import Detector
 from detect.detector0.detector import crop_rect
-from detect.detector2.detector2 import Detector2
-from detect.postdetect import concat_boxes
-from recog.recog0.recog1 import Recog1, empty_img
 
 from test_api_v0_test import *
+
+import numpy as np
+from PIL import Image
+from skimage import io
+import cv2
+import six,base64
+
+from detect.detector0.detector import Detector
+from detect.detector2.detector2 import Detector2
+from recog.recog0.recog1 import Recog1, empty_img
+
+from detect.detector0.detector import crop_rect
+from detect.postdetect import concat_boxes, get_w_rngs, get_line_size, re_mapping_lsize
 
 # from postdetect import concat_boxes
 
@@ -398,6 +401,289 @@ def isinter2plus(cord, cords_db_orig_, minDot):
     return intercount >= 2
 
 
+# class RecogHandler():
+#     def __init__(self):
+#         print('Initializing detector and recoginer models')
+#         self.detector = Detector()
+#         self.detector2 = Detector2()
+#         self.recog = Recog1()
+#
+#     def detect_char(self, img, image_path=''):
+#         '''
+#         @param img PIL Image
+#         '''
+#         res_box_chars = {}
+#         res4api = []
+#         if img is not None:
+#             img = np.array(img)
+#             res_box_chars = self.detector.detect(img, ocr_type='single_char', image_path=image_path)
+#         res4api = [
+#             {
+#                 'box': [str(pt) for pt in box],
+#                 'name': i,
+#                 'text': ''
+#             } for i, box in res_box_chars.items()
+#         ]
+#         return res_box_chars, res4api
+#
+#     def detect_line(self, img, image_path=''):
+#         '''
+#         @param img PIL Image
+#         '''
+#         res_box_lines = {}
+#         res4api = {}
+#         if img is not None:
+#             img = np.array(img)
+#             res_box_lines = self.detector.detect(img, ocr_type='force_colume', image_path=image_path)
+#         res4api = [
+#             {
+#                 'box': [str(pt) for pt in box],
+#                 'name': str(i),
+#                 'text': ''
+#             } for i, box in res_box_lines.items()
+#         ]
+#         return res_box_lines, res4api
+#
+#     def detect_line_1(self, img):
+#         '''
+#         @param img PIL Image
+#         '''
+#         if img is not None:
+#             img_np = np.array(img).astype('float32')
+#             res_box_lines = self.detector2.detect(img_np)
+#         res4api = [
+#             {
+#                 'box': [str(pt) for pt in box],
+#                 'name': str(i),
+#                 'text': ''
+#             } for i, box in res_box_lines.items()
+#         ]
+#         return res_box_lines, res4api
+#
+#     def detect_ocr_line(self, img):
+#         '''
+#         @deprecated
+#         '''
+#         # dectect line
+#         res_box_lines, _ = self.detect_line(img)
+#
+#         # crop line
+#         PIL_imgs = []
+#         image_np = np.array(img)
+#         for i, cord in res_box_lines.items():
+#             # 获取坐标
+#             _cord = cord[0], cord[1], cord[4], cord[5]
+#             xmin, ymin, xmax, ymax = _cord
+#             # 坐标到中心点、高宽转换
+#             center, size = ((xmin + xmax) / 2, (ymin + ymax) / 2), (xmax - xmin, ymax - ymin)
+#             rect = center, size, 0
+#             partImg = crop_rect(image_np, rect)  # 截取部分
+#             PIL_imgs.append(partImg)
+#         res_lines_ocr = []
+#         for img_line in PIL_imgs:
+#             res_line_ocr = self.ocr_line(img_line)
+#             print(res_line_ocr['best'])
+#             res_lines_ocr.append(res_line_ocr['best'])
+#         # ocr each line
+#         res4api = [
+#             {
+#                 'box': [str(pt) for pt in cord],
+#                 'name': str(i),
+#                 'text': res_lines_ocr[i]['text']
+#             } for i, cord in res_box_lines.items()
+#         ]
+#
+#         return res_box_lines, res_lines_ocr, res4api
+#
+#     def ocr_line(self, img):
+#         '''
+#         @param img PIL Image
+#         '''
+#         cands = res_line = self.recog.predict_one(img)
+#         if len(cands) == 0:
+#             cands = [{
+#                 'confidence': 0.0,
+#                 'char': ''
+#             }]
+#         res = {
+#             'best': {
+#                 'confidence': cands[0]['confidence'],
+#                 'text': cands[0]['char']
+#             },
+#             'cands': [
+#                 {
+#                     'confidence': cand['confidence'],
+#                     'text': cand['char']
+#                 } for cand in cands
+#             ]
+#         }
+#         return res
+#
+#     def recog_line(self, img):
+#         '''
+#         @ recog_line升级为recog_page现在功能,
+#         @ recog_page升级为检测识别列/检测识别列中的字
+#         @param img PIL Image
+#         '''
+#
+#         cands = res_line = self.recog.predict_one(img)
+#         if len(cands) == 0:
+#             cands = [{
+#                 'confidence': 0.0,
+#                 'char': ''
+#             }]
+#         res = {
+#             'best': {
+#                 'confidence': cands[0]['confidence'],
+#                 'text': cands[0]['char']
+#             },
+#             'cands': [
+#                 {
+#                     'confidence': cand['confidence'],
+#                     'text': cand['char']
+#                 } for cand in cands
+#             ]
+#         }
+#         return res
+#
+#     def ocr_many(self, imgList):
+#         res = self.recog.predict(imgList)
+#         return res
+#
+#     def rng_interact(self, rng1, rng2):
+#         interacted = False
+#         xmin1, xmax1 = rng1[0], rng1[1]  # 最小x差值的放缩
+#         xmin2, xmax2 = rng2[0], rng2[1]
+#         # print(xmin1, xmax1, xmin2, xmax2)
+#         if xmin1 <= xmax2 and xmin2 <= xmax1: interacted = True  # 此处不确定,缩小后的都要比另一个放大后的小
+#         rng_u = [min(xmin1, xmin2), max(xmax1, xmax2)]  # rng_u理论上是 x min 1和 x max 2
+#         return interacted, rng_u
+#
+#     def get_w_rngs(self, widths, R=0.1):
+#         w_sorted = sorted(widths)  # 把所有x的差值排序
+#         w_rngs_tmp = [[w * (1 - R), w * (1 + R)] for w in w_sorted]  # w_rngs_tmp为w放大缩小0.1
+#         # print(w_rngs_tmp)
+#         w_rngs, w_rng = [], w_rngs_tmp.pop(0)  # w_rng把最小的取出来
+#         for _rng in w_rngs_tmp:
+#             interacted, rng_u = self.rng_interact(w_rng, _rng)  # _rng每个放缩后的坐标
+#             # print(interacted, _rng)
+#         if interacted:
+#             w_rng = rng_u  # rng_u理论上是 x min 1和 x max 2
+#         else:
+#             w_rngs.append(w_rng)
+#             w_rng = _rng
+#         # print(w_rngs)
+#         return w_rngs
+#
+#     def get_line_size(self, w_rngs, w):
+#         sizes = ['S', 'M', 'L', 'XL', 'XXL', 'XXXL']
+#         # print(w_rngs)
+#         for i, rng in enumerate(w_rngs):
+#             rngl, rngr = rng[0], rng[1]  # (0,x min1 缩; 1, x min1 放)
+#             if rngl <= w <= rngr: return sizes[i]  # 18.9 <= w <= 23.1, return S
+#         return sizes[-1]
+#
+#     def ocr_page(self, img, detector='craft'):
+#         adv_res, concat_res = {}, {}
+#         # 默认是craft行检测
+#         res_detect_line, res4api_detect_line = self.detect_line(img)
+#         if 'craft_char' == detector:
+#             res_detect_line, res4api_detect_line = self.detect_char(img)
+#         if 'db' == detector:
+#             # 替换成db的行检测
+#             res_detect_line, res4api_detect_line = self.detect_line_1(img)
+#         if 'mix' == detector:
+#             # 同时求db的行检测，并进行融合, 返回简单结果格式
+#             res_detect_line, res4api_detect_line = self.detect_line(img)
+#             res_detect_line_db, res4api_detect_line_db = self.detect_line_1(img)
+#             concat_res = concat_boxes(res4api_detect_line, res4api_detect_line_db)
+#         if 'adv' == detector:
+#             # 同时求db的行检测，并进行融合, 返回复杂结果格式
+#             res_detect_line, res4api_detect_line = self.detect_line(img)
+#             res_detect_line_db, res4api_detect_line_db = self.detect_line_1(img)
+#             concat_res = concat_boxes(res4api_detect_line, res4api_detect_line_db)
+#         img_lst = []
+#
+#         if 'mix' == detector or 'adv' == detector:
+#             uboxes_g = concat_res['uboxes_g']
+#             # print(uboxes_g)
+#             # print()
+#             res_detect_line = {i: [ub[0], ub[1], ub[2], ub[1], ub[2], ub[3], ub[0], ub[3]] \
+#                                for i, ub in enumerate(uboxes_g)}
+#             # print(ub)
+#             # print(res_detect_line)
+#             res4api_detect_line = [
+#                 {
+#                     'box': [str(pt) for pt in box],
+#                     'name': str(i),
+#                     'text': ''
+#                 } for i, box in res_detect_line.items()
+#             ]
+#
+#         widths_line = []
+#         for index, cord in res_detect_line.items():
+#             try:
+#                 img_line = crop_img(img, cord)
+#                 img_lst.append(img_line)
+#                 # print(img_line)
+#                 x1, y1, x2, y2, x3, y3, x4, y4 = cord
+#                 min_x, max_x = round((x1 + x4) / 2), round((x2 + x3) / 2)  # 为什么不直接 min_x, max_x = x1, x2 ?
+#                 widths_line.append(abs(max_x - min_x))
+#             except Exception as e:
+#                 print(e)
+#                 continue
+#
+#         width_rngs = self.get_w_rngs(widths_line)  # 得到的还是最小框的放缩?w_rngs
+#         res_ocr_many = self.ocr_many(img_lst)  # 此处已经做好排序
+#
+#         # print()
+#         # print(res4api_detect_line)
+#
+#         for i, r_line in enumerate(res4api_detect_line):
+#             res_ocr_line = res_ocr_many[i]
+#             # print(res_ocr_line)
+#             cands = res_ocr_line['cands']
+#             # print(cands)
+#
+#             cand = cands[0]['char']
+#             r_line['text'] = cand
+#             # 字检测结果
+#             len_chars = len(cand)  # 字数
+#             box_line = r_line['box']
+#             x1, y1, x2, y2, x3, y3, x4, y4 = box_line = [int(cord) for cord in box_line]
+#             min_x, max_x = round((x1 + x4) / 2), round((x2 + x3) / 2)
+#             min_y, max_y = round((y1 + y2) / 2), round((y3 + y4) / 2)
+#             width_line = abs(max_x - min_x)  # 框宽度
+#
+#             boxes_char = []
+#             if len_chars > 0:
+#                 h_char = (max_y - min_y) / len_chars  # 框高度/字数 ≈ 字高度
+#                 for j in range(len_chars):
+#                     box = [
+#                         min_x, min_y + j * h_char, max_x, min_y + j * h_char,
+#                         max_x, min_y + (j + 1) * h_char, min_x, min_y + (j + 1) * h_char
+#                     ]
+#                     box_char = {
+#                         'box': [str(round(pt)) for pt in box],
+#                         'name': j,
+#                         'text': cand[j]
+#                     }
+#                     boxes_char.append(box_char)
+#             r_line['boxes_char'] = boxes_char
+#             # print(width_rngs, width_line)
+#             line_size = self.get_line_size(width_rngs, width_line)  # 最小框的缩, 放, 框宽度
+#             # r_line['size'] = 'M'
+#             r_line['size'] = line_size
+#             # print(line_size)
+#
+#         res = res4api_detect_line
+#         if 'adv' == detector:
+#             res = adv_res = {
+#                 'res_basic': res4api_detect_line,
+#                 'big_sub_boxes': concat_res['bigboxes_uboxes']
+#             }
+#         return res
+
 class RecogHandler():
     def __init__(self):
         print('Initializing detector and recoginer models')
@@ -547,39 +833,6 @@ class RecogHandler():
         res = self.recog.predict(imgList)
         return res
 
-    def rng_interact(self, rng1, rng2):
-        interacted = False
-        xmin1, xmax1 = rng1[0], rng1[1]  # 最小x差值的放缩
-        xmin2, xmax2 = rng2[0], rng2[1]
-        # print(xmin1, xmax1, xmin2, xmax2)
-        if xmin1 <= xmax2 and xmin2 <= xmax1: interacted = True  # 此处不确定,缩小后的都要比另一个放大后的小
-        rng_u = [min(xmin1, xmin2), max(xmax1, xmax2)]  # rng_u理论上是 x min 1和 x max 2
-        return interacted, rng_u
-
-    def get_w_rngs(self, widths, R=0.1):
-        w_sorted = sorted(widths)  # 把所有x的差值排序
-        w_rngs_tmp = [[w * (1 - R), w * (1 + R)] for w in w_sorted]  # w_rngs_tmp为w放大缩小0.1
-        # print(w_rngs_tmp)
-        w_rngs, w_rng = [], w_rngs_tmp.pop(0)  # w_rng把最小的取出来
-        for _rng in w_rngs_tmp:
-            interacted, rng_u = self.rng_interact(w_rng, _rng)  # _rng每个放缩后的坐标
-            # print(interacted, _rng)
-        if interacted:
-            w_rng = rng_u  # rng_u理论上是 x min 1和 x max 2
-        else:
-            w_rngs.append(w_rng)
-            w_rng = _rng
-        # print(w_rngs)
-        return w_rngs
-
-    def get_line_size(self, w_rngs, w):
-        sizes = ['S', 'M', 'L', 'XL', 'XXL', 'XXXL']
-        # print(w_rngs)
-        for i, rng in enumerate(w_rngs):
-            rngl, rngr = rng[0], rng[1]  # (0,x min1 缩; 1, x min1 放)
-            if rngl <= w <= rngr: return sizes[i]  # 18.9 <= w <= 23.1, return S
-        return sizes[-1]
-
     def ocr_page(self, img, detector='craft'):
         adv_res, concat_res = {}, {}
         # 默认是craft行检测
@@ -603,12 +856,8 @@ class RecogHandler():
 
         if 'mix' == detector or 'adv' == detector:
             uboxes_g = concat_res['uboxes_g']
-            # print(uboxes_g)
-            # print()
             res_detect_line = {i: [ub[0], ub[1], ub[2], ub[1], ub[2], ub[3], ub[0], ub[3]] \
                                for i, ub in enumerate(uboxes_g)}
-            # print(ub)
-            # print(res_detect_line)
             res4api_detect_line = [
                 {
                     'box': [str(pt) for pt in box],
@@ -622,26 +871,20 @@ class RecogHandler():
             try:
                 img_line = crop_img(img, cord)
                 img_lst.append(img_line)
-                # print(img_line)
+
                 x1, y1, x2, y2, x3, y3, x4, y4 = cord
-                min_x, max_x = round((x1 + x4) / 2), round((x2 + x3) / 2)  # 为什么不直接 min_x, max_x = x1, x2 ?
+                min_x, max_x = round((x1 + x4) / 2), round((x2 + x3) / 2)
                 widths_line.append(abs(max_x - min_x))
             except Exception as e:
                 print(e)
                 continue
 
-        width_rngs = self.get_w_rngs(widths_line)  # 得到的还是最小框的放缩?w_rngs
-        res_ocr_many = self.ocr_many(img_lst)  # 此处已经做好排序
-
-        # print()
-        # print(res4api_detect_line)
+        width_rngs = get_w_rngs(widths_line)
+        res_ocr_many = self.ocr_many(img_lst)
 
         for i, r_line in enumerate(res4api_detect_line):
             res_ocr_line = res_ocr_many[i]
-            # print(res_ocr_line)
             cands = res_ocr_line['cands']
-            # print(cands)
-
             cand = cands[0]['char']
             r_line['text'] = cand
             # 字检测结果
@@ -650,11 +893,11 @@ class RecogHandler():
             x1, y1, x2, y2, x3, y3, x4, y4 = box_line = [int(cord) for cord in box_line]
             min_x, max_x = round((x1 + x4) / 2), round((x2 + x3) / 2)
             min_y, max_y = round((y1 + y2) / 2), round((y3 + y4) / 2)
-            width_line = abs(max_x - min_x)  # 框宽度
+            width_line = abs(max_x - min_x)
 
             boxes_char = []
             if len_chars > 0:
-                h_char = (max_y - min_y) / len_chars  # 框高度/字数 ≈ 字高度
+                h_char = (max_y - min_y) / len_chars
                 for j in range(len_chars):
                     box = [
                         min_x, min_y + j * h_char, max_x, min_y + j * h_char,
@@ -667,14 +910,17 @@ class RecogHandler():
                     }
                     boxes_char.append(box_char)
             r_line['boxes_char'] = boxes_char
-            # print(width_rngs, width_line)
-            line_size = self.get_line_size(width_rngs, width_line)  # 最小框的缩, 放, 框宽度
+            line_size = get_line_size(width_rngs, width_line)
             # r_line['size'] = 'M'
             r_line['size'] = line_size
-            # print(line_size)
+            print(line_size)
 
+        re_mapping_lsize(res4api_detect_line)  # line size remapping
         res = res4api_detect_line
         if 'adv' == detector:
+            big_subs = concat_res['bigboxes_uboxes']
+            # 遍历 big_subs，合并big下面的框 ，并标上大小字标签
+
             res = adv_res = {
                 'res_basic': res4api_detect_line,
                 'big_sub_boxes': concat_res['bigboxes_uboxes']
@@ -758,7 +1004,7 @@ if __name__ == '__main__':
     img_test = readPILImg(file)
     res = craft_db.ocr_page(img_test, 'adv')  # 启动类中的方法
     y = list(res.values())
-    print(y[0])
+    # print(y[0])
     for i in y[0]:
         yy = list(i.values())
         # for yy in i.key
