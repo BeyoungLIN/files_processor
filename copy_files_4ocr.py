@@ -31,11 +31,12 @@ def dul_folders():
     print(error_pics)
 
 
-def sin_folders():
-    source_path = '/Users/Beyoung/Desktop/Projects/AC_OCR/宝庆/output'
-    target_path = '/Users/Beyoung/Desktop/Projects/AC_OCR/宝庆_uboxes_pics'
+def sin_folders(root_path, target_path):
+    # target_path = '/Users/Beyoung/Desktop/Projects/AC_OCR/宝庆_uboxes_pics'
+    if not os.path.exists(target_path):
+        os.mkdir(target_path)
 
-    root_path = '/Users/Beyoung/Desktop/Projects/AC_OCR/宝庆/output'
+    # root_path = '/Users/Beyoung/Desktop/Projects/AC_OCR/宝庆/output'
     error_pics = []
     files = os.listdir(root_path)
     # for file in files:
@@ -44,15 +45,17 @@ def sin_folders():
         # if os.path.isdir(dir_path):
         #     dir_path_2 = os.path.join(dir_path, 'output')
         #     files = os.listdir(dir_path_2)
-    print(files)
+    # print(files)
     for file in files:
-        if file.endswith('uboxes_g.jpg'):
+        if (file.endswith('recog_adv.txt')) or (file.endswith('rec_uboxes_size.jpg')):
             # try:
-            if not os.path.exists(target_path):
-                os.mkdir(target_path)
             os.system('cp ' + os.path.join(root_path, file) + ' ' + os.path.join(target_path, file))
             # except:
             #     error_pics.append(file)
     print(error_pics)
 
-sin_folders()
+# 页面提取自－集韵（述古堂影宋钞本_ 上海古籍）上_页面_071_res_recog_adv.txt
+# 页面提取自－集韵（述古堂影宋钞本_ 上海古籍）上_页面_071rec_uboxes_size.jpg
+root = '/disks/sde/beyoung/files_processor/宝庆/output'
+target = '/disks/sde/beyoung/files_processor/宝庆/output_size+pic'
+sin_folders(root, target)
