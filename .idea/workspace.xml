@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc86253b-a69d-498d-bc1f-e6ddd2cad51c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img_rotate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pdf2pic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/copy_files_4ocr.py" beforeDir="false" afterPath="$PROJECT_DIR$/copy_files_4ocr.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/detect/postdetect.py" beforeDir="false" afterPath="$PROJECT_DIR$/detect/postdetect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_size_pic.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_size_pic.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,13 +56,13 @@
         <counts>
           <entry key="HTML" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="40" />
+          <entry key="Python" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="146" />
-          <entry key="Python" value="7947" />
+          <entry key="PLAIN_TEXT" value="156" />
+          <entry key="Python" value="8062" />
         </counts>
       </usages-collector>
     </session>
@@ -76,7 +72,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/craft_db_mix_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
+            <state relative-caret-position="115">
               <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
             </state>
           </provider>
@@ -94,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/img_rotate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="161" column="76" selection-start-line="161" selection-start-column="76" selection-end-line="161" selection-end-column="76" />
+            <state relative-caret-position="73">
+              <caret line="143" column="20" lean-forward="true" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
               <folding>
                 <element signature="e#138#148#0" expanded="true" />
               </folding>
@@ -107,10 +103,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_api_v0_.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-833">
+              <caret line="516" column="11" selection-start-line="516" selection-start-column="11" selection-end-line="516" selection-end-column="11" />
+              <folding>
+                <element signature="e#15#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get_size_pic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="28" selection-start-line="26" selection-end-line="28" />
+            <state relative-caret-position="473">
+              <caret line="50" column="91" selection-start-line="50" selection-start-column="91" selection-end-line="50" selection-end-column="91" />
               <folding>
                 <element signature="e#139#148#0" expanded="true" />
               </folding>
@@ -119,34 +127,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plot_diagram.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="931">
-              <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
-              <folding>
-                <element signature="e#136#154#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/print_debug.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8607">
-              <caret line="446" column="58" selection-start-line="446" selection-start-column="58" selection-end-line="446" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/detect/postdetect.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8569">
-              <caret line="461" column="23" selection-start-line="461" selection-start-column="23" selection-end-line="461" selection-end-column="23" />
-              <folding>
-                <element signature="e#16#49#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="29">
+              <caret line="439" column="134" lean-forward="true" selection-start-line="439" selection-start-column="134" selection-end-line="439" selection-end-column="134" />
             </state>
           </provider>
         </entry>
@@ -154,8 +138,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/copy_files_4ocr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="63" selection-start-line="63" selection-end-line="67" selection-end-column="25" />
+            <state relative-caret-position="434">
+              <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/detect/postdetect.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="96" selection-start-line="96" selection-end-line="96" />
+              <folding>
+                <element signature="e#16#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -205,6 +201,11 @@
       <find>IMG_EXT = {'.jpg', '.png', '.tif', '.tiff', '.bmp', '.gif'}</find>
       <find>width_line</find>
       <find>IMG_EXT</find>
+      <find>draw</find>
+      <find>post</find>
+      <find>draw_1</find>
+      <find>postd</find>
+      <find>0.05</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -228,7 +229,6 @@
         <option value="$PROJECT_DIR$/word_count.py" />
         <option value="$PROJECT_DIR$/rm_blank.py" />
         <option value="$PROJECT_DIR$/pass_exist.py" />
-        <option value="$PROJECT_DIR$/detect/postdetect.py" />
         <option value="$PROJECT_DIR$/if_jinling_yi.py" />
         <option value="$PROJECT_DIR$/cp_erroe_pics.py" />
         <option value="$PROJECT_DIR$/cp_error_pics.py" />
@@ -238,12 +238,14 @@
         <option value="$PROJECT_DIR$/craft_db_mix_test.py" />
         <option value="$PROJECT_DIR$/merge_line_size.py" />
         <option value="$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/287670ac417cbf6320066bb73d21dc16/Message/MessageTemp/6de2f72322985a00cea0bd32ecb1d1dc/File/test_api_v0_.py" />
-        <option value="$PROJECT_DIR$/test_api_v0_.py" />
-        <option value="$PROJECT_DIR$/print_debug.txt" />
-        <option value="$PROJECT_DIR$/get_size_pic.py" />
-        <option value="$PROJECT_DIR$/copy_files_4ocr.py" />
         <option value="$PROJECT_DIR$/pdf2pic.py" />
         <option value="$PROJECT_DIR$/img_rotate.py" />
+        <option value="$PROJECT_DIR$/print_debug.txt" />
+        <option value="$PROJECT_DIR$/copy_files_4ocr.py" />
+        <option value="$PROJECT_DIR$/postdetect.py" />
+        <option value="$PROJECT_DIR$/test_api_v0_.py" />
+        <option value="$PROJECT_DIR$/get_size_pic.py" />
+        <option value="$PROJECT_DIR$/detect/postdetect.py" />
       </list>
     </option>
   </component>
@@ -259,9 +261,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="66" />
-    <option name="y" value="27" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="67" />
+    <option name="y" value="29" />
     <option name="width" value="1614" />
     <option name="height" value="1025" />
   </component>
@@ -356,6 +358,27 @@
               <item name="site-packages" type="462c0819:PsiDirectoryNode" />
               <item name="scipy" type="462c0819:PsiDirectoryNode" />
               <item name="misc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="files_processor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 (ICCRE) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="523104797" type="70582d5e:PySkeletonsNode" />
+            </path>
+            <path>
+              <item name="files_processor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 (ICCRE) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="523104797" type="70582d5e:PySkeletonsNode" />
+              <item name="cv2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="files_processor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 (ICCRE) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="523104797" type="70582d5e:PySkeletonsNode" />
+              <item name="cv2" type="462c0819:PsiDirectoryNode" />
+              <item name="cv2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -724,19 +747,33 @@
       <option name="project" value="LOCAL" />
       <updated>1623899008732</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="add count plot">
+      <created>1623947746139</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1623947746139</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add count plot">
+      <created>1624067067286</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1624067067286</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="25" width="1614" height="1025" extended-state="6" />
+    <frame x="67" y="29" width="1614" height="1025" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16030534" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20229007" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.68638676" weight="0.33764833" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.68575066" visible="true" weight="0.22437972" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49873096" weight="0.399137" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -744,7 +781,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.31361324" side_tool="true" visible="true" weight="0.33764833" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.31424937" side_tool="true" weight="0.22437972" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49936548" weight="0.32901832" />
       <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.4942748" weight="0.2394822" />
@@ -903,57 +940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_api_v0_.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12065">
-          <caret line="651" column="16" selection-start-line="651" selection-start-column="4" selection-end-line="651" selection-end-column="16" />
-          <folding>
-            <element signature="e#15#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plot_diagram.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
-          <folding>
-            <element signature="e#136#154#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/print_debug.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8607">
-          <caret line="446" column="58" selection-start-line="446" selection-start-column="58" selection-end-line="446" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/detect/postdetect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8569">
-          <caret line="461" column="23" selection-start-line="461" selection-start-column="23" selection-end-line="461" selection-end-column="23" />
-          <folding>
-            <element signature="e#16#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_double_folders_draw_box.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="20" selection-start-line="6" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/craft_db_mix_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pdf2pic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -967,29 +953,97 @@
     <entry file="file:///opt/miniconda3/lib/python3.7/site-packages/scipy/misc/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/plot_diagram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+          <folding>
+            <element signature="e#136#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_double_folders_draw_box.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="20" selection-start-line="6" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img_rotate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="143" column="20" lean-forward="true" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
+          <folding>
+            <element signature="e#138#148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/copy_files_4ocr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="63" selection-start-line="63" selection-end-line="67" selection-end-column="25" />
+        <state relative-caret-position="434">
+          <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/523104797/cv2/cv2/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9485" column="4" selection-start-line="9485" selection-start-column="4" selection-end-line="9485" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft_db_mix_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detect/old_postdetect.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/print_debug.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="439" column="134" lean-forward="true" selection-start-line="439" selection-start-column="134" selection-end-line="439" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/postdetect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="96" column="20" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_api_v0_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-833">
+          <caret line="516" column="11" selection-start-line="516" selection-start-column="11" selection-end-line="516" selection-end-column="11" />
+          <folding>
+            <element signature="e#15#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/get_size_pic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="28" selection-start-line="26" selection-end-line="28" />
+        <state relative-caret-position="473">
+          <caret line="50" column="91" selection-start-line="50" selection-start-column="91" selection-end-line="50" selection-end-column="91" />
           <folding>
             <element signature="e#139#148#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img_rotate.py">
+    <entry file="file://$PROJECT_DIR$/detect/postdetect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="161" column="76" selection-start-line="161" selection-start-column="76" selection-end-line="161" selection-end-column="76" />
+        <state relative-caret-position="104">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
           <folding>
-            <element signature="e#138#148#0" expanded="true" />
+            <element signature="e#16#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
