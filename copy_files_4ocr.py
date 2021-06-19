@@ -58,6 +58,7 @@ def sin_folders(root_path, target_path):
     print(error_pics)
 
 
+
 # 页面提取自－集韵（述古堂影宋钞本_ 上海古籍）上_页面_071_res_recog_adv.txt
 # 页面提取自－集韵（述古堂影宋钞本_ 上海古籍）上_页面_071rec_uboxes_size.jpg
 root = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify/output'

@@ -712,6 +712,7 @@ def concat_boxes(res4api_detect_line, res4api_detect_line_db, pth_img='', dbg=Fa
     
     # 把bigbox用暗红色画出来，画在uboxes_g上（对于没有双行夹批的，大框替代所有小框并在x,y方向缩放0.96）
     bigboxes = [bigitem['cords_big'] for i, bigitem in bigboxes_subboxes.items()]
+    print(pth_img)
 
     if not ''==pth_img:
         pth_img_uboxes_g = pth_img_rect.replace('rec.jpg','rec_uboxes_g.jpg')
