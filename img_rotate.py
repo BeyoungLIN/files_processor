@@ -5,13 +5,6 @@
 # @File   : img_rotate.py
 
 
-import cv2
-import numpy as np
-
-import numpy as np
-import cv2
-
-
 ## 图片旋转
 # def rotate_bound(image, angle):
 #     # 获取宽高
@@ -102,15 +95,15 @@ import cv2
 #
 
 
-import os
-import cv2
 import math
-import random
+import os
+
+import cv2
 import numpy as np
-from scipy import misc, ndimage
-import matplotlib.pyplot as plt
+from scipy import ndimage
 
 filepath = './'
+
 
 def rotate(img_path, out_path):
     img = cv2.imread(img_path)
@@ -143,8 +136,11 @@ def rotate(img_path, out_path):
     # cv2.imshow("img", rotate_img)
     # cv2.waitKey(0)
 
-def sin_folders(root_path, target_path):
+
+def sin_folders(root_path, target_path=None):
     # target_path = '/Users/Beyoung/Desktop/Projects/AC_OCR/宝庆_uboxes_pics'
+    if not target_path:
+        target_path = root_path + '_rectify'
     if not os.path.exists(target_path):
         os.mkdir(target_path)
     error_pics = []
@@ -153,11 +149,12 @@ def sin_folders(root_path, target_path):
     for file in files:
         if file.endswith('.jpg'):
             # try:
-            rotate(os.path.join(root_path, file), os.path.join(target_path, file[:-4]+'_rectify.jpg'))
+            rotate(os.path.join(root_path, file), os.path.join(target_path, file[:-4] + '_rectify.jpg'))
             # except:
             #     error_pics.append(file)
     print(error_pics)
 
-root = '/Users/Beyoung/Desktop/Projects/AC_OCR/OCR/6060.凤岗李氏宗谱[桐庐]'
-target = '/Users/Beyoung/Desktop/Projects/AC_OCR/OCR/6060.凤岗李氏宗谱[桐庐]_rectify'
-sin_folders(root, target)
+
+root = '/Users/Beyoung/Desktop/Projects/AC_OCR/集'
+# target = '/Users/Beyoung/Desktop/Projects/AC_OCR/OCR/6060.凤岗李氏宗谱[桐庐]_rectify'
+sin_folders(root)

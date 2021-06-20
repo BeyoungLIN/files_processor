@@ -46,8 +46,8 @@ def get_single_folder_linesize(root_dir):
     print(error)
 
 IMG_EXT = {'.jpg', '.png', '.tif', '.tiff', '.bmp', '.gif'}
-root_path = '/disks/sde/beyoung/files_processor/OCR测试图像2/寒山诗集（字大工整）'
-# get_single_folder_linesize(root_path)
-single_file = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify/6060.凤岗李氏宗谱[桐庐]_3_rectify.jpg'
-ajust_boxes(single_file, dbg=False)
-test_one_adv(single_file, mod='adv')
+root_path = '/disks/sde/beyoung/files_processor/OCR测试图像2/FFOutput'
+get_single_folder_linesize(root_path)
+# single_file = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify/6060.凤岗李氏宗谱[桐庐]_3_rectify.jpg'
+# ajust_boxes(single_file, dbg=False)
+# test_one_adv(single_file, mod='adv')
