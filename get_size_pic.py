@@ -36,7 +36,7 @@ def get_single_folder_linesize(root_dir):
     files = os.listdir(root_dir)
     error = []
     for file in files:
-        if file.endswith('.jpg'):
+        if os.path.splitext(file)[1].lower() in IMG_EXT:
             file_path = os.path.join(root_dir, file)
             try:
                 ajust_boxes(file_path, dbg=False)
@@ -46,8 +46,9 @@ def get_single_folder_linesize(root_dir):
     print(error)
 
 IMG_EXT = {'.jpg', '.png', '.tif', '.tiff', '.bmp', '.gif'}
-root_path = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify'
-get_single_folder_linesize(root_path)
+root_path = '/disks/sde/beyoung/files_processor/OCR测试图像2'
+# root_path = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify'
+get_double_folder_linesize(root_path)
 # single_file = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify/6060.凤岗李氏宗谱[桐庐]_3_rectify.jpg'
 # ajust_boxes(single_file, dbg=False)
 # test_one_adv(single_file, mod='adv')
