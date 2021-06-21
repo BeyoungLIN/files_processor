@@ -13,7 +13,8 @@ with open(txt, 'r') as f:
 
 for line in lines:
     if line != '\n':
-        content.append(line)
+        if not line.startswith('('):
+            content.append(line)
 
 with open(txt[:-4] + '_min.txt', 'w') as of:
     of.writelines(content)

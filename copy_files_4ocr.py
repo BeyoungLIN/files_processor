@@ -8,10 +8,13 @@
 import os
 
 
-def dul_folders(root_path, target_path):
+def dul_folders(root_path, target_path=None):
     # source_path = '/Volumes/ExtremeSSD/金陵诗徵/金陵诗徵44巻_gray/output'
     # root_path = '/Users/Beyoung/Desktop/Projects/AC_OCR/OCR测试图像2'
     # target_path = '/Users/Beyoung/Desktop/Projects/AC_OCR/OCR测试图像2_size_pic'
+    if not target_path:
+        target_path = root_path + '_res'
+
     if not os.path.exists(target_path):
         os.mkdir(target_path)
 
@@ -34,8 +37,12 @@ def dul_folders(root_path, target_path):
     print(error_pics)
 
 
-def sin_folders(root_path, target_path):
+def sin_folders(root_path, target_path=None):
     # target_path = '/Users/Beyoung/Desktop/Projects/AC_OCR/宝庆_uboxes_pics'
+    if not target_path:
+        target_path = root_path + '_res'
+
+
     if not os.path.exists(target_path):
         os.mkdir(target_path)
 
@@ -61,9 +68,9 @@ def sin_folders(root_path, target_path):
 
 # 页面提取自－集韵（述古堂影宋钞本_ 上海古籍）上_页面_071_res_recog_adv.txt
 # 页面提取自－集韵（述古堂影宋钞本_ 上海古籍）上_页面_071rec_uboxes_size.jpg
-root = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify/output'
-# root = '/disks/sde/beyoung/files_processor/OCR测试图像2'
+# root = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify/output'
+root = '/disks/sde/beyoung/files_processor/OCR测试图像2'
 # target = '/disks/sde/beyoung/files_processor/宝庆/output_size+pic'
-target = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify_size_pic'
+# target = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify_size_pic'
 # sin_folders(root, target)
-sin_folders(root, target)
+dul_folders(root)

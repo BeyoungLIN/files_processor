@@ -9,7 +9,6 @@ import os
 from test_api_v0 import ajust_boxes, test_one_adv
 
 
-
 def get_double_folder_linesize(root_path):
     # root_path = '/Users/Beyoung/Desktop/Projects/AC_OCR/OCR测试图像2'
     error_pics = []
@@ -26,6 +25,7 @@ def get_double_folder_linesize(root_path):
                     try:
                         ajust_boxes(file_path, dbg=False)
                         test_one_adv(file_path, mod='adv')
+                        test_one_adv(file_path, mod='mix')
                     except:
                         error_pics.append(file)
             print(error_pics)
@@ -40,15 +40,27 @@ def get_single_folder_linesize(root_dir):
             file_path = os.path.join(root_dir, file)
             try:
                 ajust_boxes(file_path, dbg=False)
-                test_one_adv(file_path, mod='adv')
+                # test_one_adv(file_path, mod='adv')
+                test_one_adv(file_path, mod='mix')
             except:
                 error.append(file)
     print(error)
 
+
 IMG_EXT = {'.jpg', '.png', '.tif', '.tiff', '.bmp', '.gif'}
-root_path = '/disks/sde/beyoung/files_processor/OCR测试图像2'
-# root_path = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify'
-get_double_folder_linesize(root_path)
-# single_file = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify/6060.凤岗李氏宗谱[桐庐]_3_rectify.jpg'
-# ajust_boxes(single_file, dbg=False)
-# test_one_adv(single_file, mod='adv')
+# root_path = '/disks/sde/beyoung/files_processor/OCR测试图像2'
+root_path = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify'
+
+root_list = [
+    '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify',
+    '/disks/sde/beyoung/files_processor/ji_rectify',
+    '/disks/sde/beyoung/files_processor/金陵诗徵44巻_gray_pure',
+    '',
+]
+
+# for root in root_list:
+#     get_single_folder_linesize(root)
+# get_single_folder_linesize(root_path)
+single_file = '/disks/sde/beyoung/files_processor/OCR测试图像2_old/史记1.jpg'
+ajust_boxes(single_file, dbg=False)
+test_one_adv(single_file, mod='mix')
