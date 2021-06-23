@@ -26,11 +26,13 @@ def dul_folders(root_path, target_path=None):
         if os.path.isdir(dir_path):
             dir_path_2 = os.path.join(dir_path, 'output')
             files = os.listdir(dir_path_2)
+            if not os.path.exists(os.path.join(target_path, dire)):
+                os.mkdir(os.path.join(target_path, dire))
             for file in files:
-                if (file.endswith('recog_adv.txt')) or (file.endswith('rec_uboxes_size.jpg')):
+                # if (file.endswith('recog_adv.txt')) or (file.endswith('rec_uboxes_size.jpg')):
+                if os.path.isfile(os.path.join(dir_path_2, file)):
+                    # os.system('cp ' + os.path.join(source_path, file) + ' ' + os.path.join(target_path, file))
                     # try:
-                    if not os.path.exists(os.path.join(target_path, dire)):
-                        os.mkdir(os.path.join(target_path, dire))
                     os.system('cp ' + os.path.join(dir_path_2, file) + ' ' + os.path.join(target_path, dire, file))
                     # except:
                     #     error_pics.append(file)
@@ -41,6 +43,8 @@ def sin_folders(root_path, target_path=None):
     # target_path = '/Users/Beyoung/Desktop/Projects/AC_OCR/宝庆_uboxes_pics'
     if not target_path:
         target_path = root_path + '_res'
+
+    root_path = os.path.join(root_path, 'output')
 
 
     if not os.path.exists(target_path):
@@ -57,7 +61,8 @@ def sin_folders(root_path, target_path=None):
     #     files = os.listdir(dir_path_2)
     # print(files)
     for file in files:
-        if (file.endswith('recog_adv.txt')) or (file.endswith('rec_uboxes_size.jpg')):
+        # if (file.endswith('recog_adv.txt')) or (file.endswith('rec_uboxes_size.jpg')):
+        if os.path.isfile(os.path.join(root_path, file)):
             # try:
             os.system('cp ' + os.path.join(root_path, file) + ' ' + os.path.join(target_path, file))
             # except:
@@ -69,8 +74,10 @@ def sin_folders(root_path, target_path=None):
 # 页面提取自－集韵（述古堂影宋钞本_ 上海古籍）上_页面_071_res_recog_adv.txt
 # 页面提取自－集韵（述古堂影宋钞本_ 上海古籍）上_页面_071rec_uboxes_size.jpg
 # root = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify/output'
-root = '/disks/sde/beyoung/files_processor/OCR测试图像2'
+# root = '/disks/sde/beyoung/files_processor/OCR测试图像2'
+root = '/disks/sde/beyoung/files_processor/金陵诗徵44巻_gray_pure'
+# root = '/disks/sde/beyoung/files_processor/集'
 # target = '/disks/sde/beyoung/files_processor/宝庆/output_size+pic'
 # target = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify_size_pic'
-# sin_folders(root, target)
-dul_folders(root)
+sin_folders(root)
+# dul_folders(root)
