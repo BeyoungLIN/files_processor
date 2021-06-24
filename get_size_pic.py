@@ -4,8 +4,8 @@
 # @Email  : linbeyoung@stu.pku.edu.cn
 # @File   : get_size_pic.py
 
-from copy_files_4ocr import *
-from extract_json import *
+# from copy_files_4ocr import *
+from extract_json import read_json_2txt
 from test_api_v0 import ajust_boxes, test_one_adv
 import time
 
@@ -78,7 +78,8 @@ root_list = [
 #     used_time = end_time - start_time
 #     print(root + '\n处理时间', used_time)
 
-get_single_folder_linesize(root_path)
-# single_file = '/disks/sde/beyoung/files_processor/OCR测试图像2_old/史记1.jpg'
-# ajust_boxes(single_file, dbg=False)
-# test_one_adv(single_file, mod='mix')
+# get_single_folder_linesize(root_path)
+single_file = '/disks/sde/beyoung/files_processor/temp/WX20210623-230418@2x.png'
+ajust_boxes(single_file, dbg=False)
+test_one_adv(single_file, mod='mix')
+test_one_adv(single_file, mod='adv')
