@@ -16,8 +16,8 @@ def diff(fn1, fn2):
 
 
 if __name__ == '__main__':
-    fn1 = '/Users/Beyoung/Desktop/Projects/AC_OCR/temp/史记1_resapi_mix.txt'
-    fn2 = '/Users/Beyoung/Desktop/Projects/AC_OCR/temp/史记1_res_recog_adv.txt'
+    fn1 = '/temp/史记1_resapi_mix.txt'
+    fn2 = '/史记1_res_recog_adv.txt'
     res = diff(fn1, fn2)
     with open ('/Users/Beyoung/Desktop/Projects/AC_OCR/temp/WX20210623-230418@2x_res_recog_diff.html', 'w') as f:
         f.write(res)
