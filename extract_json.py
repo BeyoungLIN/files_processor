@@ -4,9 +4,10 @@
 # @Email  : linbeyoung@stu.pku.edu.cn
 # @File   : extract_json.py
 
-import re
 import os
+import re
 import time
+
 
 def read_json_2txt(json, txt=None):
     with open(json, 'r') as json_file:
@@ -31,27 +32,27 @@ def read_json_2txt(json, txt=None):
 if __name__ == '__main__':
     # read_json_2txt('/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify_res/6060.凤岗李氏宗谱[桐庐]_2_rectify_resapi_mix.json.txt')
     root_list = [
-        # '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify',
-        # '/disks/sde/beyoung/files_processor/集_rectify',
+        '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify',
+        '/disks/sde/beyoung/files_processor/集_rectify',
         '/disks/sde/beyoung/files_processor/金陵诗徵44巻_gray_pure',
-        # '/disks/sde/beyoung/files_processor/6059.桐南凤岗李氏宗谱：三十二卷：[桐庐]',
+        '/disks/sde/beyoung/files_processor/6059.桐南凤岗李氏宗谱：三十二卷：[桐庐]',
     ]
 
-    # for root in root_list:
-    #     start_time = time.time()
-    #     source_path = os.path.join(root, 'output')
-    #     files = os.listdir(source_path)
-    #     target_path = root + '_res'
-    #     if not os.path.exists(target_path):
-    #         os.makedirs(target_path)
-    #     for file in files:
-    #         if file.endswith('_mix.json.txt'):
-    #             read_json_2txt(os.path.join(source_path, file))
-    #             os.system('cp ' + os.path.join(source_path, file[:-9] + '.txt') + ' ' + os.path.join(target_path, file[:-9] + '.txt'))
-    #             os.system('cp ' + os.path.join(source_path, file) + ' ' + os.path.join(target_path, file))
-    #     end_time = time.time()
-    #     used_time = end_time - start_time
-    #     print(root + '\n处理时间', used_time)
+    for root in root_list:
+        start_time = time.time()
+        source_path = os.path.join(root, 'output')
+        files = os.listdir(source_path)
+        target_path = root + '_res'
+        if not os.path.exists(target_path):
+            os.makedirs(target_path)
+        for file in files:
+            if file.endswith('_mix.json.txt'):
+                read_json_2txt(os.path.join(source_path, file))
+                os.system('cp ' + os.path.join(source_path, file[:-9] + '.txt') + ' ' + os.path.join(target_path, file[
+                                                                                                                  :-9] + '.txt'))
+                os.system('cp ' + os.path.join(source_path, file) + ' ' + os.path.join(target_path, file))
+        end_time = time.time()
+        used_time = end_time - start_time
+        print(root + '\n处理时间', used_time)
 
-
-read_json_2txt('/Users/Beyoung/Desktop/Projects/AC_OCR/temp/WX20210623-230418@2x_resapi_mix.json.txt')
+# read_json_2txt('/Users/Beyoung/Desktop/Projects/AC_OCR/temp/WX20210623-230418@2x_resapi_mix.json.txt')

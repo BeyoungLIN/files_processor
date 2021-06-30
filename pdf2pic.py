@@ -9,6 +9,7 @@ import fitz
 import pikepdf
 from PIL import Image
 import os
+import time
 
 
 # 对pdf文件进行简单的解密
@@ -61,5 +62,17 @@ def pdf_image(pdf_name, Gray=False):
 
 
 
+root_list = [
+    '/Users/Beyoung/Desktop/Projects/AC_OCR/國家圖書館藏敦煌遺書_001.pdf',
+    '/Users/Beyoung/Desktop/Projects/AC_OCR/2563[函368].pdf',
+    '/Users/Beyoung/Desktop/Projects/AC_OCR/纂図互註荀子3.pdf',
+    # '/disks/sde/beyoung/files_processor/6059.桐南凤岗李氏宗谱：三十二卷：[桐庐]',
+]
 
-pdf_image('/disks/sde/beyoung/files_processor/6059.桐南凤岗李氏宗谱：三十二卷：[桐庐]/6059.桐南凤岗李氏宗谱：三十二卷：[桐庐].pdf', Gray=True)
+for root in root_list:
+    start_time = time.time()
+    pdf_image(root, Gray=True)
+    # sin_folders(root)
+    end_time = time.time()
+    used_time = end_time - start_time
+    print(root + '\n处理时间', used_time)

@@ -8,6 +8,7 @@
 from extract_json import read_json_2txt
 from test_api_v0 import ajust_boxes, test_one_adv
 import time
+import os
 
 def get_double_folder_linesize(root_path):
     # root_path = '/Users/Beyoung/Desktop/Projects/AC_OCR/OCR测试图像2'
@@ -53,8 +54,8 @@ def get_single_folder_linesize(root_dir):
 
 IMG_EXT = {'.jpg', '.png', '.tif', '.tiff', '.bmp', '.gif'}
 # root_path = '/disks/sde/beyoung/files_processor/OCR测试图像2'
-root_path = '/disks/sde/beyoung/files_processor/金陵诗徵44巻_gray_pure'
 
+root_path = '/disks/sdd/beyoung/data/ER007'
 root_list = [
     '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify',
     '/disks/sde/beyoung/files_processor/集_rectify',
@@ -78,8 +79,8 @@ root_list = [
 #     used_time = end_time - start_time
 #     print(root + '\n处理时间', used_time)
 
-# get_single_folder_linesize(root_path)
-single_file = '/disks/sde/beyoung/files_processor/temp/WX20210623-230418@2x.png'
-ajust_boxes(single_file, dbg=False)
-test_one_adv(single_file, mod='mix')
-test_one_adv(single_file, mod='adv')
+get_double_folder_linesize(root_path)
+# single_file = '/disks/sdd/beyoung/data/ER007/20_19584/000323.gif'
+# ajust_boxes(single_file, dbg=False)
+# test_one_adv(single_file, mod='mix')
+# test_one_adv(single_file, mod='adv')

@@ -4,7 +4,10 @@
     <list default="true" id="bc86253b-a69d-498d-bc1f-e6ddd2cad51c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/detect/postdetect.py" beforeDir="false" afterPath="$PROJECT_DIR$/detect/postdetect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text_diff_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/text_diff_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extract_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/extract_json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_size_pic.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_size_pic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf2pic.py" beforeDir="false" afterPath="$PROJECT_DIR$/pdf2pic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rm_blank_lines.py" beforeDir="false" afterPath="$PROJECT_DIR$/rm_blank_lines.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +19,7 @@
     <SUITE FILE_PATH="coverage/files_processor$split_test.coverage" NAME="split_test Coverage Results" MODIFIED="1620781204508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$text_diff_1.coverage" NAME="text_diff_1 Coverage Results" MODIFIED="1624516619794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$html_processor.coverage" NAME="html_processor Coverage Results" MODIFIED="1620839106191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/files_processor$rm_blank_lines.coverage" NAME="rm_blank_lines Coverage Results" MODIFIED="1624267029590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$rm_blank_lines.coverage" NAME="rm_blank_lines Coverage Results" MODIFIED="1624687413347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$if_jinling_yi.coverage" NAME="if_jinling_yi Coverage Results" MODIFIED="1622424102517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$joint_pic.coverage" NAME="joint_pic Coverage Results" MODIFIED="1619418525866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$combine_excels2.coverage" NAME="combine_excels2 Coverage Results" MODIFIED="1624240422911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -28,7 +31,7 @@
     <SUITE FILE_PATH="coverage/files_processor$copy_files_4ocr.coverage" NAME="copy_files_4ocr Coverage Results" MODIFIED="1623252514937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$craft.coverage" NAME="craft Coverage Results" MODIFIED="1622736156013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/detect/detector0" />
     <SUITE FILE_PATH="coverage/files_processor$merge_line_size.coverage" NAME="merge_line_size Coverage Results" MODIFIED="1623834513136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/files_processor$pdf2pic.coverage" NAME="pdf2pic Coverage Results" MODIFIED="1624296552668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$pdf2pic.coverage" NAME="pdf2pic Coverage Results" MODIFIED="1625017300739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$extract_json.coverage" NAME="extract_json Coverage Results" MODIFIED="1624460964222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$test_api_v0_.coverage" NAME="test_api_v0_ Coverage Results" MODIFIED="1623844698385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/287670ac417cbf6320066bb73d21dc16/Message/MessageTemp/6de2f72322985a00cea0bd32ecb1d1dc/File" />
     <SUITE FILE_PATH="coverage/files_processor$test_api_v0___1_.coverage" NAME="test_api_v0_ (1) Coverage Results" MODIFIED="1624169952201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -43,7 +46,7 @@
     <session id="-1597010156">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="24" />
+          <entry key="project.closed" value="25" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.11" value="3" />
@@ -53,11 +56,11 @@
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.5" value="6" />
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="26" />
+          <entry key="project.opened" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -71,7 +74,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="317" />
-          <entry key="Python" value="9978" />
+          <entry key="Python" value="10048" />
         </counts>
       </usages-collector>
     </session>
@@ -81,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_api_v0.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1541">
-              <caret line="269" selection-start-line="269" selection-end-line="271" selection-end-column="16" />
+            <state relative-caret-position="-1079">
+              <caret line="562" lean-forward="true" selection-start-line="562" selection-end-line="562" />
               <folding>
                 <element signature="e#15#52#0" expanded="true" />
               </folding>
@@ -93,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extract_json.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="48" column="63" lean-forward="true" selection-start-line="48" selection-start-column="63" selection-end-line="48" selection-end-column="63" />
+            <state relative-caret-position="238">
+              <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
               <folding>
                 <element signature="e#139#148#0" expanded="true" />
               </folding>
@@ -102,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/text_diff_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
+            <state relative-caret-position="285">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -114,8 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get_size_pic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+            <state relative-caret-position="101">
+              <caret line="58" selection-start-line="58" selection-end-line="79" selection-end-column="39" />
               <folding>
                 <element signature="e#171#210#0" expanded="true" />
               </folding>
@@ -123,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pdf2pic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="37" selection-start-line="37" selection-end-line="38" selection-end-column="40" />
+            <state relative-caret-position="468">
+              <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
               <folding>
                 <element signature="e#134#147#0" expanded="true" />
               </folding>
@@ -138,7 +141,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/craft_db_mix_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-19332">
+            <state relative-caret-position="323">
               <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
               <folding>
                 <element signature="e#160#171#0" expanded="true" />
@@ -150,7 +153,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/print_debug.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="642">
+            <state relative-caret-position="8835">
               <caret line="457" column="539" selection-start-line="457" selection-start-column="539" selection-end-line="457" selection-end-column="539" />
             </state>
           </provider>
@@ -159,7 +162,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/copy_files_4ocr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="950">
               <caret line="50" selection-start-line="50" selection-end-line="50" />
             </state>
           </provider>
@@ -168,7 +171,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/copy_4conditions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
+            <state relative-caret-position="551">
               <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
             </state>
           </provider>
@@ -177,8 +180,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rm_blank_lines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            <state relative-caret-position="361">
+              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -194,7 +197,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>concat_boxes</find>
       <find>def concat_boxes</find>
       <find>双行</find>
       <find>get_line_size</find>
@@ -224,6 +226,7 @@
       <find>pth_sav</find>
       <find>text</find>
       <find>already exists</find>
+      <find>_output</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -263,14 +266,14 @@
         <option value="$PROJECT_DIR$/detect/postdetect.py" />
         <option value="$PROJECT_DIR$/combine_excels2.py" />
         <option value="$PROJECT_DIR$/combine_excels.py" />
-        <option value="$PROJECT_DIR$/rm_blank_lines.py" />
-        <option value="$PROJECT_DIR$/pdf2pic.py" />
-        <option value="$PROJECT_DIR$/test_api_v0.py" />
         <option value="$PROJECT_DIR$/print_debug.txt" />
         <option value="$PROJECT_DIR$/copy_files_4ocr.py" />
-        <option value="$PROJECT_DIR$/get_size_pic.py" />
-        <option value="$PROJECT_DIR$/extract_json.py" />
         <option value="$PROJECT_DIR$/text_diff_1.py" />
+        <option value="$PROJECT_DIR$/extract_json.py" />
+        <option value="$PROJECT_DIR$/rm_blank_lines.py" />
+        <option value="$PROJECT_DIR$/get_size_pic.py" />
+        <option value="$PROJECT_DIR$/test_api_v0.py" />
+        <option value="$PROJECT_DIR$/pdf2pic.py" />
       </list>
     </option>
   </component>
@@ -324,17 +327,6 @@
               <item name="files_processor" type="b2602c69:ProjectViewProjectNode" />
               <item name="files_processor" type="462c0819:PsiDirectoryNode" />
               <item name="detect" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="files_processor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="files_processor" type="462c0819:PsiDirectoryNode" />
-              <item name="recog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="files_processor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="files_processor" type="462c0819:PsiDirectoryNode" />
-              <item name="recog" type="462c0819:PsiDirectoryNode" />
-              <item name="recog0" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="files_processor" type="b2602c69:ProjectViewProjectNode" />
@@ -398,7 +390,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.text_diff_1">
+  <component name="RunManager" selected="Python.pdf2pic">
     <configuration name="extract_json" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="files_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -518,11 +510,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pdf2pic" />
+        <item itemvalue="Python.rm_blank_lines" />
         <item itemvalue="Python.text_diff_1" />
         <item itemvalue="Python.extract_json" />
         <item itemvalue="Python.get_size_pic" />
-        <item itemvalue="Python.pdf2pic" />
-        <item itemvalue="Python.rm_blank_lines" />
       </list>
     </recent_temporary>
   </component>
@@ -796,19 +788,40 @@
       <option name="project" value="LOCAL" />
       <updated>1624516178509</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="find text diff">
+      <created>1624549500804</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1624549500804</updated>
+    </task>
+    <task id="LOCAL-00039" summary="find text diff">
+      <created>1624550965489</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1624550965489</updated>
+    </task>
+    <task id="LOCAL-00040" summary="find text diff">
+      <created>1624551037642</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1624551037643</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="27" width="1614" height="1025" extended-state="0" />
+    <frame x="66" y="25" width="1614" height="1025" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20992367" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21501273" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32901832" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.68575066" weight="0.6170442" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6851145" weight="0.6170442" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49873096" weight="0.399137" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -816,15 +829,15 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.31424937" side_tool="true" weight="0.22437972" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50699747" side_tool="true" visible="true" weight="0.2394822" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49936548" weight="0.32901832" />
-      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.4942748" weight="0.2394822" />
+      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49300253" visible="true" weight="0.2394822" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.061068702" />
-      <window_info anchor="right" id="SciView" order="4" visible="true" weight="0.17302799" />
+      <window_info active="true" anchor="right" id="SciView" order="4" visible="true" weight="0.17302799" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
   </component>
@@ -1022,9 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
           <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-          <folding>
-            <element signature="e#141#152#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1032,9 +1042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#142#161#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1045,26 +1052,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rm_blank_lines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/copy_4conditions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/time.pyi">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/craft_db_mix_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19332">
+        <state relative-caret-position="323">
           <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
           <folding>
             <element signature="e#160#171#0" expanded="true" />
@@ -1072,54 +1065,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_api_v0.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1541">
-          <caret line="269" selection-start-line="269" selection-end-line="271" selection-end-column="16" />
-          <folding>
-            <element signature="e#15#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pdf2pic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="37" selection-start-line="37" selection-end-line="38" selection-end-column="40" />
-          <folding>
-            <element signature="e#134#147#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/print_debug.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
+        <state relative-caret-position="8835">
           <caret line="457" column="539" selection-start-line="457" selection-start-column="539" selection-end-line="457" selection-end-column="539" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/copy_files_4ocr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="950">
           <caret line="50" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_size_pic.py">
+    <entry file="file://$PROJECT_DIR$/copy_4conditions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding>
-            <element signature="e#171#210#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="551">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rm_blank_lines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/extract_json.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="48" column="63" lean-forward="true" selection-start-line="48" selection-start-column="63" selection-end-line="48" selection-end-column="63" />
+        <state relative-caret-position="238">
+          <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
           <folding>
             <element signature="e#139#148#0" expanded="true" />
           </folding>
@@ -1128,8 +1105,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/text_diff_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_api_v0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1079">
+          <caret line="562" lean-forward="true" selection-start-line="562" selection-end-line="562" />
+          <folding>
+            <element signature="e#15#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_size_pic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="58" selection-start-line="58" selection-end-line="79" selection-end-column="39" />
+          <folding>
+            <element signature="e#171#210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdf2pic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+          <folding>
+            <element signature="e#134#147#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

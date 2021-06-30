@@ -4,7 +4,7 @@
 # @Email  : linbeyoung@stu.pku.edu.cn
 # @File   : rm_blank_lines.py
 
-txt = '/Users/Beyoung/Library/Mobile Documents/com~apple~CloudDocs/电子藏书/福柯/福柯与性：解读福柯《性史》-李银河-迅捷PDF转换器.txt'
+txt = '/Users/Beyoung/Library/Mobile Documents/com~apple~CloudDocs/电子藏书/第二性（合卷本）【三秋书屋www.d4j.cn】/第二性合卷本2-迅捷PDF转换器.txt'
 
 content = []
 with open(txt, 'r') as f:
