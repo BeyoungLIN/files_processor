@@ -57,29 +57,29 @@ IMG_EXT = {'.jpg', '.png', '.tif', '.tiff', '.bmp', '.gif'}
 
 root_path = '/disks/sdd/beyoung/data/ER007'
 root_list = [
-    '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify',
-    '/disks/sde/beyoung/files_processor/集_rectify',
-    '/disks/sde/beyoung/files_processor/金陵诗徵44巻_gray_pure',
-    '/disks/sde/beyoung/files_processor/6059.桐南凤岗李氏宗谱：三十二卷：[桐庐]',
+    '/disks/sdd/beyoung/data/國家圖書館藏敦煌遺書_001',
+    '/disks/sdd/beyoung/data/2563[函368]',
+    '/disks/sdd/beyoung/data/纂図互註荀子3',
+    # '/disks/sde/beyoung/files_processor/6059.桐南凤岗李氏宗谱：三十二卷：[桐庐]',
 ]
+for root in root_list:
+    start_time = time.time()
+    get_single_folder_linesize(root)
+    # sin_folders(root)
+    source_path = os.path.join(root, 'output')
+    files = os.listdir(source_path)
+    target_path = root + '_res'
+    if not os.path.exists(target_path):
+        os.makedirs(target_path)
+    for file in files:
+        if os.path.isfile(os.path.join(source_path, file)):
+            os.system('cp ' + os.path.join(source_path, file) + ' ' + os.path.join(target_path, file))
+    end_time = time.time()
+    used_time = end_time - start_time
+    print(root + '\n处理时间', used_time)
 
-# for root in root_list:
-#     start_time = time.time()
-#     get_single_folder_linesize(root)
-#     # sin_folders(root)
-#     source_path = os.path.join(root, 'output')
-#     files = os.listdir(source_path)
-#     target_path = root + '_res'
-#     if not os.path.exists(target_path):
-#         os.makedirs(target_path)
-#     for file in files:
-#         if os.path.isfile(os.path.join(source_path, file)):
-#             os.system('cp ' + os.path.join(source_path, file) + ' ' + os.path.join(target_path, file))
-#     end_time = time.time()
-#     used_time = end_time - start_time
-#     print(root + '\n处理时间', used_time)
 
-get_double_folder_linesize(root_path)
+# get_double_folder_linesize(root_path)
 # single_file = '/disks/sdd/beyoung/data/ER007/20_19584/000323.gif'
 # ajust_boxes(single_file, dbg=False)
 # test_one_adv(single_file, mod='mix')
