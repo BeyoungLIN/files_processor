@@ -9,7 +9,7 @@ import time
 
 # from copy_files_4ocr import *
 from test_api_v0 import ajust_boxes, test_one_adv
-
+from copy_files_4ocr import copy_file
 
 def get_double_folder_linesize(root_path):
     # root_path = '/Users/Beyoung/Desktop/Projects/AC_OCR/OCR测试图像2'
@@ -69,6 +69,7 @@ def process(root_list, mod='single'):
         for file in files:
             if os.path.isfile(os.path.join(source_path, file)):
                 os.system('cp ' + os.path.join(source_path, file) + ' ' + os.path.join(target_path, file))
+        # copy_file(root)
         end_time = time.time()
         used_time = end_time - start_time
         print(root + '\n处理时间', used_time)
@@ -88,11 +89,12 @@ if __name__ == '__main__':
         '/disks/sdd/beyoung/data/pkuocrtest-20210705',
     ]
 
-    process(root_list, 'single')
+    # process(root_list, 'single')
+    # copy_file(root_list)
     # process(root_list, 'double')
 
     # get_double_folder_linesize(root_path)
-    # single_file = '/disks/sdd/beyoung/data/ER007/20_19584/000323.gif'
-    # ajust_boxes(single_file, dbg=False)
-    # test_one_adv(single_file, mod='mix')
-    # test_one_adv(single_file, mod='adv')
+    single_file = '/disks/sdd/beyoung/data/00047_inverse.tif'
+    ajust_boxes(single_file, dbg=False)
+    test_one_adv(single_file, mod='mix')
+    test_one_adv(single_file, mod='adv')

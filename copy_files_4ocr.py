@@ -69,6 +69,7 @@ def sin_folders(root_path, target_path=None):
             #     error_pics.append(file)
     print(error_pics)
 
+
 def copy_file(root_list):
     # 页面提取自－集韵（述古堂影宋钞本_ 上海古籍）上_页面_071_res_recog_adv.txt
     # 页面提取自－集韵（述古堂影宋钞本_ 上海古籍）上_页面_071rec_uboxes_size.jpg
@@ -96,13 +97,14 @@ def copy_file(root_list):
     # sin_folders(root)
     # dul_folders(root)
 
+
 if __name__ == '__main__':
     root_list = [
         # '/disks/sdd/beyoung/data/國家圖書館藏敦煌遺書_001',
         # '/disks/sdd/beyoung/data/2563[函368]',
         # '/disks/sdd/beyoung/data/纂図互註荀子3',
         # '/disks/sde/beyoung/files_processor/6059.桐南凤岗李氏宗谱：三十二卷：[桐庐]',
-        '/disks/sdd/beyoung/data/测试7.5',
+        # '/disks/sdd/beyoung/data/测试7.5',
         '/disks/sdd/beyoung/data/pkuocrtest-20210705',
     ]
 
