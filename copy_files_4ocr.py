@@ -6,6 +6,7 @@
 
 
 import os
+import time
 
 
 def dul_folders(root_path, target_path=None):
@@ -46,7 +47,6 @@ def sin_folders(root_path, target_path=None):
 
     root_path = os.path.join(root_path, 'output')
 
-
     if not os.path.exists(target_path):
         os.mkdir(target_path)
 
@@ -69,15 +69,41 @@ def sin_folders(root_path, target_path=None):
             #     error_pics.append(file)
     print(error_pics)
 
+def copy_file(root_list):
+    # 页面提取自－集韵（述古堂影宋钞本_ 上海古籍）上_页面_071_res_recog_adv.txt
+    # 页面提取自－集韵（述古堂影宋钞本_ 上海古籍）上_页面_071rec_uboxes_size.jpg
+    # root = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify/output'
+    # root = '/disks/sde/beyoung/files_processor/OCR测试图像2'
+    # root = '/disks/sde/beyoung/files_processor/金陵诗徵44巻_gray_pure'
+    # root = '/disks/sde/beyoung/files_processor/集'
+    # target = '/disks/sde/beyoung/files_processor/宝庆/output_size+pic'
+    # target = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify_size_pic'
 
+    for root in root_list:
+        start_time = time.time()
+        # source_path = os.path.join(root, 'output')
+        # files = os.listdir(source_path)
+        # target_path = root + '_res'
+        # if not os.path.exists(target_path):
+        #     os.makedirs(target_path)
+        # for file in files:
+        # if file.endswith('_mix.json.txt'):
+        sin_folders(root)
+        end_time = time.time()
+        used_time = end_time - start_time
+        print(root + '\n处理时间', used_time)
 
-# 页面提取自－集韵（述古堂影宋钞本_ 上海古籍）上_页面_071_res_recog_adv.txt
-# 页面提取自－集韵（述古堂影宋钞本_ 上海古籍）上_页面_071rec_uboxes_size.jpg
-# root = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify/output'
-# root = '/disks/sde/beyoung/files_processor/OCR测试图像2'
-root = '/disks/sde/beyoung/files_processor/金陵诗徵44巻_gray_pure'
-# root = '/disks/sde/beyoung/files_processor/集'
-# target = '/disks/sde/beyoung/files_processor/宝庆/output_size+pic'
-# target = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify_size_pic'
-sin_folders(root)
-# dul_folders(root)
+    # sin_folders(root)
+    # dul_folders(root)
+
+if __name__ == '__main__':
+    root_list = [
+        # '/disks/sdd/beyoung/data/國家圖書館藏敦煌遺書_001',
+        # '/disks/sdd/beyoung/data/2563[函368]',
+        # '/disks/sdd/beyoung/data/纂図互註荀子3',
+        # '/disks/sde/beyoung/files_processor/6059.桐南凤岗李氏宗谱：三十二卷：[桐庐]',
+        '/disks/sdd/beyoung/data/测试7.5',
+        '/disks/sdd/beyoung/data/pkuocrtest-20210705',
+    ]
+
+    copy_file(root_list)

@@ -4,11 +4,12 @@
 # @Email  : linbeyoung@stu.pku.edu.cn
 # @File   : get_size_pic.py
 
-# from copy_files_4ocr import *
-from extract_json import read_json_2txt
-from test_api_v0 import ajust_boxes, test_one_adv
-import time
 import os
+import time
+
+# from copy_files_4ocr import *
+from test_api_v0 import ajust_boxes, test_one_adv
+
 
 def get_double_folder_linesize(root_path):
     # root_path = '/Users/Beyoung/Desktop/Projects/AC_OCR/OCR测试图像2'
@@ -24,7 +25,7 @@ def get_double_folder_linesize(root_path):
                 if os.path.splitext(file)[1].lower() in IMG_EXT:
                     file_path = os.path.join(dir_path_2, file)
                     try:
-                        ajust_boxes(file_path, dbg=False)
+                        ajust_boxes(file_path, dbg=True)
                         test_one_adv(file_path, mod='adv')
                         test_one_adv(file_path, mod='mix')
                     except:
@@ -44,43 +45,54 @@ def get_single_folder_linesize(root_dir):
                 ajust_boxes(file_path, dbg=False)
                 test_one_adv(file_path, mod='adv')
                 test_one_adv(file_path, mod='mix')
-                read_json_2txt(file_path[:-4] + '_resapi_mix.json.txt')
                 flag += 1
+                # read_json_2txt(file_path[:-4] + '_resapi_mix.json.txt')
             except:
                 error.append(file)
     print('处理文件数:', flag)
     print(error)
 
 
-IMG_EXT = {'.jpg', '.png', '.tif', '.tiff', '.bmp', '.gif'}
-# root_path = '/disks/sde/beyoung/files_processor/OCR测试图像2'
-
-root_path = '/disks/sdd/beyoung/data/ER007'
-root_list = [
-    '/disks/sdd/beyoung/data/國家圖書館藏敦煌遺書_001',
-    '/disks/sdd/beyoung/data/2563[函368]',
-    '/disks/sdd/beyoung/data/纂図互註荀子3',
-    # '/disks/sde/beyoung/files_processor/6059.桐南凤岗李氏宗谱：三十二卷：[桐庐]',
-]
-for root in root_list:
-    start_time = time.time()
-    get_single_folder_linesize(root)
-    # sin_folders(root)
-    source_path = os.path.join(root, 'output')
-    files = os.listdir(source_path)
-    target_path = root + '_res'
-    if not os.path.exists(target_path):
-        os.makedirs(target_path)
-    for file in files:
-        if os.path.isfile(os.path.join(source_path, file)):
-            os.system('cp ' + os.path.join(source_path, file) + ' ' + os.path.join(target_path, file))
-    end_time = time.time()
-    used_time = end_time - start_time
-    print(root + '\n处理时间', used_time)
+def process(root_list, mod='single'):
+    for root in root_list:
+        start_time = time.time()
+        if mod == 'single':
+            get_single_folder_linesize(root)
+        if mod == 'double':
+            get_double_folder_linesize(root)
+        # sin_folders(root)
+        source_path = os.path.join(root, 'output')
+        files = os.listdir(source_path)
+        target_path = root + '_res'
+        if not os.path.exists(target_path):
+            os.makedirs(target_path)
+        for file in files:
+            if os.path.isfile(os.path.join(source_path, file)):
+                os.system('cp ' + os.path.join(source_path, file) + ' ' + os.path.join(target_path, file))
+        end_time = time.time()
+        used_time = end_time - start_time
+        print(root + '\n处理时间', used_time)
 
 
-# get_double_folder_linesize(root_path)
-# single_file = '/disks/sdd/beyoung/data/ER007/20_19584/000323.gif'
-# ajust_boxes(single_file, dbg=False)
-# test_one_adv(single_file, mod='mix')
-# test_one_adv(single_file, mod='adv')
+if __name__ == '__main__':
+    IMG_EXT = {'.jpg', '.png', '.tif', '.tiff', '.bmp', '.gif'}
+    # root_path = '/disks/sde/beyoung/files_processor/OCR测试图像2'
+
+    # root_path = '/disks/sdd/beyoung/data/ER007'
+    # root_path = '/disks/sdd/beyoung/data/测试7.5'
+    root_list = [
+        # '/disks/sdd/beyoung/data/國家圖書館藏敦煌遺書_001',
+        # '/disks/sdd/beyoung/data/2563[函368]',
+        # '/disks/sdd/beyoung/data/纂図互註荀子3',
+        # '/disks/sde/beyoung/files_processor/6059.桐南凤岗李氏宗谱：三十二卷：[桐庐]',
+        '/disks/sdd/beyoung/data/pkuocrtest-20210705',
+    ]
+
+    process(root_list, 'single')
+    # process(root_list, 'double')
+
+    # get_double_folder_linesize(root_path)
+    # single_file = '/disks/sdd/beyoung/data/ER007/20_19584/000323.gif'
+    # ajust_boxes(single_file, dbg=False)
+    # test_one_adv(single_file, mod='mix')
+    # test_one_adv(single_file, mod='adv')

@@ -32,9 +32,10 @@ def read_json_2txt(json, txt=None):
 if __name__ == '__main__':
     # read_json_2txt('/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify_res/6060.凤岗李氏宗谱[桐庐]_2_rectify_resapi_mix.json.txt')
     root_list = [
-        '/disks/sdd/beyoung/data/國家圖書館藏敦煌遺書_001',
-        '/disks/sdd/beyoung/data/2563[函368]',
-        '/disks/sdd/beyoung/data/纂図互註荀子3',
+        # '/disks/sdd/beyoung/data/國家圖書館藏敦煌遺書_001',
+        # '/disks/sdd/beyoung/data/2563[函368]',
+        # '/disks/sdd/beyoung/data/纂図互註荀子3',
+        '/disks/sdd/beyoung/data/测试7.5',
         # '/disks/sde/beyoung/files_processor/6059.桐南凤岗李氏宗谱：三十二卷：[桐庐]',
     ]
 
