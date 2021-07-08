@@ -70,7 +70,7 @@ def sin_folders(root_path, target_path=None):
     print(error_pics)
 
 
-def copy_file(root_list):
+def copy_file(root_list, mod='single'):
     # 页面提取自－集韵（述古堂影宋钞本_ 上海古籍）上_页面_071_res_recog_adv.txt
     # 页面提取自－集韵（述古堂影宋钞本_ 上海古籍）上_页面_071rec_uboxes_size.jpg
     # root = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify/output'
@@ -89,7 +89,11 @@ def copy_file(root_list):
         #     os.makedirs(target_path)
         # for file in files:
         # if file.endswith('_mix.json.txt'):
-        sin_folders(root)
+        start_time = time.time()
+        if mod == 'single':
+            sin_folders(root)
+        if mod == 'double':
+            dul_folders(root)
         end_time = time.time()
         used_time = end_time - start_time
         print(root + '\n处理时间', used_time)
@@ -105,7 +109,10 @@ if __name__ == '__main__':
         # '/disks/sdd/beyoung/data/纂図互註荀子3',
         # '/disks/sde/beyoung/files_processor/6059.桐南凤岗李氏宗谱：三十二卷：[桐庐]',
         # '/disks/sdd/beyoung/data/测试7.5',
-        '/disks/sdd/beyoung/data/pkuocrtest-20210705',
+        # '/disks/sdd/beyoung/data/pkuocrtest-20210705',
+        # '/disks/sdd/beyoung/data/經問卷一',
+        '/disks/sdd/beyoung/data/OCR测试图像2021.6.29',
     ]
 
-    copy_file(root_list)
+    # copy_file(root_list, 'single')
+    copy_file(root_list, 'double')
