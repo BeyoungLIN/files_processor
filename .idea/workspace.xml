@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc86253b-a69d-498d-bc1f-e6ddd2cad51c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/postdetect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rm_red.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_api_v0.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extract_html.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/copy_files_4ocr.py" beforeDir="false" afterPath="$PROJECT_DIR$/copy_files_4ocr.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/detect/postdetect.py" beforeDir="false" afterPath="$PROJECT_DIR$/detect/postdetect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_size_pic.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_size_pic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inverse.py" beforeDir="false" afterPath="$PROJECT_DIR$/inverse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text_diff_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/text_diff_1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +22,7 @@
     <SUITE FILE_PATH="coverage/files_processor$combine_excels2.coverage" NAME="combine_excels2 Coverage Results" MODIFIED="1624240422911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$save_same_name_files.coverage" NAME="save_same_name_files Coverage Results" MODIFIED="1618145274580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$rm_red.coverage" NAME="rm_red Coverage Results" MODIFIED="1625584241204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$extract_html.coverage" NAME="extract_html Coverage Results" MODIFIED="1625899923603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$craft_db_mix_test__1_.coverage" NAME="craft_db_mix_test (1) Coverage Results" MODIFIED="1623329016158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/" />
     <SUITE FILE_PATH="coverage/files_processor$combine_excels.coverage" NAME="combine_excels Coverage Results" MODIFIED="1624238314882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$cp_error_pics.coverage" NAME="cp_error_pics Coverage Results" MODIFIED="1623055219763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -51,9 +46,9 @@
     <session id="-1597010156">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="28" />
+          <entry key="project.closed" value="31" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.1" value="5" />
+          <entry key="project.open.time.1" value="6" />
           <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="1" />
@@ -62,58 +57,49 @@
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="6" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.5" value="7" />
           <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="32" />
+          <entry key="project.opened" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="1" />
+          <entry key="HTML" value="3" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="64" />
+          <entry key="Python" value="67" />
           <entry key="PythonStub" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="373" />
-          <entry key="Python" value="10600" />
+          <entry key="PLAIN_TEXT" value="381" />
+          <entry key="Python" value="11563" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test_api_v0.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extract_html.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+            <state relative-caret-position="-61">
+              <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
               <folding>
-                <element signature="e#15#52#0" expanded="true" />
+                <element signature="e#138#147#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/get_size_pic.py">
+        <entry file="file://$PROJECT_DIR$/craft_db_mix_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text_diff_1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+            <state relative-caret-position="150">
+              <caret line="1012" column="68" lean-forward="true" selection-start-line="1012" selection-start-column="20" selection-end-line="1012" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -126,6 +112,15 @@
               <folding>
                 <element signature="e#134#147#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../AC_OCR/Dingxiu_old/000044.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret column="3027" selection-start-column="3018" selection-end-column="3027" />
             </state>
           </provider>
         </entry>
@@ -201,9 +196,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>双行</find>
-      <find>get_line_size</find>
-      <find>y</find>
       <find>x1</find>
       <find>31</find>
       <find>re_mapping_size</find>
@@ -231,6 +223,9 @@
       <find>already exists</find>
       <find>_output</find>
       <find>tqdm</find>
+      <find>pn</find>
+      <find>png</find>
+      <find>000001</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -280,6 +275,7 @@
         <option value="$PROJECT_DIR$/rm_red.py" />
         <option value="$PROJECT_DIR$/text_diff_1.py" />
         <option value="$PROJECT_DIR$/get_size_pic.py" />
+        <option value="$PROJECT_DIR$/extract_html.py" />
       </list>
     </option>
   </component>
@@ -295,9 +291,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="68" />
-    <option name="y" value="25" />
+    <option name="y" value="26" />
     <option name="width" value="1611" />
     <option name="height" value="1025" />
   </component>
@@ -322,6 +318,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -333,6 +330,12 @@
               <item name="files_processor" type="b2602c69:ProjectViewProjectNode" />
               <item name="files_processor" type="462c0819:PsiDirectoryNode" />
               <item name="detect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="files_processor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="files_processor" type="462c0819:PsiDirectoryNode" />
+              <item name="detect" type="462c0819:PsiDirectoryNode" />
+              <item name="detector0" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="files_processor" type="b2602c69:ProjectViewProjectNode" />
@@ -360,7 +363,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,7 +398,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.text_diff_1">
+  <component name="RunManager" selected="Python.extract_html">
+    <configuration name="extract_html" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="files_processor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/opt/anaconda3/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/extract_html.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="inverse" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="files_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -433,28 +457,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pdf2pic.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="rm_blank_lines" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="files_processor" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rm_blank_lines.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -508,19 +510,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.rm_blank_lines" />
       <item itemvalue="Python.pdf2pic" />
       <item itemvalue="Python.text_diff_1" />
       <item itemvalue="Python.inverse" />
       <item itemvalue="Python.rm_red" />
+      <item itemvalue="Python.extract_html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.extract_html" />
         <item itemvalue="Python.text_diff_1" />
         <item itemvalue="Python.rm_red" />
         <item itemvalue="Python.inverse" />
         <item itemvalue="Python.pdf2pic" />
-        <item itemvalue="Python.rm_blank_lines" />
       </list>
     </recent_temporary>
   </component>
@@ -836,18 +838,26 @@
       <option name="project" value="LOCAL" />
       <updated>1625496460765</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="backup">
+      <created>1625736334767</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1625736334767</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="68" y="25" width="1611" height="1025" extended-state="0" />
+    <frame x="68" y="25" width="1612" height="1025" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22498406" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23248407" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32901832" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.68384224" weight="0.38727078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6821656" weight="0.46170443" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49873096" weight="0.399137" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -855,15 +865,15 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5086042" side_tool="true" visible="true" weight="0.2394822" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5089172" side_tool="true" visible="true" weight="0.2394822" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49936548" weight="0.32901832" />
-      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.4913958" visible="true" weight="0.2394822" />
+      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49108282" visible="true" weight="0.2394822" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.061068702" />
-      <window_info anchor="right" id="SciView" order="4" visible="true" weight="0.17272148" />
+      <window_info anchor="right" id="SciView" order="4" visible="true" weight="0.17261146" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
   </component>
@@ -888,7 +898,8 @@
     <MESSAGE value="new test sets" />
     <MESSAGE value="优化" />
     <MESSAGE value="support inverse" />
-    <option name="LAST_COMMIT_MESSAGE" value="support inverse" />
+    <MESSAGE value="backup" />
+    <option name="LAST_COMMIT_MESSAGE" value="backup" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///opt/miniconda3/lib/python3.7/site-packages/PIL/Image.py">
@@ -1091,10 +1102,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/craft_db_mix_test.py">
+    <entry file="file://$PROJECT_DIR$/test_api_v0.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+        <state relative-caret-position="969">
+          <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text_diff_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_size_pic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="90" column="95" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="95" />
+          <folding>
+            <element signature="e#139#148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AC_OCR/Dingxiu_old/0A0CBAE0046F4AB7BCBFE12789547A78/000014.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret column="2509" selection-start-column="2455" selection-end-column="2509" />
         </state>
       </provider>
     </entry>
@@ -1156,27 +1191,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text_diff_1.py">
+    <entry file="file://$PROJECT_DIR$/detect/detector0/file_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        <state relative-caret-position="158">
+          <caret line="21" column="76" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_size_pic.py">
+    <entry file="file://$PROJECT_DIR$/craft_db_mix_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        <state relative-caret-position="150">
+          <caret line="1012" column="68" lean-forward="true" selection-start-line="1012" selection-start-column="20" selection-end-line="1012" selection-end-column="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_api_v0.py">
+    <entry file="file://$PROJECT_DIR$/extract_html.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+        <state relative-caret-position="-61">
+          <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
           <folding>
-            <element signature="e#15#52#0" expanded="true" />
+            <element signature="e#138#147#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AC_OCR/Dingxiu_old/000044.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret column="3027" selection-start-column="3018" selection-end-column="3027" />
         </state>
       </provider>
     </entry>
