@@ -35,7 +35,7 @@ if __name__ == '__main__':
         # '/disks/sdd/beyoung/data/國家圖書館藏敦煌遺書_001',
         # '/disks/sdd/beyoung/data/2563[函368]',
         # '/disks/sdd/beyoung/data/纂図互註荀子3',
-        '/disks/sdd/beyoung/data/测试7.5',
+        # '/disks/sdd/beyoung/data/测试7.5',
         # '/disks/sde/beyoung/files_processor/6059.桐南凤岗李氏宗谱：三十二卷：[桐庐]',
     ]
 
@@ -56,4 +56,4 @@ if __name__ == '__main__':
         used_time = end_time - start_time
         print(root + '\n处理时间', used_time)
 
-# read_json_2txt('/Users/Beyoung/Desktop/Projects/AC_OCR/temp/WX20210623-230418@2x_resapi_mix.json.txt')
+read_json_2txt('/Users/Beyoung/Desktop/Projects/ER/dataset/ER007/20_19584_jpg/output/000010_resapi_mix.json.txt')
