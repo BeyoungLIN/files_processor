@@ -4,11 +4,6 @@
 # @Email  : linbeyoung@stu.pku.edu.cn
 # @File   : pic_projection.py
 
-作者：JimmyHua
-链接：https://zhuanlan.zhihu.com/p/75351673
-来源：知乎
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
 import cv2
 import numpy as np
 
@@ -16,24 +11,27 @@ import numpy as np
 # 水平方向投影
 def hProject(binary):
     h, w = binary.shape
+    # print(h,w)
 
     # 水平投影
     hprojection = np.zeros(binary.shape, dtype=np.uint8)
 
     # 创建h长度都为0的数组
-    h_h = [0]*h
+    h_h = [0] * h
+    # print(h_h)
     for j in range(h):
         for i in range(w):
-            if binary[j,i] == 0:
+            if binary[j, i] == 0:
                 h_h[j] += 1
     # 画出投影图
     for j in range(h):
         for i in range(h_h[j]):
-            hprojection[j,i] = 255
+            hprojection[j, i] = 255
 
-    cv2.imshow('hpro', hprojection)
+    # cv2.imshow('hpro', hprojection)
 
     return h_h
+
 
 # 垂直反向投影
 def vProject(binary):
@@ -42,31 +40,34 @@ def vProject(binary):
     vprojection = np.zeros(binary.shape, dtype=np.uint8)
 
     # 创建 w 长度都为0的数组
-    w_w = [0]*w
+    w_w = [0] * w
     for i in range(w):
         for j in range(h):
-            if binary[j, i ] == 0:
+            if binary[j, i] == 0:
                 w_w[i] += 1
 
     for i in range(w):
         for j in range(w_w[i]):
-            vprojection[j,i] = 255
+            vprojection[j, i] = 255
 
-    cv2.imshow('vpro', vprojection)
+    # cv2.imshow('vpro', vprojection)
 
     return w_w
 
 
 if __name__ == '__main__':
-    img = cv2.imread('words.jpg')
+    img = cv2.imread(
+        '/Users/Beyoung/Desktop/Projects/ER/dataset/ER007/228_41142_jpg/000337.jpg')
+        # '/Users/Beyoung/Desktop/Projects/ER/dataset/ER007/228_41142_jpg/000008.jpg')
+        # '/Users/Beyoung/Desktop/Projects/ER/dataset/ER007/20_19584_jpg/000009.jpg')
     # 可选
-    #img = cv2.resize(img, (500, 200), interpolation=cv2.INTER_CUBIC)
+    # img = cv2.resize(img, (500, 200), interpolation=cv2.INTER_CUBIC)
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
     # 针对不同图需要调整阈值
     ret, th = cv2.threshold(gray, 80, 255, cv2.THRESH_BINARY)
 
-    h,w = th.shape
+    h, w = th.shape
     h_h = hProject(th)
 
     start = 0
@@ -78,24 +79,24 @@ if __name__ == '__main__':
         if h_h[i] > 0 and start == 0:
             h_start.append(i)
             start = 1
-        if h_h[i] ==0 and start == 1:
+        if h_h[i] == 0 and start == 1:
             h_end.append(i)
             start = 0
 
     for i in range(len(h_start)):
         cropImg = th[h_start[i]:h_end[i], 0:w]
-        if i ==0:
-            cv2.imshow('cropimg', cropImg)
+        if i == 0:
+            # cv2.imshow('cropimg', cropImg)
             cv2.imwrite('words_cropimg.jpg', cropImg)
         w_w = vProject(cropImg)
 
-        wstart , wend, w_start, w_end = 0, 0, 0, 0
+        wstart, wend, w_start, w_end = 0, 0, 0, 0
         for j in range(len(w_w)):
             if w_w[j] > 0 and wstart == 0:
                 w_start = j
                 wstart = 1
                 wend = 0
-            if w_w[j] ==0 and wstart == 1:
+            if w_w[j] == 0 and wstart == 1:
                 w_end = j
                 wstart = 0
                 wend = 1
@@ -110,6 +111,6 @@ if __name__ == '__main__':
         cv2.rectangle(img, (p[0], p[1]), (p[2], p[3]), (0, 0, 255), 2)
 
     cv2.imshow('image', img)
-    cv2.imshow('th', th)
+    # cv2.imshow('th', th)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
