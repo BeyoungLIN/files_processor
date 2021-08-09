@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc86253b-a69d-498d-bc1f-e6ddd2cad51c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/acocr_postprocessor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/detect/postdetect.py" beforeDir="false" afterPath="$PROJECT_DIR$/detect/postdetect.py" afterDir="false" />
     </list>
@@ -78,6 +78,7 @@
         <counts>
           <entry key="HTML" value="4" />
           <entry key="Image" value="1" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Python" value="84" />
           <entry key="PythonStub" value="1" />
@@ -85,7 +86,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="488" />
+          <entry key="Markdown" value="114" />
+          <entry key="PLAIN_TEXT" value="511" />
           <entry key="Python" value="13986" />
         </counts>
       </usages-collector>
@@ -204,11 +206,23 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/acocr_postprocessor.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="437">
                   <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Readme.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="57">
+                    <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
+                  </first_editor>
+                  <second_editor />
                 </state>
               </provider>
             </entry>
@@ -317,6 +331,7 @@
         <option value="$PROJECT_DIR$/../AC_OCR/ER007_jpg_res/20_19584_jpg/acocr_postprocessor.py" />
         <option value="$PROJECT_DIR$/../AC_OCR/ER007_jpg_res/20_19584_jpg/000001_res_recog_adv.txt" />
         <option value="$PROJECT_DIR$/acocr_postprocessor.py" />
+        <option value="$PROJECT_DIR$/Readme.md" />
       </list>
     </option>
   </component>
@@ -548,13 +563,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618143219672</updated>
-    </task>
-    <task id="LOCAL-00001" summary="test if changed">
-      <created>1618223176972</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1618223176972</updated>
     </task>
     <task id="LOCAL-00002" summary="test if changed">
       <created>1618223206507</created>
@@ -892,7 +900,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628438029013</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="update postprocessor">
+      <created>1628501652864</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1628501652865</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -948,7 +963,8 @@
     <MESSAGE value="add common for linux" />
     <MESSAGE value="support char generation" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="update postprocessor" />
+    <option name="LAST_COMMIT_MESSAGE" value="update postprocessor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -967,13 +983,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cp_error_pics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/detect/postdetect_old2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -1304,6 +1313,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="57">
+            <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
