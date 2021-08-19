@@ -25,12 +25,22 @@ def sin_folders(root_path, source_path, target_path):
     print(error_pics)
 
 
+def copy_file(root_path, target_path):
+
+    files = os.listdir(root_path)
+    for file in files:
+        if file.endswith('mix.jpg'):
+            os.system('cp ' + os.path.join(root_path, file) + ' ' + os.path.join(target_path, file))
+
+
+
 # 页面提取自－集韵（述古堂影宋钞本_ 上海古籍）上_页面_071_res_recog_adv.txt
 # 页面提取自－集韵（述古堂影宋钞本_ 上海古籍）上_页面_071rec_uboxes_size.jpg
-source = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify'
-root = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify_size_pic/'
-# '6060.凤岗李氏宗谱[桐庐]_1_rectify.jpg'
-# '6060.凤岗李氏宗谱[桐庐]_133_rectifyrec_uboxes_size.jpg'
-target = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_error'
-# sin_folders(root, target)
-sin_folders(root, source, target)
+# source = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify'
+# root = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_rectify_size_pic/'
+# # '6060.凤岗李氏宗谱[桐庐]_1_rectify.jpg'
+# # '6060.凤岗李氏宗谱[桐庐]_133_rectifyrec_uboxes_size.jpg'
+# target = '/disks/sde/beyoung/files_processor/6060.凤岗李氏宗谱[桐庐]_error'
+# # sin_folders(root, target)
+# sin_folders(root, source, target)
+copy_file('/Users/Beyoung/Desktop/Projects/ER/dataset/ER007/20_19584_jpg/output/', '/Users/Beyoung/Desktop/Projects/ER/dataset/ER007/20_19584_jpg')

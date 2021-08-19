@@ -6,16 +6,21 @@
 
 import os
 
-def tag_convert2xml(input_path, output_path = '', mod = 'normal'):
+
+def tag_convert2xml(input_path, output_path='', mod='normal'):
     flag = 1
     contents = ''
-    with open (input_path, 'r', encoding='utf-8') as f:
+    with open(input_path, 'r', encoding='utf-8') as f:
         # a = f.read()
         # b = f.readline()
         lines = f.readlines()
     for line in lines:
         line = line.replace('\n', '')
-        content, tag = line.split('\t')[0], line.split('\t')[1]
+        if len(line.split('\t')) == 2:
+            content, tag = line.split('\t')[0], line.split('\t')[1]
+        else:
+            print(input_path)
+            content, tag = '', line.split('\t')[0]
         # print(tag)
         tag_s = tag.replace('[', '').replace(']', '')
         content_new = '<' + tag_s + '>' + content + '</' + tag_s + '>'
@@ -23,17 +28,18 @@ def tag_convert2xml(input_path, output_path = '', mod = 'normal'):
             flag += 1
             content_new = content_new + '\n'
         contents = contents + content_new
-    print(contents)
+    # print(contents)
 
     if output_path == '':
         output_path = input_path[:-4] + '_xml.txt'
 
-    with open(output_path,'w', encoding='utf-8') as of:
+    with open(output_path, 'w', encoding='utf-8') as of:
         of.write(contents)
 
     return
 
-def getfiles(root, mod = 'singel'):
+
+def getfiles(root, mod='singel'):
     files_new = []
     dirs = os.listdir(root)
     for dir in dirs:
@@ -56,10 +62,13 @@ def getfiles(root, mod = 'singel'):
     return files_new
 
 
-
-
 if __name__ == '__main__':
     txt_files = getfiles(r'/Users/Beyoung/Desktop/Projects/AC_OCR/ER007_jpg_res/')
     for txt_file in txt_files:
-        dirname, filename = os.path.split(txt_file)
-        tag_convert2xml(txt_file, )
+        dirname, filename = txt_file.split('/')[-2], txt_file.split('/')[-1]
+        save_file = filename.replace('_res_recog_adv.txt', '.txt')
+        if not os.path.exists(os.path.join('/Users/Beyoung/Desktop/Projects/AC_OCR/ER007_txt', dirname)):
+            os.mkdir(os.path.join('/Users/Beyoung/Desktop/Projects/AC_OCR/ER007_txt', dirname))
+        save_path = os.path.join('/Users/Beyoung/Desktop/Projects/AC_OCR/ER007_txt', dirname, save_file)
+        # print(os.path.join(dirname, txt_file))
+        tag_convert2xml(txt_file, save_path)

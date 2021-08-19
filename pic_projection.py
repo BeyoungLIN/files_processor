@@ -57,7 +57,9 @@ def vProject(binary):
 
 if __name__ == '__main__':
     img = cv2.imread(
-        '/Users/Beyoung/Desktop/Projects/ER/dataset/ER007/228_41142_jpg/000337.jpg')
+        # '/Users/Beyoung/Desktop/Projects/ER/dataset/ER007/228_41142_jpg/000337.jpg'
+        '/Users/Beyoung/Desktop/Projects/AC_OCR/temp/test/000009.jpg'
+    )
         # '/Users/Beyoung/Desktop/Projects/ER/dataset/ER007/228_41142_jpg/000008.jpg')
         # '/Users/Beyoung/Desktop/Projects/ER/dataset/ER007/20_19584_jpg/000009.jpg')
     # 可选

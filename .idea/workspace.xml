@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc86253b-a69d-498d-bc1f-e6ddd2cad51c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+    <list default="true" id="bc86253b-a69d-498d-bc1f-e6ddd2cad51c" name="Default Changelist" comment="update readme">
+      <change afterPath="$PROJECT_DIR$/draw_gram.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/get_punc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/punc_test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acocr_postprocessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/acocr_postprocessor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/copy_4conditions.py" beforeDir="false" afterPath="$PROJECT_DIR$/copy_4conditions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/detect/postdetect.py" beforeDir="false" afterPath="$PROJECT_DIR$/detect/postdetect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_size_pic.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_size_pic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pic_projection.py" beforeDir="false" afterPath="$PROJECT_DIR$/pic_projection.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,13 +26,15 @@
     <SUITE FILE_PATH="coverage/files_processor$rm_blank_lines.coverage" NAME="rm_blank_lines Coverage Results" MODIFIED="1624687413347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$if_jinling_yi.coverage" NAME="if_jinling_yi Coverage Results" MODIFIED="1622424102517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$format_convert.coverage" NAME="format_convert Coverage Results" MODIFIED="1626928322835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$draw_gram.coverage" NAME="draw_gram Coverage Results" MODIFIED="1629339109542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$joint_pic.coverage" NAME="joint_pic Coverage Results" MODIFIED="1619418525866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/files_processor$pic_projection.coverage" NAME="pic_projection Coverage Results" MODIFIED="1628435242628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$pic_projection.coverage" NAME="pic_projection Coverage Results" MODIFIED="1629040359147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$combine_excels2.coverage" NAME="combine_excels2 Coverage Results" MODIFIED="1624240422911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/files_processor$acocr_postprocessor.coverage" NAME="acocr_postprocessor Coverage Results" MODIFIED="1628499409254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$acocr_postprocessor.coverage" NAME="acocr_postprocessor Coverage Results" MODIFIED="1628503248042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$save_same_name_files.coverage" NAME="save_same_name_files Coverage Results" MODIFIED="1618145274580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$rm_red.coverage" NAME="rm_red Coverage Results" MODIFIED="1625584241204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$draw_box.coverage" NAME="draw_box Coverage Results" MODIFIED="1625994238188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/287670ac417cbf6320066bb73d21dc16/Message/MessageTemp/db9860b17e2a83afb3c68db1998c3d90/File" />
+    <SUITE FILE_PATH="coverage/files_processor$copy_4conditions.coverage" NAME="copy_4conditions Coverage Results" MODIFIED="1628868250632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$extract_html.coverage" NAME="extract_html Coverage Results" MODIFIED="1625899923603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$craft_db_mix_test__1_.coverage" NAME="craft_db_mix_test (1) Coverage Results" MODIFIED="1623329016158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/" />
     <SUITE FILE_PATH="coverage/files_processor$combine_excels.coverage" NAME="combine_excels Coverage Results" MODIFIED="1624238314882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -36,13 +45,16 @@
     <SUITE FILE_PATH="coverage/files_processor$inverse.coverage" NAME="inverse Coverage Results" MODIFIED="1625499594615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$craft.coverage" NAME="craft Coverage Results" MODIFIED="1622736156013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/detect/detector0" />
     <SUITE FILE_PATH="coverage/files_processor$merge_line_size.coverage" NAME="merge_line_size Coverage Results" MODIFIED="1623834513136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$json_read.coverage" NAME="json_read Coverage Results" MODIFIED="1629368478346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$draw_box__1_.coverage" NAME="draw_box (1) Coverage Results" MODIFIED="1626343010862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$pdf2pic.coverage" NAME="pdf2pic Coverage Results" MODIFIED="1625017300739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$extract_json.coverage" NAME="extract_json Coverage Results" MODIFIED="1626792154956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$copy_just.coverage" NAME="copy_just Coverage Results" MODIFIED="1625981562753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$test_api_v0_.coverage" NAME="test_api_v0_ Coverage Results" MODIFIED="1623844698385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/287670ac417cbf6320066bb73d21dc16/Message/MessageTemp/6de2f72322985a00cea0bd32ecb1d1dc/File" />
     <SUITE FILE_PATH="coverage/files_processor$test_api_v0___1_.coverage" NAME="test_api_v0_ (1) Coverage Results" MODIFIED="1624169952201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$get_api.coverage" NAME="get_api Coverage Results" MODIFIED="1628948170661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$img_rotate.coverage" NAME="img_rotate Coverage Results" MODIFIED="1624177006500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$csv_read.coverage" NAME="csv_read Coverage Results" MODIFIED="1628793978669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$rm_blank.coverage" NAME="rm_blank Coverage Results" MODIFIED="1621618197983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$get_size_pic.coverage" NAME="get_size_pic Coverage Results" MODIFIED="1624459141264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$word_count.coverage" NAME="word_count Coverage Results" MODIFIED="1620929810782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -54,84 +66,57 @@
     <session id="-1597010156">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="42" />
+          <entry key="project.closed" value="46" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="7" />
           <entry key="project.open.time.11" value="5" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.15" value="3" />
           <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.5" value="9" />
+          <entry key="project.open.time.5" value="10" />
           <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="46" />
+          <entry key="project.opened" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="4" />
           <entry key="Image" value="1" />
+          <entry key="JSON" value="6" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="84" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="Python" value="93" />
           <entry key="PythonStub" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="JSON" value="55" />
           <entry key="Markdown" value="114" />
-          <entry key="PLAIN_TEXT" value="511" />
-          <entry key="Python" value="13986" />
+          <entry key="PLAIN_TEXT" value="528" />
+          <entry key="Python" value="16446" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.26676384">
+    <splitter split-orientation="horizontal" split-proportion="0.47311828">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/print_debug.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="9120">
-                  <caret line="467" column="1812" selection-start-line="467" selection-start-column="1812" selection-end-line="467" selection-end-column="1812" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/copy_files_4ocr.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1805">
-                  <caret line="95" column="29" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
-                  <folding>
-                    <element signature="e#142#151#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/copy_4conditions.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="551">
-                  <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/draw_box.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="855">
-                  <caret line="45" selection-start-line="45" selection-end-line="45" />
+                <state relative-caret-position="101">
+                  <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
                 </state>
               </provider>
             </entry>
@@ -139,7 +124,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/generate_char.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="817">
+                <state relative-caret-position="798">
                   <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
                   <folding>
                     <element signature="e#140#183#0" expanded="true" />
@@ -151,7 +136,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/format_convert.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
+                <state relative-caret-position="285">
                   <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
                   <folding>
                     <element signature="e#141#150#0" expanded="true" />
@@ -163,8 +148,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pic_projection.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="83">
-                  <caret line="100" column="26" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="26" />
+                <state relative-caret-position="135">
+                  <caret line="104" selection-start-line="104" selection-end-line="104" />
                   <folding>
                     <element signature="e#141#151#0" expanded="true" />
                   </folding>
@@ -172,11 +157,43 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/../AC_OCR/ER007_jpg_res/20_19584_jpg/000001_res_recog_adv.txt">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file:///Volumes/Desktop/proj/weibo_spider_2/config.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="190">
-                  <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+                <state relative-caret-position="418">
+                  <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../weibo_spider_2/config_ 2549228714.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="133">
+                  <caret line="3" column="223" selection-start-line="3" selection-start-column="223" selection-end-line="3" selection-end-column="223" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/../weibo_spider_2/config_7069597517.json">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../AC_OCR/ER007_txt/228_41142_jpg/000311.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="437">
+                  <caret line="23" column="17" selection-start-line="20" selection-start-column="3" selection-end-line="23" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/get_size_pic.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="208">
+                  <caret line="97" selection-start-line="97" selection-end-line="97" />
                 </state>
               </provider>
             </entry>
@@ -184,7 +201,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pic_projection_2.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="377">
+                <state relative-caret-position="2090">
                   <caret line="111" selection-start-line="111" selection-end-line="111" />
                   <folding>
                     <element signature="e#277#287#0" expanded="true" />
@@ -196,11 +213,11 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/print_debug.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="513">
+                <state relative-caret-position="9120">
                   <caret line="467" column="1812" selection-start-line="467" selection-start-column="1812" selection-end-line="467" selection-end-column="1812" />
                 </state>
               </provider>
@@ -209,20 +226,41 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/acocr_postprocessor.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="437">
-                  <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+                <state relative-caret-position="1235">
+                  <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Readme.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="57">
-                    <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-                  </first_editor>
-                  <second_editor />
+            <entry file="file://$PROJECT_DIR$/json_read.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="59">
+                  <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="138" selection-end-column="114" />
+                  <folding>
+                    <element signature="e#139#149#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/copy_files_4ocr.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="880">
+                  <caret line="118" selection-start-line="118" selection-end-line="118" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/get_punc.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="418">
+                  <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+                  <folding>
+                    <element signature="e#245#260#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -240,13 +278,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find />
-      <find>70</find>
-      <find>tif</find>
-      <find>IMG_EXT = {'.jpg', '.png', '.tif', '.tiff', '.bmp', '.gif'}</find>
-      <find>width_line</find>
-      <find>IMG_EXT</find>
-      <find>draw</find>
       <find>concat</find>
       <find>postd</find>
       <find>0.05</find>
@@ -270,6 +301,13 @@
       <find>th</find>
       <find>crop</find>
       <find>show</find>
+      <find>115</find>
+      <find>诈骗</find>
+      <find>\</find>
+      <find>果子</find>
+      <find>分手</find>
+      <find>——</find>
+      <find>手帐</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -282,13 +320,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pinjie_pic.py" />
-        <option value="$PROJECT_DIR$/save_same_name_files.py" />
-        <option value="$PROJECT_DIR$/syn_by_git.py" />
-        <option value="$PROJECT_DIR$/joint_pic.py" />
-        <option value="$PROJECT_DIR$/split_test.py" />
-        <option value="$PROJECT_DIR$/../Jinjiang/douban的副本.html" />
-        <option value="$PROJECT_DIR$/html_processor.py" />
         <option value="$PROJECT_DIR$/multi_lines.txt" />
         <option value="$PROJECT_DIR$/word_count.py" />
         <option value="$PROJECT_DIR$/rm_blank.py" />
@@ -302,7 +333,6 @@
         <option value="$PROJECT_DIR$/craft_db_mix_test.py" />
         <option value="$PROJECT_DIR$/merge_line_size.py" />
         <option value="$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/287670ac417cbf6320066bb73d21dc16/Message/MessageTemp/6de2f72322985a00cea0bd32ecb1d1dc/File/test_api_v0_.py" />
-        <option value="$PROJECT_DIR$/copy_4conditions.py" />
         <option value="$PROJECT_DIR$/img_rotate.py" />
         <option value="$PROJECT_DIR$/test_api_v0_.py" />
         <option value="$PROJECT_DIR$/postdetect.py" />
@@ -322,16 +352,25 @@
         <option value="$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/287670ac417cbf6320066bb73d21dc16/Message/MessageTemp/db9860b17e2a83afb3c68db1998c3d90/File/draw_box.py" />
         <option value="$PROJECT_DIR$/draw_box.py" />
         <option value="$PROJECT_DIR$/generate_char.py" />
-        <option value="$PROJECT_DIR$/get_size_pic.py" />
         <option value="$PROJECT_DIR$/print_debug.txt" />
         <option value="$PROJECT_DIR$/extract_json.py" />
         <option value="$PROJECT_DIR$/format_convert.py" />
-        <option value="$PROJECT_DIR$/pic_projection.py" />
         <option value="$PROJECT_DIR$/pic_projection_2.py" />
         <option value="$PROJECT_DIR$/../AC_OCR/ER007_jpg_res/20_19584_jpg/acocr_postprocessor.py" />
-        <option value="$PROJECT_DIR$/../AC_OCR/ER007_jpg_res/20_19584_jpg/000001_res_recog_adv.txt" />
-        <option value="$PROJECT_DIR$/acocr_postprocessor.py" />
         <option value="$PROJECT_DIR$/Readme.md" />
+        <option value="$PROJECT_DIR$/acocr_postprocessor.py" />
+        <option value="$PROJECT_DIR$/../AC_OCR/ER007_jpg_res/20_19584_jpg/000001_res_recog_adv.txt" />
+        <option value="$PROJECT_DIR$/get_api.py" />
+        <option value="$PROJECT_DIR$/punc_test.txt" />
+        <option value="$PROJECT_DIR$/csv_read.py" />
+        <option value="$PROJECT_DIR$/copy_4conditions.py" />
+        <option value="$PROJECT_DIR$/get_size_pic.py" />
+        <option value="$PROJECT_DIR$/get_punc.py" />
+        <option value="$PROJECT_DIR$/pic_projection.py" />
+        <option value="$PROJECT_DIR$/../weibo_spider_2/config_7069597517的副本.json" />
+        <option value="$PROJECT_DIR$/draw_gram.py" />
+        <option value="$PROJECT_DIR$/json_read.py" />
+        <option value="/Volumes/Desktop/proj/weibo_spider_2/config.json" />
       </list>
     </option>
   </component>
@@ -348,10 +387,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="59" />
+    <option name="x" value="69" />
     <option name="y" value="25" />
-    <option name="width" value="1861" />
-    <option name="height" value="1055" />
+    <option name="width" value="1851" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -374,7 +413,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -390,6 +428,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -425,8 +464,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.acocr_postprocessor">
-    <configuration name="acocr_postprocessor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.json_read">
+    <configuration name="copy_4conditions" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="files_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -439,7 +478,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/acocr_postprocessor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/copy_4conditions.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -448,7 +487,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="extract_json" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="draw_gram" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="files_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -461,7 +500,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/extract_json.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/draw_gram.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -470,7 +509,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="format_convert" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="get_api" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="files_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -483,7 +522,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/format_convert.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_punc.py" />
+      <option name="PARAMETERS" value="--text_file punc_test" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="json_read" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="files_processor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/json_read.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -514,42 +575,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pic_projection_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="files_processor" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pic_projection_2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.format_convert" />
-      <item itemvalue="Python.extract_json" />
+      <item itemvalue="Python.json_read" />
+      <item itemvalue="Python.get_api" />
+      <item itemvalue="Python.copy_4conditions" />
       <item itemvalue="Python.pic_projection" />
-      <item itemvalue="Python.pic_projection_2" />
-      <item itemvalue="Python.acocr_postprocessor" />
+      <item itemvalue="Python.draw_gram" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.acocr_postprocessor" />
+        <item itemvalue="Python.json_read" />
+        <item itemvalue="Python.draw_gram" />
         <item itemvalue="Python.pic_projection" />
-        <item itemvalue="Python.pic_projection_2" />
-        <item itemvalue="Python.format_convert" />
-        <item itemvalue="Python.extract_json" />
+        <item itemvalue="Python.get_api" />
+        <item itemvalue="Python.copy_4conditions" />
       </list>
     </recent_temporary>
   </component>
@@ -563,13 +602,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618143219672</updated>
-    </task>
-    <task id="LOCAL-00002" summary="test if changed">
-      <created>1618223206507</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1618223206507</updated>
     </task>
     <task id="LOCAL-00003" summary="test if changed">
       <created>1618223260062</created>
@@ -907,35 +939,41 @@
       <option name="project" value="LOCAL" />
       <updated>1628501652865</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="update readme">
+      <created>1628501837410</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1628501837410</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="59" y="25" width="1861" height="1055" extended-state="6" />
-    <editor active="true" />
+    <frame x="69" y="25" width="1851" height="1000" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16987355" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17468214" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49936306" weight="0.32901832" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6750962" visible="true" weight="0.3552769" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.74161625" weight="0.39811912" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.67164177" weight="0.5321508" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.74018794" weight="0.30718955" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3249038" side_tool="true" visible="true" weight="0.3552769" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3283582" side_tool="true" visible="true" weight="0.5321508" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49936548" weight="0.32901832" />
-      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.4901211" weight="0.2394822" />
+      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.48811498" weight="0.23856209" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.061068702" />
-      <window_info anchor="right" id="SciView" order="4" visible="true" weight="0.07586586" />
+      <window_info anchor="right" id="SciView" order="4" visible="true" weight="0.15699281" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
   </component>
@@ -964,96 +1002,26 @@
     <MESSAGE value="support char generation" />
     <MESSAGE value="update" />
     <MESSAGE value="update postprocessor" />
-    <option name="LAST_COMMIT_MESSAGE" value="update postprocessor" />
+    <MESSAGE value="update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pic_projection.py</url>
-          <line>69</line>
+          <line>71</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pic_projection.py</url>
-          <line>109</line>
+          <line>111</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/detect/postdetect_old2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recog/recog0/recog1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="93" column="69" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_api_v0_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-245">
-          <caret line="462" column="26" selection-start-line="462" selection-start-column="26" selection-end-line="462" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/287670ac417cbf6320066bb73d21dc16/Message/MessageTemp/6de2f72322985a00cea0bd32ecb1d1dc/File/test_api_v0_.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="637" column="49" lean-forward="true" selection-start-line="637" selection-start-column="49" selection-end-line="637" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pass_exist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_api_v0_ 1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1672">
-          <caret line="104" column="2" selection-start-line="104" selection-start-column="2" selection-end-line="104" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///opt/miniconda3/lib/python3.7/site-packages/scipy/misc/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plot_diagram.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/523104797/cv2/cv2/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/detect/old_postdetect.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_api_v0_.py" />
-    <entry file="file://$PROJECT_DIR$/detect/postdetect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="730" column="32" lean-forward="true" selection-start-line="730" selection-start-column="32" selection-end-line="730" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/opt/anaconda3/lib/python3.8/site-packages/xlrd/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="431" selection-start-line="431" selection-end-line="431" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rm_blank.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1141,13 +1109,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-1295918196/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="3718" column="8" selection-start-line="3718" selection-start-column="8" selection-end-line="3718" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-1295918196/builtins.py" />
     <entry file="file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/287670ac417cbf6320066bb73d21dc16/Message/MessageTemp/db9860b17e2a83afb3c68db1998c3d90/File/draw_box.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
@@ -1183,13 +1145,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_size_pic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1748">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/craft_db_mix_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18829">
@@ -1221,33 +1176,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/copy_files_4ocr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1805">
-          <caret line="95" column="29" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
-          <folding>
-            <element signature="e#142#151#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/../AC_OCR/ER007_jpg_res/20_19584_jpg/acocr_postprocessor.py" />
+    <entry file="file://$PROJECT_DIR$/../FGO_Bluetooth_Assistant/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="57">
+            <caret line="2" column="54" lean-forward="true" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/copy_4conditions.py">
+    <entry file="file://$PROJECT_DIR$/../AC_OCR/ER007_jpg_res/228_41142_jpg/000096_res_recog_adv.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/draw_box.py">
+    <entry file="file://$PROJECT_DIR$/../AC_OCR/ER007_jpg_res/228_41142_jpg/000311_res_recog_adv.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="19">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/generate_char.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
+        <state relative-caret-position="798">
           <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
           <folding>
             <element signature="e#140#183#0" expanded="true" />
@@ -1257,7 +1216,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/format_convert.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="285">
           <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
           <folding>
             <element signature="e#141#150#0" expanded="true" />
@@ -1267,7 +1226,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pic_projection_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
+        <state relative-caret-position="2090">
           <caret line="111" selection-start-line="111" selection-end-line="111" />
           <folding>
             <element signature="e#277#287#0" expanded="true" />
@@ -1275,54 +1234,139 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/copy_4conditions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acocr_postprocessor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1235">
+          <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/print_debug.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9120">
+          <caret line="467" column="1812" selection-start-line="467" selection-start-column="1812" selection-end-line="467" selection-end-column="1812" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/draw_box.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/punc_test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AC_OCR/ER007_jpg_res/20_19584_jpg/000001_res_recog_adv.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AC_OCR/ER007_txt/228_41142_jpg/000311.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="17" selection-start-line="20" selection-start-column="3" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_punc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+          <folding>
+            <element signature="e#245#260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv_read.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="10" selection-start-line="6" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/copy_files_4ocr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_size_pic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pic_projection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="100" column="26" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="26" />
+        <state relative-caret-position="135">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
           <folding>
             <element signature="e#141#151#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AC_OCR/ER007_jpg_res/20_19584_jpg/acocr_postprocessor.py">
+    <entry file="file://$PROJECT_DIR$/../weibo_spider_2/config_7069597517的副本.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        <state relative-caret-position="418">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/print_debug.txt">
+    <entry file="file://$PROJECT_DIR$/draw_gram.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="467" column="1812" selection-start-line="467" selection-start-column="1812" selection-end-line="467" selection-end-column="1812" />
+        <state relative-caret-position="416">
+          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../FGO_Bluetooth_Assistant/.gitignore">
+    <entry file="file://$PROJECT_DIR$/plot_diagram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-688" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../weibo_spider_2/config_ 2549228714.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="3" column="223" selection-start-line="3" selection-start-column="223" selection-end-line="3" selection-end-column="223" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Volumes/Desktop/proj/weibo_spider_2/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../weibo_spider_2/config_7069597517.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AC_OCR/ER007_jpg_res/20_19584_jpg/000001_res_recog_adv.txt">
+    <entry file="file://$PROJECT_DIR$/json_read.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/acocr_postprocessor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="57">
-            <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-          </first_editor>
-          <second_editor />
+        <state relative-caret-position="59">
+          <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="138" selection-end-column="114" />
+          <folding>
+            <element signature="e#139#149#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

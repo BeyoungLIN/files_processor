@@ -93,13 +93,14 @@ if __name__ == '__main__':
     ]
 
     # process(root_list, 'double')
-    process(root_list, 'single')
-    copy_file(root_list)
+    # process(root_list, 'single')
+    # copy_file(root_list)
 
     # get_double_folder_linesize(root_path)
     # single_file = '/disks/sdd/beyoung/data/ZHSY000116-000009_gray.png'
     # single_file = '/disks/sdd/beyoung/data/ZHSY000116-000009_rem_red.png'
     # single_file = '/disks/sdd/beyoung/data/error/IMG_20210414_141531.jpg'
+    single_file = 'temp/WechatIMG4930.jpeg'
     # ajust_boxes(single_file, dbg=True)
-    # test_one_adv(single_file, mod='adv')
+    test_one_adv(single_file, mod='adv')
     # test_one_adv(single_file, mod='mix')
