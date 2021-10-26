@@ -23,7 +23,7 @@ def gif2jpg(input, output):
 
 
 PIC_SET = ['.gif', '.tif', '.jpg', '.jepg']
-path = '/Users/Beyoung/Desktop/Projects/ER/dataset/ER007/228_41142'
+path = '/Users/Beyoung/Desktop/Projects/ER/txtpic.part01/txtpic/228_00475'
 op_path = path + '_jpg'
 if not os.path.exists(op_path):
     os.mkdir(op_path)

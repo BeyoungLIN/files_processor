@@ -95,8 +95,8 @@ def character_cut(img, img_bi):  # 字符切割
         # cv2.imshow('img_line', img_line)
         # cv2.imshow('img_line_gray', img_line_gray)
         # cv2.imshow('img_line_bi', img_line_bi)
-        cv2.waitKey(0)
-        cv2.destroyAllWindows()
+        # cv2.waitKey(0)
+        # cv2.destroyAllWindows()
 
         va = get_vertical_shadow(img_line, img_line_bi)
 
@@ -108,7 +108,11 @@ def character_cut(img, img_bi):  # 字符切割
             img_char = img_line[0:img_line.shape[0], vs:ve]  # [0:h, vs:ve]
             # step2.6: 保存字符
             save_name = './character/char_' + str(i) + '_' + str(j) + '.jpg'
-            cv2.imwrite(save_name, img_char)
+            # cv2.imwrite(save_name, img_char)
+            # cv2.imshow('word', img_char)
+            # cv2.waitKey(0)
+            # cv2.destroyAllWindows()
+
 
 
 if __name__ == "__main__":
