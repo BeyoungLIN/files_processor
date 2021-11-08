@@ -4,7 +4,6 @@
     <list default="true" id="bc86253b-a69d-498d-bc1f-e6ddd2cad51c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic_format_convert.py" beforeDir="false" afterPath="$PROJECT_DIR$/pic_format_convert.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,9 +73,9 @@
     <session id="-1597010156">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="64" />
+          <entry key="project.closed" value="65" />
           <entry key="project.open.time.0" value="4" />
-          <entry key="project.open.time.1" value="11" />
+          <entry key="project.open.time.1" value="12" />
           <entry key="project.open.time.11" value="5" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="2" />
@@ -94,7 +93,7 @@
           <entry key="project.open.time.7" value="3" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="69" />
+          <entry key="project.opened" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -112,7 +111,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="106" />
-          <entry key="Markdown" value="215" />
+          <entry key="Markdown" value="328" />
           <entry key="PLAIN_TEXT" value="608" />
           <entry key="Properties" value="9" />
           <entry key="Python" value="19907" />
@@ -121,13 +120,13 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.57045674">
+    <splitter split-orientation="horizontal" split-proportion="0.69493175">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/generate_char.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
+                <state relative-caret-position="342">
                   <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
                   <folding>
                     <element signature="e#140#183#0" expanded="true" />
@@ -152,8 +151,8 @@
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="228">
-                    <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="71" />
+                  <first_editor relative-caret-position="285">
+                    <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -163,7 +162,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pdf2pic.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2033">
+                <state relative-caret-position="2147">
                   <caret line="113" column="19" selection-start-line="113" selection-start-column="19" selection-end-line="113" selection-end-column="19" />
                   <folding>
                     <element signature="e#134#143#0" expanded="true" />
@@ -175,7 +174,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pic_projection.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="760">
+                <state relative-caret-position="779">
                   <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
                   <folding>
                     <element signature="e#141#151#0" expanded="true" />
@@ -196,7 +195,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pic_projection_2.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2280">
+                <state relative-caret-position="2299">
                   <caret line="121" column="35" selection-end-line="123" selection-end-column="54" />
                   <folding>
                     <element signature="e#277#287#0" expanded="true" />
@@ -212,7 +211,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/dbscan.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="190">
+                <state relative-caret-position="209">
                   <caret line="11" selection-start-line="11" selection-end-line="12" selection-end-column="28" />
                   <folding>
                     <element signature="e#133#151#0" expanded="true" />
@@ -224,7 +223,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/dbscan_2.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1387">
+                <state relative-caret-position="1463">
                   <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
                   <folding>
                     <element signature="e#135#153#0" expanded="true" />
@@ -236,7 +235,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Hierarchical.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1748">
+                <state relative-caret-position="1767">
                   <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
                   <folding>
                     <element signature="e#139#150#0" expanded="true" />
@@ -248,7 +247,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Hierarchical_2.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="38">
+                <state relative-caret-position="152">
                   <caret line="8" column="85" selection-start-line="8" selection-start-column="85" selection-end-line="8" selection-end-column="85" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
@@ -260,7 +259,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cluster.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1805">
+                <state relative-caret-position="1900">
                   <caret line="100" column="44" selection-start-line="100" selection-start-column="44" selection-end-line="100" selection-end-column="44" />
                   <folding>
                     <element signature="e#134#152#0" expanded="true" />
@@ -272,7 +271,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cluster2.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2983">
+                <state relative-caret-position="3078">
                   <caret line="162" column="4" selection-start-line="162" selection-start-column="4" selection-end-line="162" selection-end-column="4" />
                   <folding>
                     <element signature="e#135#153#0" expanded="true" />
@@ -284,7 +283,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/检测纯黑图片.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="266">
+                <state relative-caret-position="323">
                   <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
                   <folding>
                     <element signature="e#133#143#0" expanded="true" />
@@ -305,7 +304,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/get_punc.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="722">
+                <state relative-caret-position="798">
                   <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
                   <folding>
                     <element signature="e#245#260#0" expanded="true" />
@@ -336,7 +335,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>\</find>
       <find>果子</find>
       <find>分手</find>
       <find>——</find>
@@ -366,6 +364,7 @@
       <find>boxes_data</find>
       <find>label</find>
       <find>gif</find>
+      <find>res_recog_diff</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -444,10 +443,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="69" />
-    <option name="y" value="25" />
-    <option name="width" value="1611" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="66" />
+    <option name="y" value="26" />
+    <option name="width" value="1614" />
     <option name="height" value="1025" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -471,6 +470,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -521,7 +521,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -695,20 +694,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618143219672</updated>
-    </task>
-    <task id="LOCAL-00005" summary="update files">
-      <created>1618223541929</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1618223541929</updated>
-    </task>
-    <task id="LOCAL-00006" summary="update files">
-      <created>1618363837401</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1618363837401</updated>
     </task>
     <task id="LOCAL-00007" summary="update files">
       <created>1618410768738</created>
@@ -1039,14 +1024,28 @@
       <option name="project" value="LOCAL" />
       <updated>1635248904049</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="more utils">
+      <created>1636371437152</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1636371437153</updated>
+    </task>
+    <task id="LOCAL-00055" summary="more utils">
+      <created>1636371539479</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1636371539479</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="69" y="25" width="1611" height="1025" extended-state="0" />
+    <frame x="69" y="26" width="1611" height="1025" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16889739" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17080943" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1326,7 +1325,7 @@
     <entry file="file://$PROJECT_DIR$/draw_box.py" />
     <entry file="file://$PROJECT_DIR$/generate_char.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="342">
           <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding>
             <element signature="e#140#183#0" expanded="true" />
@@ -1334,9 +1333,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pic_format_convert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#141#150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pdf2pic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2033">
+        <state relative-caret-position="2147">
           <caret line="113" column="19" selection-start-line="113" selection-start-column="19" selection-end-line="113" selection-end-column="19" />
           <folding>
             <element signature="e#134#143#0" expanded="true" />
@@ -1346,7 +1355,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pic_projection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
+        <state relative-caret-position="779">
           <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
           <folding>
             <element signature="e#141#151#0" expanded="true" />
@@ -1363,7 +1372,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pic_projection_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
+        <state relative-caret-position="2299">
           <caret line="121" column="35" selection-end-line="123" selection-end-column="54" />
           <folding>
             <element signature="e#277#287#0" expanded="true" />
@@ -1373,7 +1382,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dbscan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="209">
           <caret line="11" selection-start-line="11" selection-end-line="12" selection-end-column="28" />
           <folding>
             <element signature="e#133#151#0" expanded="true" />
@@ -1383,7 +1392,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dbscan_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1387">
+        <state relative-caret-position="1463">
           <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
           <folding>
             <element signature="e#135#153#0" expanded="true" />
@@ -1393,7 +1402,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Hierarchical.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1748">
+        <state relative-caret-position="1767">
           <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
           <folding>
             <element signature="e#139#150#0" expanded="true" />
@@ -1403,7 +1412,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Hierarchical_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
+        <state relative-caret-position="152">
           <caret line="8" column="85" selection-start-line="8" selection-start-column="85" selection-end-line="8" selection-end-column="85" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -1413,7 +1422,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cluster.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1805">
+        <state relative-caret-position="1900">
           <caret line="100" column="44" selection-start-line="100" selection-start-column="44" selection-end-line="100" selection-end-column="44" />
           <folding>
             <element signature="e#134#152#0" expanded="true" />
@@ -1423,7 +1432,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cluster2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2983">
+        <state relative-caret-position="3078">
           <caret line="162" column="4" selection-start-line="162" selection-start-column="4" selection-end-line="162" selection-end-column="4" />
           <folding>
             <element signature="e#135#153#0" expanded="true" />
@@ -1440,7 +1449,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/get_punc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
+        <state relative-caret-position="798">
           <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
           <folding>
             <element signature="e#245#260#0" expanded="true" />
@@ -1457,7 +1466,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/检测纯黑图片.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
+        <state relative-caret-position="323">
           <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
           <folding>
             <element signature="e#133#143#0" expanded="true" />
@@ -1465,21 +1474,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pic_format_convert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#141#150#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="228">
-            <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="71" />
+          <first_editor relative-caret-position="285">
+            <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           </first_editor>
           <second_editor />
         </state>
