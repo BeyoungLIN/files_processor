@@ -9,8 +9,7 @@ import os
 from PIL import Image
 
 
-def gif2jpg(input, output):
-    gif_file = input
+def gif2jpg(gif_file, output):
     img = Image.open(gif_file)
     # print(img.mode, img.format)  # P  和  GIF
     img = img.convert('RGB')
