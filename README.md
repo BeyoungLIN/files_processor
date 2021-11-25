@@ -12,7 +12,11 @@
 * text_diff_1.py
 检测两个文件的文字是否存在差别, 结果以html格式返回
 
+* open_urls.py
+批量打开各种url
 
+* progress_bar.py
+实现进度条可视化效果
 
 ## some errors records
 1. 
