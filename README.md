@@ -18,6 +18,9 @@
 * progress_bar.py
 实现进度条可视化效果
 
+* cv_operation.py
+一些使用open_cv的图片操作,如对比度之类的
+
 ## some errors records
 1. 
 ```
