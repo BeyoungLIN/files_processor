@@ -21,6 +21,9 @@
 * cv_operation.py
 一些使用open_cv的图片操作,如对比度之类的
 
+* cut_pic.jpg
+裁图小程序
+
 ## some errors records
 1. 
 ```

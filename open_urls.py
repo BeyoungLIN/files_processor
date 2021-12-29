@@ -8,11 +8,16 @@ import webbrowser
 import codecs
 import time
 
+def get_url_from_txt(txt_pth):
+    with open(txt_pth) as fp:
+        urls = fp.readlines()
+    return urls
 
-with open("urls.txt") as fp:
-    urls = fp.readlines()
-for url in urls[0:20]:
-    url = url.replace('\n', '')
-    time.sleep(5) #打开间隔时间
-    webbrowser.open(url) #打开网页
-    # print(urls)
+
+if __name__ == '__main__':
+    urls = get_url_from_txt("urls.txt")
+    for url in urls[0:20]:
+        url = url.replace('\n', '')
+        time.sleep(5) #打开间隔时间
+        webbrowser.open(url) #打开网页
+        # print(urls)
