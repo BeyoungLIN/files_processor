@@ -48,4 +48,12 @@ if __name__ == '__main__':
     '''
     把程序放在图片所在目录, 在cut_pic函数内输入图片路径及想要切开的图片数即可
     '''
-    # cut_pic(pth='', pic_no=2)
+    pth = ''
+    try:
+        cut_pic(pth, pic_no=2)
+    except ModuleNotFoundError as e:
+        os.system('pip install opencv-python')
+        cut_pic(pth, pic_no=2)
+
+
+

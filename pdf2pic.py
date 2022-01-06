@@ -62,14 +62,7 @@ def pdf_image(pdf_name, Gray=False):
     return img_paths
 
 
-def roots2pdf():
-    root_list = [
-        '/Users/Beyoung/Desktop/Projects/AC_OCR/國家圖書館藏敦煌遺書_001.pdf',
-        '/Users/Beyoung/Desktop/Projects/AC_OCR/2563[函368].pdf',
-        '/Users/Beyoung/Desktop/Projects/AC_OCR/纂図互註荀子3.pdf',
-        # '/disks/sde/beyoung/files_processor/6059.桐南凤岗李氏宗谱：三十二卷：[桐庐]',
-    ]
-
+def roots2pdf(root_list):
     for root in root_list:
         start_time = time.time()
         pdf_image(root, Gray=True)
@@ -100,8 +93,6 @@ def jpgs2pdf(ori_img_path, save_path):
 # 另一个算法, 可能会小一点?
 # ! /usr/local/bin/python3
 # -*- coding: utf-8 -*-
-
-
 def combine2Pdf(folderPath, pdfFilePath):
     files = os.listdir(folderPath)
     pngFiles = []
@@ -119,13 +110,24 @@ def combine2Pdf(folderPath, pdfFilePath):
         sources.append(pngFile)
     output.save(pdfFilePath, "pdf", save_all=True, append_images=sources)
 
-
-if __name__ == "__main__":
-    folder = "/Users/weiyang/Desktop/pngFiles/"
-    pdfFile = "/Users/weiyang/Desktop/contract.pdf"
-    combine2Pdf(folder, pdfFile)
-
 if __name__ == '__main__':
-    img_path = '/Users/Beyoung/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/287670ac417cbf6320066bb73d21dc16/Message/MessageTemp/a3b2a1373f6c459b14d2c5ae746f7cc1/File/thsis_image'
-    pdf_save_path = '/Users/Beyoung/Library/Mobile Documents/com~apple~CloudDocs/papers/组内毕业论文/**.pdf'
-    jpgs2pdf(img_path, pdf_save_path)
+    root_list = [
+        # '/Users/Beyoung/Desktop/Projects/AC_OCR/國家圖書館藏敦煌遺書_001.pdf',
+        # '/Users/Beyoung/Desktop/Projects/AC_OCR/2563[函368].pdf',
+        # '/Users/Beyoung/Desktop/Projects/AC_OCR/纂図互註荀子3.pdf',
+        # '/disks/sde/beyoung/files_processor/6059.桐南凤岗李氏宗谱：三十二卷：[桐庐]',
+        '/Users/Beyoung/Desktop/Projects/corpus/（1-3）K877.5-2014-清华大学藏战国竹简（壹-叁）文字编-李学勤沈建华贾连翔.pdf'
+    ]
+    roots2pdf(root_list)
+
+
+# if __name__ == "__main__":
+#     folder = "/Users/weiyang/Desktop/pngFiles/"
+#     pdfFile = "/Users/weiyang/Desktop/contract.pdf"
+#     combine2Pdf(folder, pdfFile)
+
+# if __name__ == '__main__':
+#     img_path = '/Users/Beyoung/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/287670ac417cbf6320066bb73d21dc16/Message/MessageTemp/a3b2a1373f6c459b14d2c5ae746f7cc1/File/thsis_image'
+#     pdf_save_path = '/Users/Beyoung/Library/Mobile Documents/com~apple~CloudDocs/papers/组内毕业论文/**.pdf'
+#     jpgs2pdf(img_path, pdf_save_path)
+#

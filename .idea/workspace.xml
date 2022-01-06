@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc86253b-a69d-498d-bc1f-e6ddd2cad51c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cut_pic.jpg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini_test_code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pdf_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/combine_excels2.py" beforeDir="false" afterPath="$PROJECT_DIR$/combine_excels2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv_operation.py" beforeDir="false" afterPath="$PROJECT_DIR$/cv_operation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/open_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cut_pic.jpg.py" beforeDir="false" afterPath="$PROJECT_DIR$/cut_pic.jpg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf2pic.py" beforeDir="false" afterPath="$PROJECT_DIR$/pdf2pic.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,18 +83,6 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/open_urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="171">
-                  <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-                  <folding>
-                    <element signature="e#137#154#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/progress_bar.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="209">
@@ -108,8 +94,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pdf2pic.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="798">
-                  <caret line="48" selection-start-line="48" selection-end-line="51" selection-end-column="30" />
+                <state relative-caret-position="582">
+                  <caret line="91" selection-start-line="91" selection-end-line="91" />
                   <folding>
                     <element signature="e#134#143#0" expanded="true" />
                   </folding>
@@ -117,10 +103,19 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/pdf_utils.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="532">
+                  <caret line="28" column="103" selection-start-line="28" selection-start-column="103" selection-end-line="28" selection-end-column="103" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pic_projection.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="247">
+                <state relative-caret-position="1729">
                   <caret line="92" column="31" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="31" />
                   <folding>
                     <element signature="e#141#151#0" expanded="true" />
@@ -129,11 +124,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cut_pic.jpg.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+                <state relative-caret-position="190">
+                  <caret line="10" selection-start-line="10" selection-end-line="10" />
                   <folding>
                     <element signature="e#139#149#0" expanded="true" />
                   </folding>
@@ -154,7 +149,7 @@
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="385">
+                  <first_editor relative-caret-position="456">
                     <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
                   </first_editor>
                   <second_editor />
@@ -262,8 +257,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/combine_excels2.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="152">
-                  <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+                <state relative-caret-position="437">
+                  <caret line="23" selection-start-line="23" selection-end-line="23" />
+                  <folding>
+                    <element signature="e#142#151#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -316,8 +314,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>——</find>
-      <find>手帐</find>
       <find>11</find>
       <find>05-10</find>
       <find>心理障碍</find>
@@ -346,6 +342,8 @@
       <find>res_recog_diff</find>
       <find>鼎秀现有坐标对比</find>
       <find>gray</find>
+      <find>pdf</find>
+      <find>roots2pdf</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -358,8 +356,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/extract_json.py" />
-        <option value="$PROJECT_DIR$/format_convert.py" />
         <option value="$PROJECT_DIR$/../AC_OCR/ER007_jpg_res/20_19584_jpg/acocr_postprocessor.py" />
         <option value="$PROJECT_DIR$/Readme.md" />
         <option value="$PROJECT_DIR$/acocr_postprocessor.py" />
@@ -396,7 +392,6 @@
         <option value="$PROJECT_DIR$/dbscan_2.py" />
         <option value="$PROJECT_DIR$/cluster.py" />
         <option value="$PROJECT_DIR$/cluster2.py" />
-        <option value="$PROJECT_DIR$/pdf2pic.py" />
         <option value="$PROJECT_DIR$/检测纯黑图片.py" />
         <option value="$PROJECT_DIR$/pic_format_convert.py" />
         <option value="$PROJECT_DIR$/text_diff_1.py" />
@@ -405,10 +400,13 @@
         <option value="$PROJECT_DIR$/progress_bar.py" />
         <option value="$PROJECT_DIR$/cv_operation.py" />
         <option value="$PROJECT_DIR$/open_urls.py" />
-        <option value="$PROJECT_DIR$/combine_excels2.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/mini_test_code.py" />
         <option value="$PROJECT_DIR$/cut_pic.jpg.py" />
+        <option value="$PROJECT_DIR$/pdf2pic.py" />
+        <option value="$PROJECT_DIR$/pdf_cut.py" />
+        <option value="$PROJECT_DIR$/combine_excels2.py" />
+        <option value="$PROJECT_DIR$/pdf_utils.py" />
       </list>
     </option>
   </component>
@@ -424,11 +422,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="55" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="69" />
     <option name="y" value="25" />
-    <option name="width" value="1625" />
-    <option name="height" value="1025" />
+    <option name="width" value="2939" />
+    <option name="height" value="1667" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -451,7 +449,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -502,6 +499,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -675,13 +673,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618143219672</updated>
-    </task>
-    <task id="LOCAL-00010" summary="support multi folders">
-      <created>1619116113144</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1619116113145</updated>
     </task>
     <task id="LOCAL-00011" summary="support multi folders">
       <created>1619191461131</created>
@@ -1019,7 +1010,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638270088271</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="加入对比度计算">
+      <created>1640783861590</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1640783861591</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1032,15 +1030,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="26" width="1622" height="1025" extended-state="6" />
-    <editor active="true" />
+    <frame x="69" y="25" width="2939" height="1667" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16455697" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.106662065" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49936306" weight="0.32901832" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.671089" visible="true" weight="0.40237325" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.671089" weight="0.28321943" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.74018794" weight="0.5400802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1056,7 +1053,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.061068702" />
-      <window_info anchor="right" id="SciView" order="4" visible="true" weight="0.15253164" />
+      <window_info anchor="right" id="SciView" order="4" visible="true" weight="0.09837763" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
   </component>
@@ -1133,7 +1130,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../weibo_spider_2/config_7069597517的副本.json" />
     <entry file="file://$PROJECT_DIR$/draw_gram.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -1333,13 +1329,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pdf2pic.py">
+    <entry file="file://$PROJECT_DIR$/pic_projection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="48" selection-start-line="48" selection-end-line="51" selection-end-column="30" />
+        <state relative-caret-position="1729">
+          <caret line="92" column="31" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="31" />
           <folding>
-            <element signature="e#134#143#0" expanded="true" />
+            <element signature="e#141#151#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mini_test_code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="456">
+            <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1447,47 +1460,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/combine_excels2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pic_projection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="92" column="31" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="31" />
-          <folding>
-            <element signature="e#141#151#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="385">
-            <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mini_test_code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cut_pic.jpg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#139#149#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdf2pic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+          <folding>
+            <element signature="e#134#143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/combine_excels2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#142#151#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdf_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="103" selection-start-line="28" selection-start-column="103" selection-end-line="28" selection-end-column="103" />
         </state>
       </provider>
     </entry>
