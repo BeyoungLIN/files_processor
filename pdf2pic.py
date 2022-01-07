@@ -26,9 +26,8 @@ def jiemi(pdfpath):
         pdf.save(new_pdfpath)
     return new_pdfpath
 
-    # 将每一页转化为图片并保存
 
-
+# 将每一页转化为图片并保存
 def pdf_image(pdf_name, Gray=False):
     img_paths = []
     pdf = fitz.Document(pdf_name)
