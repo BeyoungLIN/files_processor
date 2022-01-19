@@ -27,6 +27,9 @@
 * pdf_utils.py
 一些pypdf的处理代码
 
+* go_dete.py
+棋盘检测矫正处理
+
 ## some errors records
 1. 
 ```

@@ -62,13 +62,13 @@ def cut_pdf(start_page, end_page, ip_pdf_pth, op_pdf_pth=''):
     # 截止页
     # end_page = 5
     if op_pdf_pth == '':
-        op_pdf_pth = ip_pdf_pth[:-4] + '_mini.pdf'
+        op_pdf_pth = ip_pdf_pth[:-4] + '_cut.pdf'
     output = PdfFileWriter()
     pdf_file = PdfFileReader(open(ip_pdf_pth, "rb"))
     pdf_pages_len = pdf_file.getNumPages()
 
     # 保存input.pdf中的1-5页到output.pdf
-    for i in range(start_page, end_page + 1):
+    for i in range(start_page - 1, end_page):
         output.addPage(pdf_file.getPage(i))
 
     outputStream = open(op_pdf_pth, "wb")
@@ -78,15 +78,15 @@ def cut_pdf(start_page, end_page, ip_pdf_pth, op_pdf_pth=''):
 def cut_pdf_img(sp, ep, ipdf_pth, opdf_pth=''):
 
     if opdf_pth == '':
-        opdf_pth = ipdf_pth[:-4] + '_mini.pdf'
+        opdf_pth = ipdf_pth[:-4] + '_cut.pdf'
     cut_pdf(sp, ep, ipdf_pth, opdf_pth)
     pdf_image(opdf_pth, Gray=True)
 
 
 if __name__ == '__main__':
     # cut_pdf(8, 370, '/Users/Beyoung/Desktop/Projects/corpus/（1-3）K877.5-2014-清华大学藏战国竹简（壹-叁）文字编-李学勤沈建华贾连翔.pdf')
-    # cut_pdf_img(8, 370, '/Users/Beyoung/Desktop/Projects/corpus/（1-3）K877.5-2014-清华大学藏战国竹简（壹-叁）文字编-李学勤沈建华贾连翔.pdf')  # 1-3
-    cut_pdf_img(9, 347, '/Users/Beyoung/Desktop/Projects/corpus/（4-6）K877.5-2017-清华大学藏战国竹简（肆-陆）文字编-李学勤贾连翔沈建华.pdf')  # 4-6
-    # cut_pdf_img(156, 221, '/Users/Beyoung/Desktop/Projects/corpus/（7）K877.5-2017-清华大学藏战国竹简7-清华大学出土文献研究与保护中心.pdf')  # 7
-    # cut_pdf_img(190, 274, '/Users/Beyoung/Desktop/Projects/corpus/（9）K877.5-2019-清华大学藏战国竹简9-清华大学出土文献研究与保护中心.pdf')  # 9
+    # cut_pdf_img(7, 376, '/Users/Beyoung/Desktop/Projects/corpus/（1-3）K877.5-2014-清华大学藏战国竹简（壹-叁）文字编-李学勤沈建华贾连翔.pdf')  # 1-3 √
+    # cut_pdf_img(9, 355, '/Users/Beyoung/Desktop/Projects/corpus/（4-6）K877.5-2017-清华大学藏战国竹简（肆-陆）文字编-李学勤贾连翔沈建华.pdf')  # 4-6 √
+    # cut_pdf_img(164, 229, '/Users/Beyoung/Desktop/Projects/corpus/（7）K877.5-2017-清华大学藏战国竹简7-清华大学出土文献研究与保护中心.pdf')  # 7  148-156 差8页 √
+    cut_pdf_img(190, 274, '/Users/Beyoung/Desktop/Projects/corpus/（9）K877.5-2019-清华大学藏战国竹简9-清华大学出土文献研究与保护中心.pdf')  # 9
     # cut_pdf_img(140, 218, '/Users/Beyoung/Desktop/Projects/corpus/清华十.pdf')  # 10
