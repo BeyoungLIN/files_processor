@@ -25,7 +25,7 @@
 裁图小程序
 
 * pdf_utils.py
-一些pypdf的处理代码
+一些pypdf的处理代码 cut_pdf_img用于剪切图片
 
 * go_dete.py
 棋盘检测矫正处理
