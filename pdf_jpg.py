@@ -82,19 +82,8 @@ def cut_pdf_img(sp, ep, ipdf_pth, opdf_pth=''):
         opdf_pth = ipdf_pth[:-4] + '_png.pdf'
     cut_pdf(sp, ep, ipdf_pth, opdf_pth)
     # pdf_image(opdf_pth, Gray=True)  # 是否灰度读取
-    pdf_image(ipdf_pth, sp -1 , ep -1 , Gray=False)
+    pdf_image(ipdf_pth, sp - 1, ep - 1, Gray=False)
 
 
 if __name__ == '__main__':
-    # cut_pdf(8, 370, '/Users/Beyoung/Desktop/Projects/corpus/（1-3）K877.5-2014-清华大学藏战国竹简（壹-叁）文字编-李学勤沈建华贾连翔.pdf')
-    # cut_pdf_img(7, 376, '/Users/Beyoung/Desktop/Projects/corpus/（1-3）K877.5-2014-清华大学藏战国竹简（壹-叁）文字编-李学勤沈建华贾连翔.pdf')  # 1-3 √
-    # cut_pdf_img(9, 355, '/Users/Beyoung/Desktop/Projects/corpus/（4-6）K877.5-2017-清华大学藏战国竹简（肆-陆）文字编-李学勤贾连翔沈建华.pdf')  # 4-6 √
-    # cut_pdf_img(164, 229, '/Users/Beyoung/Desktop/Projects/corpus/（7）K877.5-2017-清华大学藏战国竹简7-清华大学出土文献研究与保护中心.pdf')  # 7  148-156 差8页 √
-    # cut_pdf_img(190, 274, '/Users/Beyoung/Desktop/Projects/corpus/（9）K877.5-2019-清华大学藏战国竹简9-清华大学出土文献研究与保护中心.pdf')  # 9
-    # cut_pdf_img(140, 218, '/Users/Beyoung/Desktop/Projects/corpus/清华十.pdf')  # 10
-    # cut_pdf_img(30, 160, '/Users/Beyoung/Desktop/Projects/corpus/甲骨文字編-李宗焜.pdf')  # 字表
-    # cut_pdf_img(162, 1464, '/Users/Beyoung/Desktop/Projects/corpus/甲骨文字編-李宗焜.pdf')  # 索引
-    # cut_pdf_img(31, 161, '/Users/Beyoung/Desktop/Projects/corpus/甲骨文字编（上）.pdf', '/Users/Beyoung/Desktop/Projects/corpus/甲骨文字编（上）_字表目录.pdf')  # 9
-    # cut_pdf_img(10, 29, '/Users/Beyoung/Desktop/Projects/corpus/甲骨文字编（上）.pdf', '/Users/Beyoung/Desktop/Projects/corpus/甲骨文字编（上）_字表目录.pdf')  # 9
-    cut_pdf_img(10, 29, '/Users/Beyoung/Desktop/Projects/corpus/K877.5-2015-清华简5-清华大学出土文献研究与保护中心.pdf')  # 9
-    # cut_pdf_img(163, 542, '/Users/Beyoung/Desktop/Projects/corpus/甲骨文字编（上）.pdf', '_png')  # 9
+    cut_pdf_img(10, 29, '../corpus/K877.5-2015-清华简5-清华大学出土文献研究与保护中心.pdf')  # 9

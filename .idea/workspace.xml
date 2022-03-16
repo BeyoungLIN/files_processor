@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc86253b-a69d-498d-bc1f-e6ddd2cad51c" name="Default Changelist" comment="棋盘检测">
+      <change afterPath="$PROJECT_DIR$/cnocr_usage.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/easyocr_usage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neteasy_choice.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paddle_ocr_usage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/read_json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/files_processor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/files_processor.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pdf_jpg.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pdf_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/pdf_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/stats.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,7 +325,7 @@
       <recent name="$PROJECT_DIR$/detect" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.easyocr_usage">
+  <component name="RunManager" selected="Python.pdf_utils">
     <configuration name="cut_pic.jpg" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="files_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -450,8 +445,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.easyocr_usage" />
         <item itemvalue="Python.pdf_utils" />
+        <item itemvalue="Python.easyocr_usage" />
         <item itemvalue="Python.read_json" />
         <item itemvalue="Python.cut_pic.jpg" />
         <item itemvalue="Python.mini_test_code" />
@@ -472,14 +467,14 @@
       <workItem from="1645087293514" duration="1154000" />
       <workItem from="1645155709873" duration="526000" />
       <workItem from="1645432405795" duration="1297000" />
-      <workItem from="1645536300577" duration="1655000" />
-    </task>
-    <task id="LOCAL-00015" summary="update">
-      <created>1620872000717</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1620872000717</updated>
+      <workItem from="1645536300577" duration="4597000" />
+      <workItem from="1645599407193" duration="2042000" />
+      <workItem from="1646121495278" duration="473000" />
+      <workItem from="1646294307300" duration="1369000" />
+      <workItem from="1646493937393" duration="1879000" />
+      <workItem from="1646640689924" duration="778000" />
+      <workItem from="1646730832662" duration="792000" />
+      <workItem from="1647244250861" duration="3542000" />
     </task>
     <task id="LOCAL-00016" summary="update">
       <created>1623030019741</created>
@@ -817,7 +812,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642588820320</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="ocr操作">
+      <created>1645552588394</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1645552588395</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TodoView">
@@ -886,7 +888,8 @@
     <MESSAGE value="加入对比度计算" />
     <MESSAGE value="pdf相关处理代码" />
     <MESSAGE value="棋盘检测" />
-    <option name="LAST_COMMIT_MESSAGE" value="棋盘检测" />
+    <MESSAGE value="ocr操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="ocr操作" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -930,8 +933,8 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/files_processor$pdf_utils.coverage" NAME="pdf_utils Coverage Results" MODIFIED="1645433044213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/files_processor$easyocr_usage.coverage" NAME="easyocr_usage Coverage Results" MODIFIED="1645552421970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$pdf_utils.coverage" NAME="pdf_utils Coverage Results" MODIFIED="1647248285531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$easyocr_usage.coverage" NAME="easyocr_usage Coverage Results" MODIFIED="1645584523887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../weibo_spider_2/config_ 2549228714.json">
