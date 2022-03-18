@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc86253b-a69d-498d-bc1f-e6ddd2cad51c" name="Default Changelist" comment="棋盘检测">
-      <change afterPath="$PROJECT_DIR$/cnocr_usage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyocr_usage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pdf_jpg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdf_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/pdf_utils.py" afterDir="false" />
-    </list>
+    <list default="true" id="bc86253b-a69d-498d-bc1f-e6ddd2cad51c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -325,29 +319,7 @@
       <recent name="$PROJECT_DIR$/detect" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.pdf_utils">
-    <configuration name="cut_pic.jpg" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="files_processor" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cut_pic.jpg.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.pdf_jpg">
     <configuration name="easyocr_usage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="files_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -370,7 +342,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mini_test_code" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pdf_jpg" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="files_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -383,7 +355,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mini_test_code.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pdf_jpg.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -414,7 +386,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="read_json" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="screenshot_web" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="files_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -427,7 +399,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/read_json.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/screenshot_web.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="screenshot_web2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="files_processor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/screenshot_web2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -437,19 +431,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.mini_test_code" />
-      <item itemvalue="Python.cut_pic.jpg" />
       <item itemvalue="Python.pdf_utils" />
-      <item itemvalue="Python.read_json" />
       <item itemvalue="Python.easyocr_usage" />
+      <item itemvalue="Python.screenshot_web" />
+      <item itemvalue="Python.screenshot_web2" />
+      <item itemvalue="Python.pdf_jpg" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pdf_jpg" />
+        <item itemvalue="Python.screenshot_web2" />
+        <item itemvalue="Python.screenshot_web" />
         <item itemvalue="Python.pdf_utils" />
         <item itemvalue="Python.easyocr_usage" />
-        <item itemvalue="Python.read_json" />
-        <item itemvalue="Python.cut_pic.jpg" />
-        <item itemvalue="Python.mini_test_code" />
       </list>
     </recent_temporary>
   </component>
@@ -475,13 +469,8 @@
       <workItem from="1646640689924" duration="778000" />
       <workItem from="1646730832662" duration="792000" />
       <workItem from="1647244250861" duration="3542000" />
-    </task>
-    <task id="LOCAL-00016" summary="update">
-      <created>1623030019741</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1623030019741</updated>
+      <workItem from="1647422711263" duration="1127000" />
+      <workItem from="1647607891635" duration="165000" />
     </task>
     <task id="LOCAL-00017" summary="update">
       <created>1623067267158</created>
@@ -819,7 +808,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645552588395</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="棋盘检测">
+      <created>1647422775795</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1647422775796</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TodoView">
@@ -887,9 +883,9 @@
     <MESSAGE value="update readme, more introduction of some programms." />
     <MESSAGE value="加入对比度计算" />
     <MESSAGE value="pdf相关处理代码" />
-    <MESSAGE value="棋盘检测" />
     <MESSAGE value="ocr操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="ocr操作" />
+    <MESSAGE value="棋盘检测" />
+    <option name="LAST_COMMIT_MESSAGE" value="棋盘检测" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -933,7 +929,10 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/files_processor$screenshot_web2.coverage" NAME="screenshot_web2 Coverage Results" MODIFIED="1647428635713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$pdf_utils.coverage" NAME="pdf_utils Coverage Results" MODIFIED="1647248285531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$pdf_jpg.coverage" NAME="pdf_jpg Coverage Results" MODIFIED="1647428752137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$screenshot_web.coverage" NAME="screenshot_web Coverage Results" MODIFIED="1647422816450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$easyocr_usage.coverage" NAME="easyocr_usage Coverage Results" MODIFIED="1645584523887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">

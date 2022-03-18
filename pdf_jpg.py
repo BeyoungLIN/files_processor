@@ -87,3 +87,4 @@ def cut_pdf_img(sp, ep, ipdf_pth, opdf_pth=''):
 
 if __name__ == '__main__':
     cut_pdf_img(10, 29, '../corpus/K877.5-2015-清华简5-清华大学出土文献研究与保护中心.pdf')  # 9
+    # print(os.path.dirname(__file__))  # /Users/Beyoung/Desktop/Projects/files_processor

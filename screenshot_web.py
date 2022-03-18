@@ -3,6 +3,17 @@
 # @Author : beyoung
 # @Email  : linbeyoung@stu.pku.edu.cn
 # @File   : screenshot_web.py
+#!/usr/bin/env python
+# -*- coding:UTF-8 -*-
+#Python学习交流群：778463939
+
+import sys
+from PyQt5.QtCore import *
+from PyQt5.QtWidgets import *
+from PyQt5.QtWebEngineWidgets import *
+from PIL import Image
+from pathlib import Path
+
 
 class ScreenShotMerge():
     def __init__(self, page, over_flow_size):
@@ -66,3 +77,97 @@ class ScreenShotMerge():
         box = (left, top, right, bottom)
         region = obj.crop(box)
         return region
+
+
+class MainWindow(QMainWindow):
+    def __init__(self, parent=None):
+        super(MainWindow, self).__init__(parent)
+        self.setWindowTitle('易哈佛')
+        self.temp_height = 0
+        self.setWindowFlag(Qt.WindowMinMaxButtonsHint, False)  # 禁用最大化，最小化
+        # self.setWindowFlag(Qt.WindowStaysOnTopHint, True)  # 窗口顶置
+        self.setWindowFlag(Qt.FramelessWindowHint, True)  # 窗口无边框
+
+    def urlScreenShot(self, url):
+        self.browser = QWebEngineView()
+        self.browser.load(QUrl(url))
+        geometry = self.chose_screen()
+        self.setGeometry(geometry)
+        self.browser.loadFinished.connect(self.check_page)
+        self.setCentralWidget(self.browser)
+
+    def get_page_size(self):
+        size = self.browser.page().contentsSize()
+        self.set_height = size.height()
+        self.set_width = size.width()
+        return size.width(), size.height()
+
+    def chose_screen(self):
+        width, height = 750, 1370
+        desktop = QApplication.desktop()
+        screen_count = desktop.screenCount()
+        for i in range(0, screen_count):
+            rect = desktop.availableGeometry(i)
+            s_width, s_height = rect.width(), rect.height()
+            if s_width > width and s_height > height:
+                return QRect(rect.left(), rect.top(), width, height)
+        return QRect(0, 0, width, height)
+
+    def check_page(self):
+        p_width, p_height = self.get_page_size()
+        self.page, self.over_flow_size = divmod(p_height, self.height())
+        if self.page == 0:
+            self.page = 1
+        self.ssm = ScreenShotMerge(self.page, self.over_flow_size)
+        self.timer = QTimer(self)
+        self.timer.timeout.connect(self.exe_command)
+        self.timer.setInterval(400)
+        self.timer.start()
+
+    def exe_command(self):
+        if self.page > 0:
+            self.screen_shot()
+            self.run_js()
+
+        elif self.page < 0:
+            self.timer.stop()
+            self.ssm.image_merge()
+            self.close()
+
+        elif self.over_flow_size > 0:
+            self.screen_shot()
+        self.page -= 1
+
+    def run_js(self):
+        script = """
+            var scroll = function (dHeight) {
+            var t = document.documentElement.scrollTop
+            var h = document.documentElement.scrollHeight
+            dHeight = dHeight || 0
+            var current = t + dHeight
+            if (current > h) {
+                window.scrollTo(0, document.documentElement.clientHeight)
+              } else {
+                window.scrollTo(0, current)
+              }
+            }
+        """
+        command = script + '\n scroll({})'.format(self.height())
+        self.browser.page().runJavaScript(command)
+
+    def screen_shot(self):
+        screen = QApplication.primaryScreen()
+        winid = self.browser.winId()
+        pix = screen.grabWindow(int(winid))
+        name = '{}/temp.png'.format(self.ssm.root_path)
+        pix.save(name)
+        self.ssm.add_im(name)
+
+
+if __name__ == '__main__':
+    url = 'https://www.runoob.com/cplusplus/cpp-polymorphism.html'
+    app = QApplication(sys.argv)
+    win = MainWindow()
+    win.urlScreenShot(url)
+    win.show()
+    app.exit(app.exec_())
