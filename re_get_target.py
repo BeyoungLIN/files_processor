@@ -5,14 +5,15 @@
 # @File   : re_get_target.py
 
 import re
+import pprint
 pth = "/Users/Beyoung/Desktop/Projects/ben's crawler/geek/算法训练营2021版-代码模板.html"
 with open(pth, 'r') as w:
     con = w.read()
 
-p_pic = re.compile(r'!\[\]\((.*?)\){')
+p_pic = re.compile(r'href="(.*?)" rel="noopener nofollow" target="_blank">(.*?)</a></li>')
 pics = p_pic.findall(con)
 
-print(pics)
+pprint.pprint(pics)
 
 #
 # pth_ls = [
