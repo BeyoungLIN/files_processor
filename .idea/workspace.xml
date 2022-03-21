@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc86253b-a69d-498d-bc1f-e6ddd2cad51c" name="Default Changelist" comment="棋盘检测">
+    <list default="true" id="bc86253b-a69d-498d-bc1f-e6ddd2cad51c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/re_get_target.py" beforeDir="false" afterPath="$PROJECT_DIR$/re_get_target.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,7 +310,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -475,14 +474,8 @@
       <workItem from="1647422711263" duration="1127000" />
       <workItem from="1647607891635" duration="165000" />
       <workItem from="1647608885249" duration="939000" />
-      <workItem from="1647748184305" duration="1858000" />
-    </task>
-    <task id="LOCAL-00020" summary="update">
-      <created>1623332127466</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1623332127466</updated>
+      <workItem from="1647748184305" duration="2588000" />
+      <workItem from="1647843838545" duration="19000" />
     </task>
     <task id="LOCAL-00021" summary="update">
       <created>1623346052346</created>
@@ -820,7 +813,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647748414772</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="棋盘检测">
+      <created>1647755621869</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1647755621870</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TodoView">
