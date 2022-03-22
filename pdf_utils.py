@@ -12,14 +12,15 @@ import PyPDF4
 import fitz
 import pikepdf
 from PIL import Image
+from tqdm import tqdm
 
 
 # 将每一页转化为图片并保存
-def pdf_image(pdf_name, st, ed, Gray=True, n=3):
+def pdf_image(pdf_name, st, ed, Gray=True, n=4, format='.png'):
     img_paths = []
     pdf = fitz.Document(pdf_name)
     # for i, pg in enumerate(range(0, pdf.pageCount)):
-    for i, pg in enumerate(range(st, ed)):
+    for i, pg in enumerate(tqdm(range(st, ed))):
         page = pdf[pg]  # 获得每一页的对象
         trans = fitz.Matrix(3.0, 3.0).preRotate(0)
         pm = page.getPixmap(matrix=trans, alpha=False)  # 获得每一页的流对象
@@ -32,9 +33,9 @@ def pdf_image(pdf_name, st, ed, Gray=True, n=3):
         img_folder_pth = os.path.join(os.path.dirname(pdf_name), img_folder_name)
         if not os.path.exists(img_folder_pth):
             os.mkdir(img_folder_pth)
-        print(img_folder_pth)
+        # print(img_folder_pth)
         # img_path = os.path.join(img_folder_pth, pdf_name[:-4] + '_' + str(pg + 1) + '.jpg')
-        img_path = img_folder_pth + '/' + pdf_name.split('/')[-1][:-4] + '_' + str((pg + 1)).zfill(n) + '.png'
+        img_path = img_folder_pth + '/' + pdf_name.split('/')[-1][:-4] + '_' + str((pg + 1)).zfill(n) + format
         print(img_path)
         # print(pdf_name[:-4], pdf_name[:-4] + '_' + str(pg + 1) + '.jpg')
         pm.writePNG(img_path)  # 保存图片
