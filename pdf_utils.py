@@ -93,8 +93,8 @@ if __name__ == '__main__':
     # cut_pdf_img(190, 274, '/Users/Beyoung/Desktop/Projects/corpus/（9）K877.5-2019-清华大学藏战国竹简9-清华大学出土文献研究与保护中心.pdf')  # 9
     # cut_pdf_img(140, 218, '/Users/Beyoung/Desktop/Projects/corpus/清华十.pdf')  # 10
     # cut_pdf_img(30, 160, '/Users/Beyoung/Desktop/Projects/corpus/甲骨文字編-李宗焜.pdf')  # 字表
-    # cut_pdf_img(162, 1464, '/Users/Beyoung/Desktop/Projects/corpus/甲骨文字編-李宗焜.pdf')  # 索引
+    cut_pdf_img(162, 1464, '/Users/Beyoung/Desktop/Projects/corpus/甲骨文字編-李宗焜.pdf')  # 索引
     # cut_pdf_img(31, 161, '/Users/Beyoung/Desktop/Projects/corpus/甲骨文字编（上）.pdf', '/Users/Beyoung/Desktop/Projects/corpus/甲骨文字编（上）_字表目录.pdf')  # 9
     # cut_pdf_img(10, 29, '/Users/Beyoung/Desktop/Projects/corpus/甲骨文字编（上）.pdf', '/Users/Beyoung/Desktop/Projects/corpus/甲骨文字编（上）_字表目录.pdf')  # 9
-    cut_pdf_img(10, 29, '/Users/Beyoung/Desktop/Projects/corpus/K877.5-2015-清华简5-清华大学出土文献研究与保护中心.pdf')  # 9
+    # cut_pdf_img(10, 29, '/Users/Beyoung/Desktop/Projects/corpus/K877.5-2015-清华简5-清华大学出土文献研究与保护中心.pdf')  # 9
     # cut_pdf_img(163, 542, '/Users/Beyoung/Desktop/Projects/corpus/甲骨文字编（上）.pdf', '_png')  # 9
