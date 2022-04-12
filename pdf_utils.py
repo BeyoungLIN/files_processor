@@ -35,7 +35,7 @@ def pdf_image(pdf_name, st, ed, Gray=True, n=4, format='.png'):
             os.mkdir(img_folder_pth)
         # print(img_folder_pth)
         # img_path = os.path.join(img_folder_pth, pdf_name[:-4] + '_' + str(pg + 1) + '.jpg')
-        img_path = img_folder_pth + '/' + pdf_name.split('/')[-1][:-4] + '_' + str((pg + 1)).zfill(n) + format
+        img_path = img_folder_pth + '/' + pdf_name.split('/')[-1][:-4] + '_' + str((i + 1)).zfill(n) + format
         print(img_path)
         # print(pdf_name[:-4], pdf_name[:-4] + '_' + str(pg + 1) + '.jpg')
         pm.writePNG(img_path)  # 保存图片
