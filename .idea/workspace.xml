@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc86253b-a69d-498d-bc1f-e6ddd2cad51c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mini_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newcode_crawler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newcode_crawler2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/png2jpg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spider_nowcoder_disxuss.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/combine_srt_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/combine_srt_video.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider_nowcoder_questions.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider_nowcoder_questions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,16 +319,16 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/detect" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.mini_test">
-    <configuration name="cut_video" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.combine_srt_video">
+    <configuration name="combine_srt_video" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="files_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -336,7 +341,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cut_video.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/combine_srt_video.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -367,7 +372,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pdf_jpg" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="newcode_crawler" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="files_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -380,7 +385,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pdf_jpg.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/newcode_crawler.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -389,7 +394,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pdf_utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="spider_nowcoder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="files_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -402,7 +407,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pdf_utils.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider_nowcoder.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -411,7 +416,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="re_get_target" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="spider_nowcoder_disxuss" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="files_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -424,7 +429,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/re_get_target.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider_nowcoder_disxuss.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -434,19 +439,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.pdf_utils" />
-      <item itemvalue="Python.pdf_jpg" />
-      <item itemvalue="Python.re_get_target" />
-      <item itemvalue="Python.cut_video" />
       <item itemvalue="Python.mini_test" />
+      <item itemvalue="Python.spider_nowcoder" />
+      <item itemvalue="Python.spider_nowcoder_disxuss" />
+      <item itemvalue="Python.newcode_crawler" />
+      <item itemvalue="Python.combine_srt_video" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.combine_srt_video" />
+        <item itemvalue="Python.newcode_crawler" />
+        <item itemvalue="Python.spider_nowcoder_disxuss" />
+        <item itemvalue="Python.spider_nowcoder" />
         <item itemvalue="Python.mini_test" />
-        <item itemvalue="Python.cut_video" />
-        <item itemvalue="Python.pdf_utils" />
-        <item itemvalue="Python.re_get_target" />
-        <item itemvalue="Python.pdf_jpg" />
       </list>
     </recent_temporary>
   </component>
@@ -487,13 +492,12 @@
       <workItem from="1650043816857" duration="1466000" />
       <workItem from="1650070619483" duration="565000" />
       <workItem from="1650081695577" duration="597000" />
-    </task>
-    <task id="LOCAL-00027" summary="add count plot">
-      <created>1623899008732</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1623899008732</updated>
+      <workItem from="1650100779166" duration="4783000" />
+      <workItem from="1650129502629" duration="1697000" />
+      <workItem from="1650133723332" duration="1989000" />
+      <workItem from="1650215550680" duration="3360000" />
+      <workItem from="1650268590424" duration="3072000" />
+      <workItem from="1650385159786" duration="319000" />
     </task>
     <task id="LOCAL-00028" summary="add count plot">
       <created>1623947746139</created>
@@ -831,7 +835,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650034575155</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="爬取">
+      <created>1650100959497</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1650100959497</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TodoView">
@@ -876,7 +887,6 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test if changed" />
     <MESSAGE value="update files" />
     <MESSAGE value="support multi folders" />
     <MESSAGE value="add count plot" />
@@ -901,7 +911,8 @@
     <MESSAGE value="pdf相关处理代码" />
     <MESSAGE value="ocr操作" />
     <MESSAGE value="棋盘检测" />
-    <option name="LAST_COMMIT_MESSAGE" value="棋盘检测" />
+    <MESSAGE value="爬取" />
+    <option name="LAST_COMMIT_MESSAGE" value="爬取" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -946,11 +957,15 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/files_processor$re_get_target.coverage" NAME="re_get_target Coverage Results" MODIFIED="1647748570586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/files_processor$mini_test.coverage" NAME="mini_test Coverage Results" MODIFIED="1650044645876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$mini_test.coverage" NAME="mini_test Coverage Results" MODIFIED="1650100806089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$spider_nowcoder.coverage" NAME="spider_nowcoder Coverage Results" MODIFIED="1650101114187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$screenshot_web2.coverage" NAME="screenshot_web2 Coverage Results" MODIFIED="1647428635713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$cut_video.coverage" NAME="cut_video Coverage Results" MODIFIED="1649840755965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$pdf_utils.coverage" NAME="pdf_utils Coverage Results" MODIFIED="1648715442273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$pdf_jpg.coverage" NAME="pdf_jpg Coverage Results" MODIFIED="1647428752137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$spider_nowcoder_disxuss.coverage" NAME="spider_nowcoder_disxuss Coverage Results" MODIFIED="1650101411221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$newcode_crawler.coverage" NAME="newcode_crawler Coverage Results" MODIFIED="1650102459924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$combine_srt_video.coverage" NAME="combine_srt_video Coverage Results" MODIFIED="1650330038093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$screenshot_web.coverage" NAME="screenshot_web Coverage Results" MODIFIED="1647422816450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$easyocr_usage.coverage" NAME="easyocr_usage Coverage Results" MODIFIED="1645584523887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
