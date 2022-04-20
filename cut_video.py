@@ -23,7 +23,7 @@ def batch_cut(ip_path, op_path, resize_ratio=0.2):
         os.makedirs(op_path)
 
     for filename in os.listdir(ip_path):
-        if filename.endswith('.mp4'):
+        if filename.endswith('带字幕.mp4'):
             name = filename[:-4]
             video_pth = os.path.join(ip_path, filename)
             print(video_pth)
@@ -37,7 +37,7 @@ def batch_cut(ip_path, op_path, resize_ratio=0.2):
                 rval = False
                 print("false")
 
-            timeF = 600  # 视频帧计数间隔
+            timeF = 300  # 视频帧计数间隔
 
             while rval:  # 循环读取视频
                 rval, frame = vc.read()
@@ -68,7 +68,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--ip_path", type=str, help="原路径")
     parser.add_argument("--op_path", type=str, help="压缩后输出路径")
-    parser.add_argument("--resize_ratio", type=int, default=0.2, help="压缩比例")
+    parser.add_argument("--resize_ratio", type= int, default=0.2, help="压缩比例")
     args = parser.parse_args()
     args.ip_path = '/Users/Beyoung/Movies/Unity3D游戏开发教程 Core核心功能01 Create Project 创建项目导入素材｜Unity中文课堂/'
     args.op_path = '/Users/Beyoung/Movies/Unity3D游戏开发教程 Core核心功能01 Create Project 创建项目导入素材｜Unity中文课堂_screenshot/'
