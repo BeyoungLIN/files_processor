@@ -89,7 +89,7 @@ if __name__ == '__main__':
     # srt_path = './audio/333.zh-cn.srt'
     for curDir, dirs, files in os.walk("/Users/Beyoung/Movies/Unity3D游戏开发教程 Core核心功能01 Create Project 创建项目导入素材｜Unity中文课堂/"):
         for file in tqdm.tqdm(files):
-            if file.endswith("_中文（中国）.srt"):
+            if file.endswith("4-04 Navigation 智能导航地图烘焙-1080P 高清-AVC_中文（中国）.srt"):
             # if file.endswith(".srt") and not file.endswith("_中文（中国）.srt"):
                 srt_path = os.path.join(curDir, file)
                 print(srt_path)
