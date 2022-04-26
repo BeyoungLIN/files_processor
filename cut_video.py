@@ -25,7 +25,7 @@ def batch_cut(ip_path, op_path, resize_ratio=0.2):
         os.makedirs(op_path)
 
     for filename in tqdm.tqdm(os.listdir(ip_path)):
-        if filename.endswith('6-06.动画效果Anima-1080P 高清-AVC_2带弹幕.mp4'):
+        if filename.endswith('_带弹幕.mp4'):
         # if filename.endswith('14-14 Patrol Randomly 随机巡逻点-1080P 高清-AVC.mp4'):
             name = filename[:-4]
             video_pth = os.path.join(ip_path, filename)
@@ -73,7 +73,7 @@ if __name__ == '__main__':
     parser.add_argument("--op_path", type=str, help="压缩后输出路径")
     parser.add_argument("--resize_ratio", type= int, default=0.2, help="压缩比例")
     args = parser.parse_args()
-    args.ip_path = '/Users/Beyoung/Desktop/Projects/Unity2018教程2D入门 01安装软件&导入素材/'
-    args.op_path = 'Unity2018教程2D入门_screenshot_30_6/'
+    args.ip_path = 'Unity2018教程2D入门_final/combine_video'
+    args.op_path = 'Unity2018教程2D入门_带弹幕_screenshot'
     batch_cut(args.ip_path, args.op_path, args.resize_ratio)
 

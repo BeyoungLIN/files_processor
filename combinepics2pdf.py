@@ -2,7 +2,7 @@
 # @Time   : 2022/4/24 20:07
 # @Author : beyoung
 # @Email  : linbeyoung@stu.pku.edu.cn
-# @File   : combine_pic_np.py
+# @File   : combinepics2pdf.py
 import os
 
 import cv2
@@ -183,8 +183,8 @@ def creat_pdf(pdf_folder, pdf1_filename):
 
 if __name__ == '__main__':
     # root = 'Unity3D游戏开发教程 Core核心功能01 Create Project 创建项目导入素材｜Unity中文课堂_screenshot_30'
-    # root = 'Unity2018教程2D入门 01安装软件&导入素材_screenshot_30/'
-    root = 'Unity2018教程2D入门_screenshot_30'
+    # root = 'Unity2018教程2D入门 01安装软件&导入素材_screenshot_30'
+    root = 'Unity2018教程2D入门_带弹幕_screenshot'
     pic_ls = os.listdir(root)
     # pic_ls.sort(key=lambda arr: (arr[:2], int(arr[2:])))
     pic_ls.sort(key=lambda arr: (int(arr.split('-')[0]), int(arr.split('_')[-1][:-4])))
@@ -200,6 +200,6 @@ if __name__ == '__main__':
     # pdf_folder = 'Unity3D游戏开发教程 Core核心功能01 Create Project 创建项目导入素材｜Unity中文课堂_screenshot_30_combine'
     # pdf_folder = 'Unity2018教程2D入门 01安装软件&导入素材_screenshot_30/'
     # pdf_pic_ls = get_pdf_pic_ls(pdf_folder)
-    pdf1_filename = 'u2课件_30_10.pdf'
+    pdf1_filename = 'u2课件_fps30_4page_0_8.pdf'
     print('creat pdf')
     creat_pdf(pdf_folder, pdf1_filename)

@@ -88,20 +88,21 @@ if __name__ == '__main__':
     '''调用方法示例'''
     # srt_path = './audio/333.zh-cn.srt'
     # base_path = 'Unity3D游戏开发教程 Core核心功能01 Create Project 创建项目导入素材｜Unity中文课堂'
-    # # base_path = "Unity2018教程2D入门 01安装软件&导入素材"
-    # for curDir, dirs, files in os.walk(base_path):
-    #     for file in tqdm.tqdm(files):
-    #         # if file.endswith(".srt"):
-    #         if file.endswith(".ass"):
-    #         # if file.endswith(".srt") and not file.endswith("_中文（中国）.srt"):
-    #             srt_path = os.path.join(curDir, file)
-    #             print(srt_path)
-    #             # video_pth = srt_path.replace('_中文（中国）.srt', '.mp4')
-    #             video_pth = srt_path.replace('.ass', '_2带字幕.mp4')
-    #             addSubtitles = RealizeAddSubtitles(
-    #                 video_pth, srt_path)
+    # base_path = "Unity2018教程2D入门 01安装软件&导入素材"
+    base_path = "Unity2018教程2D入门 01安装软件&导入素材"
+    for curDir, dirs, files in os.walk(base_path):
+        for file in tqdm.tqdm(files):
+            # if file.endswith(".srt"):
+            if file.endswith(".ass"):
+            # if file.endswith(".srt") and not file.endswith("_中文（中国）.srt"):
+                srt_path = os.path.join(curDir, file)
+                print(srt_path)
+                # video_pth = srt_path.replace('_中文（中国）.srt', '.mp4')
+                video_pth = srt_path.replace('.ass', '_2带字幕.mp4')
+                addSubtitles = RealizeAddSubtitles(
+                    video_pth, srt_path)
 
 
-    srt_path = '/Users/Beyoung/Movies/Unity3D游戏开发教程 Core核心功能01 Create Project 创建项目导入素材｜Unity中文课堂/1-01 Create Project 创建项目导入素材-1080P 高清-AVC_中文（中国）.srt'
-    addSubtitles = RealizeAddSubtitles('/Users/Beyoung/Movies/Unity3D游戏开发教程 Core核心功能01 Create Project 创建项目导入素材｜Unity中文课堂/1-01 Create Project 创建项目导入素材-1080P 高清-AVC.mp4', srt_path)
+    # srt_path = '/Users/Beyoung/Movies/Unity3D游戏开发教程 Core核心功能01 Create Project 创建项目导入素材｜Unity中文课堂/1-01 Create Project 创建项目导入素材-1080P 高清-AVC_中文（中国）.srt'
+    # addSubtitles = RealizeAddSubtitles('/Users/Beyoung/Movies/Unity3D游戏开发教程 Core核心功能01 Create Project 创建项目导入素材｜Unity中文课堂/1-01 Create Project 创建项目导入素材-1080P 高清-AVC.mp4', srt_path)
 
