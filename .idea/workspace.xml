@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc86253b-a69d-498d-bc1f-e6ddd2cad51c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/burn_video_with_danmu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/video2danmu2pdf_pinepline.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/combine_pic_np.py" beforeDir="false" afterPath="$PROJECT_DIR$/combinepics2pdf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/combine_srt_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/combine_srt_video.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/combinepics2pdf.py" beforeDir="false" afterPath="$PROJECT_DIR$/combinepics2pdf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cut_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/cut_video.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -511,14 +508,9 @@
       <workItem from="1650876315716" duration="787000" />
       <workItem from="1650895083438" duration="212000" />
       <workItem from="1650895337424" duration="8585000" />
-      <workItem from="1650961343612" duration="10932000" />
-    </task>
-    <task id="LOCAL-00034" summary="support blank lines removing">
-      <created>1624266936187</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1624266936187</updated>
+      <workItem from="1650961343612" duration="13592000" />
+      <workItem from="1651026973581" duration="1285000" />
+      <workItem from="1651074227685" duration="599000" />
     </task>
     <task id="LOCAL-00035" summary="support json_txt to txt">
       <created>1624295045375</created>
@@ -856,7 +848,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650978438832</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="multi_&#10;png_pdf">
+      <created>1650991852478</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1650991852478</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TodoView">

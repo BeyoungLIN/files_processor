@@ -40,7 +40,7 @@ def batch_cut(ip_path, op_path, resize_ratio=0.2):
                 rval = False
                 print("false")
 
-            timeF = 30  # 视频帧计数间隔
+            timeF = 45  # 视频帧计数间隔
 
             while rval:  # 循环读取视频
                 rval, frame = vc.read()

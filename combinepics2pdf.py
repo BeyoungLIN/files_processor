@@ -169,7 +169,7 @@ def creat_pdf(pdf_folder, pdf1_filename):
     list1 = []
     # pic_ls.sort(key=lambda arr: (int(arr.split('-')[0]), int(arr.split('_')[-1][:-4])))
     # for each_img_pth in tqdm.tqdm(pdf_pic_pth_ls[len(pdf_pic_pth_ls)//2:]):
-    for each_img_pth in tqdm.tqdm(pdf_pic_pth_ls[:len(pdf_pic_pth_ls)//2]):
+    for each_img_pth in tqdm.tqdm(pdf_pic_pth_ls[:]):
         # 得到完整的图片路径
         # each_img_full_path = os.path.join(pictures_src_path, each_img)
         # print(each_img_full_path)
