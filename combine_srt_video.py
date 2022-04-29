@@ -71,8 +71,10 @@ class RealizeAddSubtitles():
                 start, end = map(float, (start, end))
                 span=end-start
                 txt = (TextClip(sentences, fontsize=40,
-                                font='/System/Library/Fonts/PingFang.ttc', size=(w - 20, 40),
-                                align='center', color='red')
+                                # font='/System/Library/Fonts/PingFang.ttc', size=(w - 20, 40),
+                                # align='center', color='red')
+                               font='PingFang.ttc', size=(w - 20, 40),
+                              align = 'center', color='white', stroke_color='black')
                        .set_position((10, h - 150))
                        .set_duration(span)
                        .set_start(start))
@@ -89,18 +91,22 @@ if __name__ == '__main__':
     # srt_path = './audio/333.zh-cn.srt'
     # base_path = 'Unity3D游戏开发教程 Core核心功能01 Create Project 创建项目导入素材｜Unity中文课堂'
     # base_path = "Unity2018教程2D入门 01安装软件&导入素材"
-    base_path = "Unity2018教程2D入门 01安装软件&导入素材"
-    for curDir, dirs, files in os.walk(base_path):
-        for file in tqdm.tqdm(files):
-            # if file.endswith(".srt"):
-            if file.endswith(".ass"):
-            # if file.endswith(".srt") and not file.endswith("_中文（中国）.srt"):
-                srt_path = os.path.join(curDir, file)
-                print(srt_path)
-                # video_pth = srt_path.replace('_中文（中国）.srt', '.mp4')
-                video_pth = srt_path.replace('.ass', '_2带字幕.mp4')
-                addSubtitles = RealizeAddSubtitles(
-                    video_pth, srt_path)
+    # todo_video = [
+    #
+    # ]
+    # base_path = "Unity2018教程2D入门 01安装软件&导入素材"
+    # for curDir, dirs, files in os.walk(base_path):
+    #     for file in tqdm.tqdm(files):
+    #         if file.endswith("22-22.2D光效(ver. Unity2018)-1080P 高清-AVC.srt"):
+    #             # if file.endswith(".ass"):
+    #             # if file.endswith(".srt") and not file.endswith("_中文（中国）.srt"):
+    #             srt_path = os.path.join(curDir, file)
+    #             print(srt_path)
+    #             video_pth = srt_path.replace('.srt', '.mp4')
+    #             # video_pth = srt_path.replace('.ass', '_2带字幕.mp4')
+    #             addSubtitles = RealizeAddSubtitles(
+    #                 video_pth, srt_path)
+    pass
 
 
     # srt_path = '/Users/Beyoung/Movies/Unity3D游戏开发教程 Core核心功能01 Create Project 创建项目导入素材｜Unity中文课堂/1-01 Create Project 创建项目导入素材-1080P 高清-AVC_中文（中国）.srt'

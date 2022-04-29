@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="bc86253b-a69d-498d-bc1f-e6ddd2cad51c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/burn_video_with_danmu.py" beforeDir="false" afterPath="$PROJECT_DIR$/burn_video_with_danmu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/combine_srt_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/combine_srt_video.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/combinepics2pdf.py" beforeDir="false" afterPath="$PROJECT_DIR$/combinepics2pdf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cut_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/cut_video.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video2danmu2pdf_pinepline.py" beforeDir="false" afterPath="$PROJECT_DIR$/video2danmu2pdf_pinepline.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,7 +326,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.burn_video_with_danmu">
+  <component name="RunManager" selected="Python.video2danmu2pdf_pinepline">
     <configuration name="burn_video_with_danmu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="files_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -412,7 +415,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="png2jpg" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="video2danmu2pdf_pinepline" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="files_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -425,7 +428,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/png2jpg.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/video2danmu2pdf_pinepline.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -436,18 +439,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.combine_srt_video" />
-      <item itemvalue="Python.png2jpg" />
       <item itemvalue="Python.cut_video" />
       <item itemvalue="Python.burn_video_with_danmu" />
       <item itemvalue="Python.combinepics2pdf" />
+      <item itemvalue="Python.video2danmu2pdf_pinepline" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.video2danmu2pdf_pinepline" />
+        <item itemvalue="Python.combine_srt_video" />
         <item itemvalue="Python.burn_video_with_danmu" />
         <item itemvalue="Python.cut_video" />
-        <item itemvalue="Python.combine_srt_video" />
         <item itemvalue="Python.combinepics2pdf" />
-        <item itemvalue="Python.png2jpg" />
       </list>
     </recent_temporary>
   </component>
@@ -511,13 +514,11 @@
       <workItem from="1650961343612" duration="13592000" />
       <workItem from="1651026973581" duration="1285000" />
       <workItem from="1651074227685" duration="599000" />
-    </task>
-    <task id="LOCAL-00035" summary="support json_txt to txt">
-      <created>1624295045375</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1624295045375</updated>
+      <workItem from="1651082435258" duration="7200000" />
+      <workItem from="1651164157928" duration="597000" />
+      <workItem from="1651171088299" duration="1792000" />
+      <workItem from="1651204880418" duration="554000" />
+      <workItem from="1651257104841" duration="720000" />
     </task>
     <task id="LOCAL-00036" summary="edit files">
       <created>1624416889128</created>
@@ -855,7 +856,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650991852478</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="multi_&#10;png_pdf">
+      <created>1651082440816</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1651082440816</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TodoView">
@@ -971,6 +979,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/files_processor$re_get_target.coverage" NAME="re_get_target Coverage Results" MODIFIED="1647748570586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$spider_nowcoder.coverage" NAME="spider_nowcoder Coverage Results" MODIFIED="1650101114187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$video2danmu2pdf_pinepline.coverage" NAME="video2danmu2pdf_pinepline Coverage Results" MODIFIED="1651150295483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$cut_video.coverage" NAME="cut_video Coverage Results" MODIFIED="1650978334882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$pdf_utils.coverage" NAME="pdf_utils Coverage Results" MODIFIED="1648715442273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$spider_nowcoder_disxuss.coverage" NAME="spider_nowcoder_disxuss Coverage Results" MODIFIED="1650101411221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -979,9 +988,10 @@
     <SUITE FILE_PATH="coverage/files_processor$mini_test.coverage" NAME="mini_test Coverage Results" MODIFIED="1650100806089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$combine_pic_np.coverage" NAME="combine_pic_np Coverage Results" MODIFIED="1650869298410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$screenshot_web2.coverage" NAME="screenshot_web2 Coverage Results" MODIFIED="1647428635713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$burn_video_with_danmu.coverage" NAME="burn_video_with_danmu Coverage Results" MODIFIED="1651149580434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$pdf_jpg.coverage" NAME="pdf_jpg Coverage Results" MODIFIED="1647428752137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$png2jpg.coverage" NAME="png2jpg Coverage Results" MODIFIED="1650385595932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/files_processor$combine_srt_video.coverage" NAME="combine_srt_video Coverage Results" MODIFIED="1650972163746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$combine_srt_video.coverage" NAME="combine_srt_video Coverage Results" MODIFIED="1651149839073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$screenshot_web.coverage" NAME="screenshot_web Coverage Results" MODIFIED="1647422816450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$easyocr_usage.coverage" NAME="easyocr_usage Coverage Results" MODIFIED="1645584523887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

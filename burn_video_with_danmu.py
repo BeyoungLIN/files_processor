@@ -56,14 +56,15 @@ def sort_method(ori_ls):
 
 if __name__ == '__main__':
     # for
-    video_root = 'Unity2018教程2D入门 01安装软件&导入素材/'
-    video_ls = get_batch_ls(video_root)
-    video_ls = sort_method(video_ls)
-
-    for i in tqdm.tqdm(video_ls[:10]):
-        print(i)
-        video_pth, ass_pth, op_pth = get_paths(i)
-        run_ass_combine(video_pth, ass_pth, op_pth)
+    # video_root = 'Unity2018教程2D入门 01安装软件&导入素材/'
+    # video_ls = get_batch_ls(video_root)
+    # video_ls = sort_method(video_ls)
+    #
+    # for i in tqdm.tqdm(video_ls[:10]):
+    #     print(i)
+    #     video_pth, ass_pth, op_pth = get_paths(i)
+    #     run_ass_combine(video_pth, ass_pth, op_pth)
+    pass
     # video_pth = 'Unity2018教程2D入门 01安装软件&导入素材/3-03.图层layer&角-1080P 高清-AVC_2带字幕.mp4'
     # ass_pth = 'Unity2018教程2D入门_final/danmu/3-03.图层layer&角-1080P 高清-AVC_make.ass'
     # op_pth = 'Unity2018教程2D入门_final/combine_video/3-03.图层layer&角-1080P 高清-AVC_带弹幕.mp4'

@@ -103,9 +103,9 @@ def pic_compose(page_list, root):
         for rn, r in enumerate(p):
             for ln, l in enumerate(r):
                 if ln == 0:
-                    # print(l)
+                    print(l)
                     img = cv2.imread(l)
-                    img = cv2.resize(img, (1680, 1050))
+                    img = cv2.resize(img, (1920, 1200))
                     img_tmp = img
                     if pn == len(page_list) - 1 and rn != 0 and r[0] == p[rn - 1][-1]:
 
@@ -114,7 +114,7 @@ def pic_compose(page_list, root):
                         img[img == 0] = 255  # 0 -> 255
                 else:
                     img = cv2.imread(l)
-                    img = cv2.resize(img, (1680, 1050))
+                    img = cv2.resize(img, (1920, 1200))
                     if pn == len(page_list) - 1 and r[ln] == r[ln - 1]:
                         img = np.zeros(img.shape)
 
@@ -184,7 +184,8 @@ def creat_pdf(pdf_folder, pdf1_filename):
 if __name__ == '__main__':
     # root = 'Unity3D游戏开发教程 Core核心功能01 Create Project 创建项目导入素材｜Unity中文课堂_screenshot_30'
     # root = 'Unity2018教程2D入门 01安装软件&导入素材_screenshot_30'
-    root = 'Unity2018教程2D入门_带弹幕_screenshot'
+    # root = 'Unity2018教程2D入门_带弹幕_screenshot'
+    root = 'Unity2018教程2D入门_带弹幕_screenshot_9_30_60'
     pic_ls = os.listdir(root)
     # pic_ls.sort(key=lambda arr: (arr[:2], int(arr[2:])))
     pic_ls.sort(key=lambda arr: (int(arr.split('-')[0]), int(arr.split('_')[-1][:-4])))
@@ -200,6 +201,7 @@ if __name__ == '__main__':
     # pdf_folder = 'Unity3D游戏开发教程 Core核心功能01 Create Project 创建项目导入素材｜Unity中文课堂_screenshot_30_combine'
     # pdf_folder = 'Unity2018教程2D入门 01安装软件&导入素材_screenshot_30/'
     # pdf_pic_ls = get_pdf_pic_ls(pdf_folder)
-    pdf1_filename = 'u2课件_fps30_4page_0_8.pdf'
+    pdf1_filename = 'u2课件_fps60_4page_9_30.pdf'
     print('creat pdf')
     creat_pdf(pdf_folder, pdf1_filename)
+    pass
