@@ -88,31 +88,31 @@ if __name__ == '__main__':
         '9-09 Shader Graph 遮挡剔除-1080P 高清-AVC.mp4'
     ]
     # vroot = 'Unity3D游戏开发教程 Core核心功能01 Create Project 创建项目导入素材｜Unity中文课堂'
-    vroot = 'Unity3D游戏开发教程 Core核心功能01 Create Project 创建项目导入素材｜Unity中文课堂'
-    # srtroot = 'Unity2018教程2D入门_final/srt'
-    srtroot = 'Unity3D游戏开发教程 Core核心功能01 Create Project 创建项目导入素材｜Unity中文课堂'
-    for file in tqdm.tqdm(todo_file):
-        video_path = os.path.join(vroot, file)
-        srt_path = os.path.join(srtroot, file.replace('.mp4', '.srt'))
-        print(video_path)
-        print(srt_path)
-        # video_pth = srt_path.replace('_中文（中国）.srt', '.mp4')
-        # video_pth = srt_path.replace('.ass', '_2带字幕.mp4')
-        addSubtitles = RealizeAddSubtitles(video_path, srt_path)
-        fn, ext = splitext(video_path)
-        srt_video_pth = f'{fn}_2带字幕{ext}'
-        # ass_pth =
-        # ass_pth = os.path.join('Unity2018教程2D入门_final/danmu/', file[:-4] + '.ass')
-        ass_pth = os.path.join(srtroot, file[:-4] + '.ass')
-        op_pth = os.path.join('Unity3D游戏开发教程 Core核心功能_final', file[:-4] + '_带弹幕.mp4')
-        run_ass_combine(srt_video_pth, ass_pth, op_pth)
-        filename = file[:-4] + '_带弹幕.mp4'
-        ip_path = 'Unity3D游戏开发教程 Core核心功能_final'
-        # op_path = 'Unity2018教程2D入门_带弹幕_screenshot_9_30_60'
-        op_path = 'Unity3D游戏开发教程 Core核心功能_final_screenshot_60_danmu'
-        one_cut(ip_path, filename, op_path)
-
-    root = op_path
+    # vroot = 'Unity3D游戏开发教程 Core核心功能01 Create Project 创建项目导入素材｜Unity中文课堂'
+    # # srtroot = 'Unity2018教程2D入门_final/srt'
+    # srtroot = 'Unity3D游戏开发教程 Core核心功能01 Create Project 创建项目导入素材｜Unity中文课堂'
+    # for file in tqdm.tqdm(todo_file):
+    #     video_path = os.path.join(vroot, file)
+    #     srt_path = os.path.join(srtroot, file.replace('.mp4', '.srt'))
+    #     print(video_path)
+    #     print(srt_path)
+    #     # video_pth = srt_path.replace('_中文（中国）.srt', '.mp4')
+    #     # video_pth = srt_path.replace('.ass', '_2带字幕.mp4')
+    #     addSubtitles = RealizeAddSubtitles(video_path, srt_path)
+    #     fn, ext = splitext(video_path)
+    #     srt_video_pth = f'{fn}_2带字幕{ext}'
+    #     # ass_pth =
+    #     # ass_pth = os.path.join('Unity2018教程2D入门_final/danmu/', file[:-4] + '.ass')
+    #     ass_pth = os.path.join(srtroot, file[:-4] + '.ass')
+    #     op_pth = os.path.join('Unity3D游戏开发教程 Core核心功能_final', file[:-4] + '_带弹幕.mp4')
+    #     run_ass_combine(srt_video_pth, ass_pth, op_pth)
+    #     filename = file[:-4] + '_带弹幕.mp4'
+    #     ip_path = 'Unity3D游戏开发教程 Core核心功能_final'
+    #     # op_path = 'Unity2018教程2D入门_带弹幕_screenshot_9_30_60'
+    #     op_path = 'Unity3D游戏开发教程 Core核心功能_final_screenshot_60_danmu'
+    #     one_cut(ip_path, filename, op_path)
+    #
+    root = 'Unity3D游戏开发教程 Core核心功能_final_screenshot_60_danmu'
     pic_ls = os.listdir(root)
     # pic_ls.sort(key=lambda arr: (arr[:2], int(arr[2:])))
     pic_ls.sort(key=lambda arr: (int(arr.split('-')[0]), int(arr.split('_')[-1][:-4])))
@@ -121,15 +121,17 @@ if __name__ == '__main__':
     line = 2
 
     pic_ls = get_pic_pth_ls(root, pic_ls)
+    print(pic_ls)
+
     print('divd pic')
     page_list = divi_pic(pic_ls, row, line)
-    print('pic_compose')
+    # print('pic_compose')
     pdf_folder = pic_compose(page_list, root)
     # pdf_folder = 'Unity3D游戏开发教程 Core核心功能01 Create Project 创建项目导入素材｜Unity中文课堂_screenshot_30_combine'
     # pdf_folder = 'Unity2018教程2D入门 01安装软件&导入素材_screenshot_30/'
     # pdf_pic_ls = get_pdf_pic_ls(pdf_folder)
     # pdf1_filename = 'u2课件_fps30_4page_9_30.pdf'
     pdf1_filename = 'u3课件_fps60_4page.pdf'
-    print('creat pdf')
+    print(pdf_folder)
     creat_pdf(pdf_folder, pdf1_filename)
 

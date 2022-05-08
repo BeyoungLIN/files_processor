@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bc86253b-a69d-498d-bc1f-e6ddd2cad51c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/burn_video_with_danmu.py" beforeDir="false" afterPath="$PROJECT_DIR$/burn_video_with_danmu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/combine_srt_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/combine_srt_video.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/combinepics2pdf.py" beforeDir="false" afterPath="$PROJECT_DIR$/combinepics2pdf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cut_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/cut_video.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/mini_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/video2danmu2pdf_pinepline.py" beforeDir="false" afterPath="$PROJECT_DIR$/video2danmu2pdf_pinepline.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -326,7 +325,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.video2danmu2pdf_pinepline">
+  <component name="RunManager" selected="Python.get_correct_txt">
     <configuration name="burn_video_with_danmu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="files_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -371,7 +370,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="combinepics2pdf" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="get_correct_txt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="files_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -379,12 +378,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../AC_OCR/CUHK_OCR/code" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/combinepics2pdf.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../AC_OCR/CUHK_OCR/code/get_correct_txt.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -393,7 +392,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="cut_video" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="mini_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="files_processor" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -406,7 +405,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cut_video.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mini_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -439,18 +438,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.combine_srt_video" />
-      <item itemvalue="Python.cut_video" />
       <item itemvalue="Python.burn_video_with_danmu" />
-      <item itemvalue="Python.combinepics2pdf" />
       <item itemvalue="Python.video2danmu2pdf_pinepline" />
+      <item itemvalue="Python.mini_test" />
+      <item itemvalue="Python.get_correct_txt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.get_correct_txt" />
+        <item itemvalue="Python.mini_test" />
         <item itemvalue="Python.video2danmu2pdf_pinepline" />
         <item itemvalue="Python.combine_srt_video" />
         <item itemvalue="Python.burn_video_with_danmu" />
-        <item itemvalue="Python.cut_video" />
-        <item itemvalue="Python.combinepics2pdf" />
       </list>
     </recent_temporary>
   </component>
@@ -518,14 +517,11 @@
       <workItem from="1651164157928" duration="597000" />
       <workItem from="1651171088299" duration="1792000" />
       <workItem from="1651204880418" duration="554000" />
-      <workItem from="1651257104841" duration="720000" />
-    </task>
-    <task id="LOCAL-00036" summary="edit files">
-      <created>1624416889128</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1624416889128</updated>
+      <workItem from="1651257104841" duration="1098000" />
+      <workItem from="1651291146824" duration="34000" />
+      <workItem from="1651643996378" duration="597000" />
+      <workItem from="1651839405895" duration="888000" />
+      <workItem from="1651975550666" duration="800000" />
     </task>
     <task id="LOCAL-00037" summary="find text diff">
       <created>1624516178509</created>
@@ -863,7 +859,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651082440816</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="multi_&#10;png_pdf">
+      <created>1651257999150</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1651257999150</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TodoView">
@@ -984,6 +987,7 @@
     <SUITE FILE_PATH="coverage/files_processor$pdf_utils.coverage" NAME="pdf_utils Coverage Results" MODIFIED="1648715442273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$spider_nowcoder_disxuss.coverage" NAME="spider_nowcoder_disxuss Coverage Results" MODIFIED="1650101411221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$newcode_crawler.coverage" NAME="newcode_crawler Coverage Results" MODIFIED="1650102459924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/files_processor$get_correct_txt.coverage" NAME="get_correct_txt Coverage Results" MODIFIED="1651839576484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../AC_OCR/CUHK_OCR/code" />
     <SUITE FILE_PATH="coverage/files_processor$convert_srt_danmu.coverage" NAME="convert_srt_danmu Coverage Results" MODIFIED="1650981222003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$mini_test.coverage" NAME="mini_test Coverage Results" MODIFIED="1650100806089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/files_processor$combine_pic_np.coverage" NAME="combine_pic_np Coverage Results" MODIFIED="1650869298410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

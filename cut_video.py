@@ -77,13 +77,13 @@ def batch_rename(path):
 
 if __name__ == '__main__':
     # Parse arguments
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--ip_path", type=str, help="原路径")
-    parser.add_argument("--op_path", type=str, help="压缩后输出路径")
-    parser.add_argument("--resize_ratio", type= int, default=0.2, help="压缩比例")
-    args = parser.parse_args()
-    args.ip_path = 'Unity2018教程2D入门_final/combine_video'
-    args.op_path = 'Unity2018教程2D入门_带弹幕_screenshot_9_30_60'
-    batch_cut(args.ip_path, args.op_path, args.resize_ratio)
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument("--ip_path", type=str, help="原路径")
+    # parser.add_argument("--op_path", type=str, help="压缩后输出路径")
+    # parser.add_argument("--resize_ratio", type= int, default=0.2, help="压缩比例")
+    # args = parser.parse_args()
+    # args.ip_path = 'Unity2018教程2D入门_final/combine_video'
+    # args.op_path = 'Unity2018教程2D入门_带弹幕_screenshot_9_30_60'
+    # batch_cut(args.ip_path, args.op_path, args.resize_ratio)
     pass
 
