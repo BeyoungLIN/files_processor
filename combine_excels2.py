@@ -11,8 +11,9 @@ import pandas as pd
 # 文件路径
 # file_dir = r'input root path'
 file_dirs = [
-    '/Users/Beyoung/Library/Mobile Documents/com~apple~CloudDocs/20软微/党团公务/新增党员信息/attachments',
-    '/Users/Beyoung/Library/Mobile Documents/com~apple~CloudDocs/20软微/党团公务/新增党员信息/attachments (1)'
+    # '/Users/Beyoung/Library/Mobile Documents/com~apple~CloudDocs/20软微/党团公务/新增党员信息/attachments',
+    # '/Users/Beyoung/Library/Mobile Documents/com~apple~CloudDocs/20软微/党团公务/新增党员信息/attachments (1)',
+    '/Users/Beyoung/Library/Mobile Documents/com~apple~CloudDocs/20软微/党团公务/2022新增党员/'
 ]
 new_list = []
 
@@ -24,7 +25,7 @@ for file_dir in file_dirs:
 
     for file in file_list:
         print(file)
-        if file != '.DS_Store':
+        if file.endswith('.xlsx'):
             # 重构文件路径
             file_path = os.path.join(file_dir, file)
             # 将excel转换成DataFrame

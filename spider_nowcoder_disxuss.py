@@ -84,6 +84,11 @@ if __name__ == '__main__':
 
     crawl = niuke()
     enterprise, enterprise_name, num = crawl.get_enterprise()
+    print(enterprise, enterprise_name, num)
+    enterprise.insert(0, enterprise[0])
+    num.insert(0, num[0])
+    enterprise_name.insert(0, '朝夕光年')
+
 
     #    for j in range(len(enterprise)):
     for j in range(100):
