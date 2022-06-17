@@ -55,13 +55,13 @@ def getDetailData(tmp_path, title, detail_response):
     f.close()
 
 
-path = "../面试相关/牛客游戏研发"
+path = "../面试相关/牛客游戏研发3"
 
 if __name__ == '__main__':
     # url = "https://www.nowcoder.com/discuss/experience/json?token=&tagId=639&companyId=0&phaseId=0&order=3&query=&page=1"
-    url = "https://www.nowcoder.com/discuss/experience/json?token=&tagId=1194&companyId=0&phaseId=0&order=3&query=&page=1"
+    url = "https://www.nowcoder.com/discuss/experience/json?token=&tagId=1194&companyId=0&phaseId=0&order=3&query=&page="
 
-    for i in range(0, 100):
+    for i in range(1, 100):
         url = url + str(i)
         if not os.path.exists(path):
             os.mkdir(path)
