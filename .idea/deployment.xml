@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="file_pro">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="acmodel_no2_out">
     <serverData>
+      <paths name="acmodel_no2_out">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/files_processor" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="file_pro">
         <serverdata>
           <mappings>
